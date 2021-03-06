@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7db87953-7494-4fc7-a968-b57b53850273}</ProjectGuid>
-    <RootNamespace>HelloWorld</RootNamespace>
+    <ProjectGuid>{04f19d8c-6d62-42fe-8be6-589cfc755ba5}</ProjectGuid>
+    <RootNamespace>Chap02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,13 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex03_FloatingPointType.c" />
-    <ClCompile Include="ex07_Function_sum.c" />
-    <ClCompile Include="ex02_IntegerType.c" />
-    <ClCompile Include="ex01_Hello.c" />
-    <ClCompile Include="ex06_Quiz04_2.c" />
-    <ClCompile Include="ex04_Variable01_Definition.c" />
-    <ClCompile Include="ex05_Variable02_Declaration.c" />
+    <ClCompile Include="ex01_printMyName.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

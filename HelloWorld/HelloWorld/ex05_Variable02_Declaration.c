@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int main_Variable02_Declaration(void) {
+	int money;		// int형 변수 money를 선언함.
+	money = 3000;	// 변수 money에 값 3000을 저장함.
+	printf("money에 저장된 값은 %d\n", money);
+}

@@ -15,25 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_Hello.c">
+    <ClCompile Include="1053.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex02_IntegerType.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex03_FloatingPointType.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex04_Variable01_Definition.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex05_Variable02_Declaration.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex06_Quiz04_2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex07_Function_sum.c">
+    <ClCompile Include="..\CodeUP\template.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
