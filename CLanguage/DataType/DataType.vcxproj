@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{04f19d8c-6d62-42fe-8be6-589cfc755ba5}</ProjectGuid>
-    <RootNamespace>Chap02</RootNamespace>
+    <ProjectGuid>{53d10804-14c6-48e8-afa9-26c154f4defb}</ProjectGuid>
+    <RootNamespace>DataType</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Ch01_DataType</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -85,7 +86,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,7 +140,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_printMyName이동윤.c" />
+    <ClCompile Include="ex01_IntegerTypeRange.c" />
+    <ClCompile Include="ex02_FloatingPointTypeRange.c" />
+    <ClCompile Include="ex03_char.c" />
+    <ClCompile Include="ex04_variableExercise.c" />
+    <ClCompile Include="ex05_scanf.c" />
+    <ClCompile Include="ex06_scanfExercise.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
