@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main() {
+int main_ex04_operator() {
 	printf("0 && 0ÀÇ °ª: %d \n", 0 && 0);		// °ÅÁş && °ÅÁş
 	printf("0 && 1ÀÇ °ª: %d \n", 0 && 1);		// °ÅÁş && Âü
 	printf("1 && 0ÀÇ °ª: %d \n", 1 && 0);		// Âü && °ÅÁş
@@ -13,4 +13,6 @@ int main() {
 
 	printf("!0 = %d \n", !(5 < 3));				// !(°ÅÁş)
 	printf("!1 = %d \n", !(5 > 3));				// !(Âü)
+
+	return 0;
 }
