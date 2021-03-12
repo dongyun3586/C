@@ -146,6 +146,7 @@
     <ClCompile Include="ex04_variableExercise.c" />
     <ClCompile Include="ex05_scanf.c" />
     <ClCompile Include="ex06_scanfExercise.c" />
+    <ClCompile Include="ex07_implicitTypeConversion.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
