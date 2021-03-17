@@ -15,28 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_IntegerTypeRange.c">
+    <ClCompile Include="ex01_operator.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex02_FloatingPointTypeRange.c">
+    <ClCompile Include="ex02_operator.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex03_char.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex04_variableExercise.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex05_scanf.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex06_scanfExercise.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex07_implicitTypeConversion.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Hello.c">
+    <ClCompile Include="ex03_operator.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
