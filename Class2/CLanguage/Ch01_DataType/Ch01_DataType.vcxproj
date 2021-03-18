@@ -139,11 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="codeup.c" />
     <ClCompile Include="ex01_IntegerTypeRange.c" />
     <ClCompile Include="ex02_FloatingPointTypeRange.c" />
     <ClCompile Include="ex03_char.c" />
     <ClCompile Include="ex04_variableExercise.c" />
     <ClCompile Include="ex05_scanf.c" />
+    <ClCompile Include="ex06_scanfExercise.c" />
+    <ClCompile Include="ex07_implicitTypeConversion.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

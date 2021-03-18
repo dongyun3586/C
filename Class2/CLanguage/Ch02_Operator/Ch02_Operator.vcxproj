@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c0114851-b765-463f-8c89-7d933720a99b}</ProjectGuid>
-    <RootNamespace>Ch01DataType</RootNamespace>
+    <ProjectGuid>{cb4cf625-b748-43e4-b452-2c69fee25de7}</ProjectGuid>
+    <RootNamespace>Ch02Operator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="codeup.c" />
-    <ClCompile Include="ex01_IntegerTypeRange.c" />
-    <ClCompile Include="ex02_FloatingPointTypeRange.c" />
-    <ClCompile Include="ex03_char.c" />
-    <ClCompile Include="ex04_variableExercise.c" />
-    <ClCompile Include="ex05_scanf.c" />
-    <ClCompile Include="ex06_scanfExercise.c" />
-    <ClCompile Include="ex07_implicitTypeConversion.c" />
+    <ClCompile Include="ex01_operator.c" />
+    <ClCompile Include="ex02_operator.c" />
+    <ClCompile Include="ex03_operator.c" />
+    <ClCompile Include="ex04_operator.c" />
+    <ClCompile Include="ex05_operator.c" />
+    <ClCompile Include="ex06_operator.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
