@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main_ex04_variableExercise()
 {
     int num1 = 10, num2 = 20, num3 = 30;
 
