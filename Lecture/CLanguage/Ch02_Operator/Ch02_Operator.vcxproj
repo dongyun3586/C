@@ -145,6 +145,7 @@
     <ClCompile Include="ex04_operator.c" />
     <ClCompile Include="ex05_operator.c" />
     <ClCompile Include="ex06_operator.c" />
+    <ClCompile Include="ex07_LeapYear_NormalYear.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

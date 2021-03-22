@@ -2,9 +2,9 @@
 
 #include<stdio.h>
 
-int main() {
+int main_ex05_operator() {
 	// 변수 선언
-	float width, height, radius;
+	double width, height, radius;
 	const float PI = 3.14;
 
 	// 삼각형의 넓이 구하기
