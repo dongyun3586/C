@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch01_DataType", "Ch01_DataT
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch02_Operator", "Ch02_Operator\Ch02_Operator.vcxproj", "{CB4CF625-B748-43E4-B452-2C69FEE25DE7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch03_FlowControl", "Ch03_FlowControl\Ch03_FlowControl.vcxproj", "{32C957EE-76D2-4603-BA54-A7B225F2E085}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CB4CF625-B748-43E4-B452-2C69FEE25DE7}.Release|x64.Build.0 = Release|x64
 		{CB4CF625-B748-43E4-B452-2C69FEE25DE7}.Release|x86.ActiveCfg = Release|Win32
 		{CB4CF625-B748-43E4-B452-2C69FEE25DE7}.Release|x86.Build.0 = Release|Win32
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Debug|x64.ActiveCfg = Debug|x64
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Debug|x64.Build.0 = Debug|x64
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Debug|x86.ActiveCfg = Debug|Win32
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Debug|x86.Build.0 = Debug|Win32
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Release|x64.ActiveCfg = Release|x64
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Release|x64.Build.0 = Release|x64
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Release|x86.ActiveCfg = Release|Win32
+		{32C957EE-76D2-4603-BA54-A7B225F2E085}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
