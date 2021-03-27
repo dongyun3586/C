@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main_ex07_implicitTypeConversion()
 {
 #pragma region 자료형 확장(type promotion)
     // 1. int와 float 자료형의 연산 결과 => 실수

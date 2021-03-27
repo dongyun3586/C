@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex12_gugudan() {
+int main_ex13_gugudan() {
 	int dan;
 
 	printf("구구단 중 출력을 원하는 단을 입력하시오 : ");
