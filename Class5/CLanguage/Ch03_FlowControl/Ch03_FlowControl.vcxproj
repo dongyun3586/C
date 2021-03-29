@@ -140,6 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex01_if.c" />
+    <ClCompile Include="ex02_if.c" />
+    <ClCompile Include="ex03_ifelse.c" />
+    <ClCompile Include="ex04_ifelseifelse.c" />
+    <ClCompile Include="ex05_classification.c" />
+    <ClCompile Include="ex06_quadraticEquation.c" />
+    <ClCompile Include="ex07_switchcase.c" />
+    <ClCompile Include="ex08_daysInMonth.c" />
+    <ClCompile Include="ex09_for.c" />
+    <ClCompile Include="ex10_sum_for.c" />
+    <ClCompile Include="ex11_factorsOfANumber.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

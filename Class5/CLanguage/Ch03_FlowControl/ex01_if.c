@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main() {
+int main_ex01_if() {
 
 	// 1. 실행문장이 하나인 경우 { } 생략 가능
 	int number;
