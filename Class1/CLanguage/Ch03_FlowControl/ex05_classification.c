@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main() {
+int main_ex05_classification() {
 
 	char ch;
 	scanf("%c", &ch);
