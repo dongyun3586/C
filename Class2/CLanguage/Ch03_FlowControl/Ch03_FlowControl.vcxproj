@@ -149,6 +149,15 @@
     <ClCompile Include="ex08_daysInMonth.c" />
     <ClCompile Include="ex09_for.c" />
     <ClCompile Include="ex10_sum_for.c" />
+    <ClCompile Include="ex11_factorsOfANumber.c" />
+    <ClCompile Include="ex12_FibonacciSequence.c" />
+    <ClCompile Include="ex13_while.c" />
+    <ClCompile Include="ex14_gugudan.c" />
+    <ClCompile Include="ex15_countNumberOfDigitsInAnInteger.c" />
+    <ClCompile Include="ex16_FibonacciSequence.c" />
+    <ClCompile Include="ex17_gugudan.c" />
+    <ClCompile Include="ex18_PrintHalfPyramid.c" />
+    <ClCompile Include="ex19_PrintInvertedHalfPyramid.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
