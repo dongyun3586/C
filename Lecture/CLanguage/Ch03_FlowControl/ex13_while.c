@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex11_while() {
+int main() {
 	int num = 1, sum = 0;
 
 	while (num <= 10) {
