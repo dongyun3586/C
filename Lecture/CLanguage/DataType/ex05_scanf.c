@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main_ex05_scanf()
 {
 	int x, y, sum;

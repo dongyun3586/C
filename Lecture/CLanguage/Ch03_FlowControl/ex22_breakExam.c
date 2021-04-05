@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main_ex22_breakExam() {
-    int i, number, sum = 0;
+    int number, sum = 0;
 
-    for (i = 1; i <= 10; ++i) {
-        printf("정수입력 %d: ", i);
+    while (1) {
+        printf("정수입력: ");
         scanf("%d", &number);
 
         // 음수가 입력되면 종료된다.
-        if (number < 0) 
+        if (number < 0)
             break;
 
-        sum += number; 
+        sum += number;
     }
 
     printf("합계 = %d", sum);

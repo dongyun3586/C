@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main_ex06_scanfExercise()
 {
 	int a, b, temp;
