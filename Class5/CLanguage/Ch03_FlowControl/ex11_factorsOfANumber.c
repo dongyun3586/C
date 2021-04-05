@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+int main_ex11_factorsOfANumber() {
     int num, i;
     printf("양의 정수를 입력하시오: ");
     scanf("%d", &num);

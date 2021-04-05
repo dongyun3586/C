@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main() {
+int main_ex10_sum_for() {
 	int sum, n;
 	sum = 0;
 
