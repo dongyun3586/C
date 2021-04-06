@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_ex15_countNumberOfDigitsInAnInteger() {
     int number, count = 0;  // INT_MAX = 2,147,483,647
 
     printf("양의 정수를 입력하시오: ");
@@ -11,7 +11,6 @@ int main() {
         number /= 10;
         count++;
     }
-
 
     printf("자릿수: %d \n", count);
 }
