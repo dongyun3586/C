@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main() {
+int main_ex16_FibonacciSequence() {
 	int n, a = 0, b = 1, next;
 
 	printf("양의 정수를 입력하시오: ");
