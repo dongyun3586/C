@@ -2,7 +2,7 @@
 #include<stdlib.h>  // rand(), srand() 정의
 #include<time.h>    // time() 정의
 
-int main_ex01_RandomNumber() {
+int main() {
 #pragma region 1. rand() 사용
     // 함수원형: int rand (void) 
     // 함수기능: Generate pseudo-random number [0 ~ RAND_MAX]
@@ -10,7 +10,7 @@ int main_ex01_RandomNumber() {
     // rand() 함수는 0~32767 사이의 정수값을 반환한다.
     printf("RAND_MAX : %d\n", RAND_MAX);  // RAND_MAX : 32767
 
-    for(int i=0; i<10; i++)
+    for (int i = 0; i < 10; i++)
         printf("rand : %d\n", rand());
     // => rand() 함수는 프로그램이 생성될때 값이 정해지기 때문에 프로그램을 여러번 실행시켜도 동일한 값이 나옵니다.
 #pragma endregion
@@ -23,18 +23,19 @@ int main_ex01_RandomNumber() {
     //// srand(seed)에 전달되는 seed값이 같으면 rand()함수가 생성하는 정수값들은 같다.
     //srand(100);
     //for (int i = 0; i < 10; i++)
-    //    printf("rand : %d\n", rand());
-    //printf("\n");
+    //    printf("%5d ", rand());
+    //printf("\n\n");
 
     //srand(100);
     //for (int i = 0; i < 10; i++)
-    //    printf("rand : %d\n", rand());
-    //printf("\n");
+    //    printf("%5d ", rand());
+    //printf("\n\n");
 
     //// srand(seed)에 전달되는 seed값이 다르면 rand()함수가 생성하는 정수값들도 다르다.
     //srand(200);
     //for (int i = 0; i < 10; i++)
-    //    printf("rand : %d\n", rand());
+    //    printf("%5d ", rand());
+    //printf("\n\n");
 #pragma endregion
 
 #pragma region 3. rand(), srand(), time() 사용
@@ -51,5 +52,29 @@ int main_ex01_RandomNumber() {
     //printf("\n");
 #pragma endregion
 
-	return 0;
+#pragma region 4. 원하는 범위의 난수 생성
+    //srand(time(NULL));
+
+    //// 0 ~ 10 사이의 난수
+    //printf("*** 0 ~ 10 사이의 난수 ***\n");
+    //for (int i = 0; i < 20; i++)
+    //    printf("%2d ", rand() % 11);
+    //printf("\n\n");
+
+    //// 1 ~ 10 사이의 난수
+    //printf("*** 1 ~ 10 사이의 난수 ***\n");
+    //for (int i = 0; i < 20; i++)
+    //    printf("%2d ", rand() % 10 + 1);
+    //printf("\n\n");
+
+    //// 2 ~ 9 사이의 난수
+    //printf("***2 ~ 9 사이의 난수 ***\n");
+    //for (int i = 0; i < 20; i++)
+    //    printf("%2d ", rand() % 8 + 2);
+    //printf("\n\n");
+
+#pragma endregion
+
+
+    return 0;
 }
