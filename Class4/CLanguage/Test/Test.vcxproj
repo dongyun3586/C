@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4d863c6a-6d63-4859-b7f6-35a7d43f6b2e}</ProjectGuid>
-    <RootNamespace>Ch03FlowControl</RootNamespace>
+    <ProjectGuid>{da332128-270f-4e2f-a1a3-3f4ec91b6ecb}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,28 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_if.c" />
-    <ClCompile Include="ex02_if.c" />
-    <ClCompile Include="ex03_ifelse.c" />
-    <ClCompile Include="ex04_ifelseifelse.c" />
-    <ClCompile Include="ex05_classification.c" />
-    <ClCompile Include="ex06_quadraticEquation.c" />
-    <ClCompile Include="ex07_switchcase.c" />
-    <ClCompile Include="ex08_daysInMonth.c" />
-    <ClCompile Include="ex09_for.c" />
-    <ClCompile Include="ex10_sum_for.c" />
-    <ClCompile Include="ex11_factorsOfANumber.c" />
-    <ClCompile Include="ex12_FibonacciSequence.c" />
-    <ClCompile Include="ex13_while.c" />
-    <ClCompile Include="ex14_gugudan.c" />
-    <ClCompile Include="ex15_countNumberOfDigitsInAnInteger.c" />
-    <ClCompile Include="ex16_FibonacciSequence.c" />
-    <ClCompile Include="ex17_gugudan.c" />
-    <ClCompile Include="ex18_printHalfPyramid.c" />
-    <ClCompile Include="ex19_printInvertedHalfPyramid.c" />
-    <ClCompile Include="ex20_PrintFullPyramid.c" />
-    <ClCompile Include="ex21_rightTriangle.c" />
-    <ClCompile Include="ex25_randomGugudan.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
