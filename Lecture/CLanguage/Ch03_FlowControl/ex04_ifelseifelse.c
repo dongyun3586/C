@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex04_ifelseifelse() {
+int main() {
 	int score;
 	
 	printf("점수를 입력하시오: ");

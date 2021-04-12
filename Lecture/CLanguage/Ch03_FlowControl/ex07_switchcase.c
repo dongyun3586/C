@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex07_switchcase() {
+int main() {
 	int buttonNum;
 
 	printf("음료수 버튼 번호(1~4번)를 선택하세요: ");

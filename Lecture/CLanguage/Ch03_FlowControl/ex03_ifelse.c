@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex03_ifelse() {
+int main() {
 	int score;
 	printf("점수를 입력하시오: ");
 	scanf("%d", &score);

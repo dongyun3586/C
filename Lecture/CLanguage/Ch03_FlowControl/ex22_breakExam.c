@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main_ex22_breakExam() {
+int main() {
     int number, sum = 0;
 
     while (1) {

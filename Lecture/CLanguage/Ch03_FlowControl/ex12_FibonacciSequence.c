@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex12_FibonacciSequence() {
+int main() {
 	int n, a = 0, b = 1, next;
 
 	printf("피보나치 수열 출력 개수는? ");

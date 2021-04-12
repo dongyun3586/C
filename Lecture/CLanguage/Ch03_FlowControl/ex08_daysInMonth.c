@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex08_daysInMonth() {
+int main() {
 	int month, days;
 
 	printf("월을 입력하시오: ");

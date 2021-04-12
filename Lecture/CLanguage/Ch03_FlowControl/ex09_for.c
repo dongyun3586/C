@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex09_for() {
+int main() {
 	
 #pragma region printf() 함수만 사용
 	printf("Hello World! \n");

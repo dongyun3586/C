@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex05_classification() {
+int main() {
 	char ch;
 
 	printf("문자 하나를 입력하시오: ");

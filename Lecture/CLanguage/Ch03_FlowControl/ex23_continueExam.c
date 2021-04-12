@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main_ex23_continueExam() {
+int main() {
     int number, sum = 0;
 
     for (int i = 1; i <= 5; i++) {

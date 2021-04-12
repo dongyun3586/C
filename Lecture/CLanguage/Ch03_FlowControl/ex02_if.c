@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main_ex02_if() {
+int main() {
 	int number;
 
 	printf("정수를 입력하시오: ");

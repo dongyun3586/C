@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main_ex20_PrintFullPyramid() {
+int main() {
     int height;
 
     printf("피라미드의 높이: ");

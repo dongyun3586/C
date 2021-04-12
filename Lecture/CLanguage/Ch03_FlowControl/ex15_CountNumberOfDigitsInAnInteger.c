@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main_ex14_CountNumberOfDigitsInAnInteger() {
+int main() {
     int number, count = 0;  // INT_MAX = 2,147,483,647
 
     printf("양의 정수를 입려하시오: ");
