@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_ex19_printInvertedHalfPyramid() {
     int i, j, height;
     printf("피라미드의 높이: ");
     scanf("%d", &height);
