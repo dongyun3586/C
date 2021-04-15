@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>  // rand(), srand() 정의
 #include<time.h>    // time() 정의
+#include<ctype.h>
 
 int main() {
     // 변수 선언
@@ -17,10 +18,17 @@ int main() {
         dan = rand() % 18 + 2;  // 2~19
         su = rand() % 19 + 1;   // 1~19
         jungdap = dan * su;
+        int a;
 
         // 문제 출력 및 사용자 입력 받기
         printf("%2d * %2d = ", dan, su);
-        scanf("%d", &userdap);
+        a = scanf("%d", &userdap);
+        printf("%d\n", a);
+        /*if (isdigit(userdap)) {
+            printf("정수");
+        }
+        else
+            printf("정수 아님");*/
 
         // 정답 체크
         if (jungdap == userdap) {
