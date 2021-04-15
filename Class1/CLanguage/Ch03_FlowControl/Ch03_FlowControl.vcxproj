@@ -163,6 +163,7 @@
     <ClCompile Include="ex22_breakExam.c" />
     <ClCompile Include="ex23_continueExam.c" />
     <ClCompile Include="ex24_randomNumber.c" />
+    <ClCompile Include="ex25_randomGugudan.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
