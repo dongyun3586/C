@@ -1,32 +1,39 @@
 #include <stdio.h>
 
-void add(int value1, int value2)         // function definition   
+void printLine(int n);  // 함수 원형 선언
+
+void main_ex01_function()
 {
-    int result = value1 + value2;
-    printf("%d + %d = %d\n", value1, value2, result);
-}
+    int a, b;
 
-int subtract(int value1, int value2)         // function definition   
-{
-    int result = value1 - value2;
-    return result;                  // return statement
-}
-
-int multiply(int a, int b);
-
-void main()
-{
-    int a, b, result;
-
-    printf("정수 두 개 입력: ");
+    printf("두 정수의 사칙연산 프로그램\n");
+    printLine(30);
+    
+    printf("\n정수 두 개 입력: ");
     scanf("%d %d", &a, &b);
+    printf("\n");
 
-    add(a, b);        // function call
-    result = subtract(a, b);
-    printf("%d - %d = %d \n", a, b, result);
-    printf("%d * %d = %d \n", a, b, multiply(a, b));
+    // add
+    printf("%d + %d = %d\n", a, b, a + b);
+    printLine(15);
+
+    // subtract
+    printf("%d - %d = %d\n", a, b, a - b);
+    printLine(15);
+
+    // multiply
+    printf("%d * %d = %d\n", a, b, a * b);
+    printLine(15);
+
+    // divide
+    printf("%d / %d = %.2f\n", a, b, (float)a / b);
+    printLine(15);
 }
 
-int multiply(int a, int b) {
-    return a * b;
+// 함수 정의
+void printLine(int n) {
+    for (int i = 0; i < n; i++)
+        printf("-");
+    printf("\n");
 }
+

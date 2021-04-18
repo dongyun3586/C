@@ -140,6 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex01_function.c" />
+    <ClCompile Include="ex02_function.c" />
+    <ClCompile Include="ex04_combination.c" />
+    <ClCompile Include="ex06_checkArmstronNumber.c" />
+    <ClCompile Include="ex03_factorial.c" />
+    <ClCompile Include="ex04_primeNumbersBetweenTwoIntegers.c" />
+    <ClCompile Include="ex05_SumOfTwoPrimeNumbers.c" />
+    <ClCompile Include="MyMath.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyMath.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

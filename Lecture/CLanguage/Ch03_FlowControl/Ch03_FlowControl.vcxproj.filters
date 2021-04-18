@@ -84,5 +84,11 @@
     <ClCompile Include="ex23_continueExam.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex24_randomNumber.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex25_randomGugudan.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

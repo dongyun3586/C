@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-	int year, result;
+	int year;
 
 	printf("연도를 입력하시오: ");
 	scanf("%d", &year);
@@ -11,9 +11,13 @@ int main() {
 	  - 100으로 나누어 떨어지는 연도는 제외한다.
 	  - 400으로 나누어 떨어지는 연도는 윤년이다. */
 	
-	// 1. result에 윤년이면 1(True), 평년이면 0(False)을 저장한다.
-	result = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
-	printf("result = %d \n", result);
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+		printf("%d년은 윤년입니다. \n", year);
+	else
+		printf("%d년은 평년입니다. \n", year);
+
+	main_ex01_operator();
+	main_ex06_operator();
 
 	return 0;
 }

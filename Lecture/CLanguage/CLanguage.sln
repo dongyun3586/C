@@ -13,8 +13,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeUP", "CodeUP\CodeUP.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Performance_Assessment", "Performance_Assessment\Performance_Assessment.vcxproj", "{73901E3F-C40E-472F-BD1B-2A2A34F24334}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenerateRandomNumber", "GenerateRandomNumber\GenerateRandomNumber.vcxproj", "{11ACBF7D-7265-409A-9347-8041215F4148}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{D34E8620-CF44-43C2-9B3C-F968289D811B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch04_Function", "Ch04_Function\Ch04_Function.vcxproj", "{157E1322-BF2C-46BA-A3F2-D29B4B59B089}"
@@ -67,14 +65,6 @@ Global
 		{73901E3F-C40E-472F-BD1B-2A2A34F24334}.Release|x64.Build.0 = Release|x64
 		{73901E3F-C40E-472F-BD1B-2A2A34F24334}.Release|x86.ActiveCfg = Release|Win32
 		{73901E3F-C40E-472F-BD1B-2A2A34F24334}.Release|x86.Build.0 = Release|Win32
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Debug|x64.ActiveCfg = Debug|x64
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Debug|x64.Build.0 = Debug|x64
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Debug|x86.ActiveCfg = Debug|Win32
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Debug|x86.Build.0 = Debug|Win32
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Release|x64.ActiveCfg = Release|x64
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Release|x64.Build.0 = Release|x64
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Release|x86.ActiveCfg = Release|Win32
-		{11ACBF7D-7265-409A-9347-8041215F4148}.Release|x86.Build.0 = Release|Win32
 		{D34E8620-CF44-43C2-9B3C-F968289D811B}.Debug|x64.ActiveCfg = Debug|x64
 		{D34E8620-CF44-43C2-9B3C-F968289D811B}.Debug|x64.Build.0 = Debug|x64
 		{D34E8620-CF44-43C2-9B3C-F968289D811B}.Debug|x86.ActiveCfg = Debug|Win32
