@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9c8c2fcd-aeae-4ce3-8e8a-ee4d5118fa9f}</ProjectGuid>
-    <RootNamespace>no07</RootNamespace>
+    <ProjectGuid>{bae918cb-e41a-43e3-88d7-cebbc29cf00a}</ProjectGuid>
+    <RootNamespace>n10</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -85,7 +85,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,76 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1102.c" />
-    <ClCompile Include="1103.c" />
-    <ClCompile Include="1106.c" />
-    <ClCompile Include="1107.c" />
-    <ClCompile Include="1108.c" />
-    <ClCompile Include="1109.c" />
-    <ClCompile Include="1112.c" />
-    <ClCompile Include="1114.c" />
-    <ClCompile Include="1116.c" />
-    <ClCompile Include="1117.c" />
-    <ClCompile Include="1201.c" />
-    <ClCompile Include="1202.c" />
-    <ClCompile Include="1203.c" />
-    <ClCompile Include="1204.c" />
-    <ClCompile Include="1206.c" />
-    <ClCompile Include="1207.c" />
-    <ClCompile Include="1208.c" />
-    <ClCompile Include="1209.c" />
-    <ClCompile Include="1210.c" />
-    <ClCompile Include="1212.c" />
-    <ClCompile Include="1215.c" />
-    <ClCompile Include="1216.c" />
-    <ClCompile Include="1301.c" />
-    <ClCompile Include="1302.c" />
-    <ClCompile Include="1304.c" />
-    <ClCompile Include="1306.c" />
-    <ClCompile Include="1307.c" />
-    <ClCompile Include="1308.c" />
-    <ClCompile Include="1309.c" />
-    <ClCompile Include="1310.c" />
-    <ClCompile Include="1311.c" />
-    <ClCompile Include="1312.c" />
-    <ClCompile Include="1313.c" />
-    <ClCompile Include="1314.c" />
-    <ClCompile Include="1315.c" />
-    <ClCompile Include="1319.c" />
-    <ClCompile Include="1401.c" />
-    <ClCompile Include="1402.c" />
-    <ClCompile Include="1403.c" />
-    <ClCompile Include="1404.c" />
-    <ClCompile Include="1407.c" />
-    <ClCompile Include="1409.c" />
-    <ClCompile Include="1410.c" />
-    <ClCompile Include="1411.c" />
-    <ClCompile Include="1412.c" />
-    <ClCompile Include="1413.c" />
-    <ClCompile Include="1414.c" />
-    <ClCompile Include="1416.c" />
-    <ClCompile Include="1501.c" />
-    <ClCompile Include="1502.c" />
-    <ClCompile Include="1503.c" />
-    <ClCompile Include="1504.c" />
-    <ClCompile Include="1505.c" />
-    <ClCompile Include="1506.c" />
-    <ClCompile Include="1507.c" />
-    <ClCompile Include="1510.c" />
-    <ClCompile Include="1511.c" />
-    <ClCompile Include="1512.c" />
-    <ClCompile Include="1514.c" />
-    <ClCompile Include="1516.c" />
     <ClCompile Include="1601.c" />
-    <ClCompile Include="1602.c" />
-    <ClCompile Include="1603.c" />
-    <ClCompile Include="1605.c" />
-    <ClCompile Include="1608.c" />
-    <ClCompile Include="1609.c" />
-    <ClCompile Include="1612.c" />
-    <ClCompile Include="1613.c" />
-    <ClCompile Include="1614.c" />
-    <ClCompile Include="1615.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

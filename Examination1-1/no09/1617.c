@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/* 정수 뒤집어서 출력하기 */
+int main() {
+    int n, i=1;
+
+    printf("입력 정수: ");
+    scanf("%d", &n);
+
+    while (1) {
+        if (n / > 0) {
+            i *= 10;
+            printf("%d", n % i);
+        }
+        else
+            break;
+    }
+
+    return 0;
+}

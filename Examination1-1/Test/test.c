@@ -1,24 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
-/* 알람 시간 출력 */
+/* 역 피라미드 출력 */
 int main() {
-	int a, b, c, d, hour, minute;
+    int h, k;
 
-	printf("현재 시간: ");
-	scanf("%d %d", &a, &b);
-	printf("알람 시간: ");
-	scanf("%d %d", &c, &d);
+    printf("높이: ");
+    scanf("%d", &h);
 
-	if (b <= d) {
-		minute = d - b;
-		hour = (a <= c) ? c - a : c - a + 24;
-	}
-	else {
-		minute = d - b + 60;
-		hour = (a < c) ? c - a - 1 : c - a + 24-1;
-	}
+    for (int i=0; i > 0; i--) {
+        for (int j = h-i; j > 0; j --)  // 2 * h - 1 - 2 * i
+            printf("\n");
+        for (int j = 2*h-1; j > 0; j--)  printf(" ");   // j <= i-1
+            printf("*");
+        
+    }
 
-	printf("%d시간 %d분", hour, minute);
-
-	return 0;
+    return 0;
 }

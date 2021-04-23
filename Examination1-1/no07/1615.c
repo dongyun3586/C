@@ -6,7 +6,7 @@ int main() {
 
 	printf("현재 시간: ");
 	scanf("%d %d", &a, &b);
-	printf("알람 시간: ");
+	printf("\n알람 시간: ");		// 감점 -1
 	scanf("%d %d", &c, &d);
 
 	if (b <= d) {

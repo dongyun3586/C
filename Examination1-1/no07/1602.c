@@ -8,11 +8,11 @@ int main() {
 	// ② 입력 정보 안내 및 입력 받기 [2점]
 	printf("현재 시간: ");
 	scanf("%d %d", &h1, &h2);
-	printf("알람 시간: ");
+	printf("\n알람 시간: ");						// 감점 -1
 	scanf("%d %d", &min1, &min2);
 
 	// ③ 처리 [8점]
-	if ((h2-h1) < 0)
+	if ((h2 - h1) < 0)
 		if ((min2 - min1) < 0) {
 			min = min2 - min1 + 60;
 			h = h2 - h1 + 23;
@@ -33,7 +33,8 @@ int main() {
 	}
 
 	printf("%d 시간 %d 분", h, min);
-	
+
 
 	return 0;
 }
+// 감점 {1, 2, 
