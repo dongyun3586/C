@@ -13,7 +13,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "no08", "no08\no08.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "no09", "no09\no09.vcxproj", "{DA6CC619-4534-4664-B66E-FD2F857DF117}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "n10", "n10\n10.vcxproj", "{BAE918CB-E41A-43E3-88D7-CEBBC29CF00A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "no10", "n10\n10.vcxproj", "{BAE918CB-E41A-43E3-88D7-CEBBC29CF00A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jungdap", "Jungdap\Jungdap.vcxproj", "{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{BAE918CB-E41A-43E3-88D7-CEBBC29CF00A}.Release|x64.Build.0 = Release|x64
 		{BAE918CB-E41A-43E3-88D7-CEBBC29CF00A}.Release|x86.ActiveCfg = Release|Win32
 		{BAE918CB-E41A-43E3-88D7-CEBBC29CF00A}.Release|x86.Build.0 = Release|Win32
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Debug|x64.ActiveCfg = Debug|x64
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Debug|x64.Build.0 = Debug|x64
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Debug|x86.Build.0 = Debug|Win32
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Release|x64.ActiveCfg = Release|x64
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Release|x64.Build.0 = Release|x64
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Release|x86.ActiveCfg = Release|Win32
+		{FA793190-1F49-40FD-8FF4-4E8232DCDBFB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
