@@ -48,5 +48,17 @@
     <ClCompile Include="ex11_lotto.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex07_alarm3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex07_alarm2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex09_reverseInteger2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex10_invertedFullPyramid_sample.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

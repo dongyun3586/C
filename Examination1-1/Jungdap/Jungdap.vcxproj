@@ -146,9 +146,13 @@
     <ClCompile Include="ex05_swap.c" />
     <ClCompile Include="ex06_FibonacciSequence.c" />
     <ClCompile Include="ex07_alarm.c" />
+    <ClCompile Include="ex07_alarm2.c" />
+    <ClCompile Include="ex07_alarm3.c" />
     <ClCompile Include="ex08_doubleFor.c" />
     <ClCompile Include="ex09_reverseInteger.c" />
+    <ClCompile Include="ex09_reverseInteger2.c" />
     <ClCompile Include="ex10_invertedFullPyramid.c" />
+    <ClCompile Include="ex10_invertedFullPyramid_sample.c" />
     <ClCompile Include="ex11_lotto.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

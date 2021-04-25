@@ -16,6 +16,7 @@ int main() {
 		h = ah + 24 - ch;
 	else
 		h = ah - ch;
+
 	if (am < cm) {
 		m = am + 60 - cm;
 		h--;
