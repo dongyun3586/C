@@ -139,17 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1103.c" />
     <ClCompile Include="1109.c" />
     <ClCompile Include="1114.c" />
+    <ClCompile Include="1115.c" />
     <ClCompile Include="1116.c" />
     <ClCompile Include="1201.c" />
     <ClCompile Include="1208.c" />
     <ClCompile Include="1209.c" />
+    <ClCompile Include="1212.c" />
+    <ClCompile Include="1215.c" />
     <ClCompile Include="1302.c" />
     <ClCompile Include="1304.c" />
     <ClCompile Include="1307.c" />
+    <ClCompile Include="1309.c" />
     <ClCompile Include="1310.c" />
     <ClCompile Include="1311.c" />
+    <ClCompile Include="1313.c" />
     <ClCompile Include="1314.c" />
     <ClCompile Include="1402.c" />
     <ClCompile Include="1404.c" />
@@ -161,6 +167,8 @@
     <ClCompile Include="1507.c" />
     <ClCompile Include="1508.c" />
     <ClCompile Include="1510.c" />
+    <ClCompile Include="1511.c" />
+    <ClCompile Include="1516.c" />
     <ClCompile Include="1602.c" />
     <ClCompile Include="1603.c" />
     <ClCompile Include="1609.c" />

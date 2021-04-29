@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1109.c" />
+    <ClCompile Include="1114.c" />
     <ClCompile Include="1215.c" />
     <ClCompile Include="1301.c" />
     <ClCompile Include="1304.c" />

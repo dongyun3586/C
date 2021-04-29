@@ -12,14 +12,17 @@ int main() {
 	if (a < c) {
 		if (b <= d)
 			printf("%d시간 %d분", c - a, d - b);
-		else if(b>d)
-			printf("%d시간 %d분", c - a-1, b-d);
+		else if (b > d)
+			printf("%d시간 %d분", c - a - 1, b - d);
 	}
 	else if (a > c) {
-		if(b<=d)
-			printf("%d시간 %d분", 24-a+c+1, d - b);
+		if (b <= d)
+			printf("%d시간 %d분", 24 - a + c + 1, d - b);
 		else
-			printf("%d시간 %d분", 24 - a + c, 60- b+d);
+			printf("%d시간 %d분", 24 - a + c, 60 - b + d);
+	}
+	else {
+		printf("0시간 %d분", d - b);
 	}
 
 	return 0;

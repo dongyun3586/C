@@ -1,19 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
-/* 알람 시간 출력  1612 임원상 */
+/* 정수 뒤집어서 출력하기 */
 int main() {
-	int hh, hm, rh, rm;
+    int n, count = 0, a, b;
 
-	printf("현재 시간: ");
-	scanf("%d %d", &hh, &hm);
-	printf("알람 시간: ");
-	scanf("%d %d", &rh, &rm);
+    printf("입력 정수: ");
+    scanf("%d", &n);
+    a = n;
 
-	if (rm >= hm)	// 알람분 > 현재분
-		// (알람시간 - 현재시간 + 24) % 24
-		printf("%d시간 %d분 ", (rh - hh + 24) % 24, rm - hm);
-	else
-		printf("%d시간 %d분 ", (rh - hh + 23) % 24, rm - hm + 60);
+    while (n > 0) {
+        n /= 10;
+        count++;
+    }
 
-	return 0;
+    printf("출력 정수: ");
+    /*for (int i = 0; i < count; i++) {
+        b = a % 10;
+        a = a - b * 10
+            printf("%d", b);
+    }*/
+
+    return 0;
 }

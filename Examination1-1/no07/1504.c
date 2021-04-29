@@ -13,7 +13,7 @@ int main() {
 
 	// ③ 처리 [8점]
 	if (a > c)
-		e = 24 - 1 + c;
+		e = 24 - a + c;
 	else
 		e = c - a;
 
@@ -25,7 +25,6 @@ int main() {
 	else
 		f = d - b;
 
-	// ④ 출력 [3점]
 	printf("%d시간 %d분 ", e, f);
 
 	return 0;

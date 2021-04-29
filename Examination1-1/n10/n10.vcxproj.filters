@@ -18,5 +18,20 @@
     <ClCompile Include="1601.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1511.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1103.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1201.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1207.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1611.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
