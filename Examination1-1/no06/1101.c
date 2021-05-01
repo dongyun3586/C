@@ -9,12 +9,11 @@ int main() {
 	scanf("%d", &n);
 
 	for (int i = 0; ; i++) {
-		if (c > n)
+		if (c >= n)
 			break;
 		printf("%d ", c);
 		c = a + b;
 		a = b;
-		b = c;
 	}
 
 	return 0;
