@@ -2,7 +2,7 @@
 
 void printLine(int n);  // 함수 원형 선언
 
-void main_ex01_function()
+void main_ex01_function2()
 {
     int a, b;
 
@@ -30,10 +30,10 @@ void main_ex01_function()
     printLine(15);
 }
 
-// 함수 정의
-void printLine(int n) {
-    for (int i = 0; i < n; i++)
-        printf("-");
-    printf("\n");
-}
+//// 함수 정의
+//void printLine(int n) {
+//    for (int i = 0; i < n; i++)
+//        printf("-");
+//    printf("\n");
+//}
 

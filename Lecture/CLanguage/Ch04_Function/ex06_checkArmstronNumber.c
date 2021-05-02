@@ -5,7 +5,7 @@ int checkArmstrongNumber(int);
 int reversNumber(int);
 void printArmstrongNumber(int);
 
-int main() {
+int main_ex06_checkArmstronNumber() {
 	int a, b;
 
 	printf("암스트롱 정수 범위(양의 정수 두 개): ");

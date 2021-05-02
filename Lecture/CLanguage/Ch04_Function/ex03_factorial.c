@@ -2,7 +2,7 @@
 
 int factorial(int n);
 
-int main() {
+int main_ex03_factorial() {
 	int n;
 
 	printf("팩토리얼 값? ");

@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "MyMath.h"
 
-void main_ex02_function()
+void main()
 {
     int a, b, result;
 

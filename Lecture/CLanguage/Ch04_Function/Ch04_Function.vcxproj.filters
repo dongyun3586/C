@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_function.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="MyMath.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -37,6 +34,18 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex04_combination.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex01_function1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex01_function2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="myFunction.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex01_function3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

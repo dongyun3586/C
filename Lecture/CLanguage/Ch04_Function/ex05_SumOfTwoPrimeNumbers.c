@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_ex05_SumOfTwoPrimeNumbers() {
     int n, flag = 0;
     printf("양의 정수: ");
     scanf("%d", &n);
