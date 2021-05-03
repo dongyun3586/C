@@ -1,15 +1,23 @@
-#include <stdio.h>
-#include <myMath.h>
+#include<stdio.h>
 
-void main()
-{
-    int a, b;
+int factorial(int n);
 
-    printf("정수 두 개 입력: ");
-    scanf("%d %d", &a, &b);
+int main() {
+	int n;
 
-    add(a, b);
-    subtract(a, b);
-    multiply(a, b);
-    divide(a, b);
+	printf("팩토리얼 값? ");
+	scanf("%d", &n);
+
+	printf("%d!= %d\n", n, factorial(n));
+
+	return 0;
+}
+
+int factorial(int n) {
+	int result = 1;
+
+	for (int i = 1; i <= n; i++)
+		result *= i;
+
+	return result;
 }

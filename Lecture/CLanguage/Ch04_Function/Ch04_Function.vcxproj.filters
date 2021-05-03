@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyMath.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex02_function.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -46,6 +43,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex01_function3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\myMath.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

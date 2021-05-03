@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Test\myMath.c" />
     <ClCompile Include="ex01_function2.c" />
     <ClCompile Include="ex01_function1.c" />
     <ClCompile Include="ex01_function3.c" />
@@ -149,7 +150,6 @@
     <ClCompile Include="ex04_primeNumbersBetweenTwoIntegers.c" />
     <ClCompile Include="ex05_SumOfTwoPrimeNumbers.c" />
     <ClCompile Include="myFunction.c" />
-    <ClCompile Include="MyMath.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMath.h" />

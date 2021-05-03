@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "MyMath.h"
+//#include <myMath.h>
 
 void main()
 {
-    int a, b, result;
+    int a, b;
 
     printf("정수 두 개 입력: ");
     scanf("%d %d", &a, &b);
