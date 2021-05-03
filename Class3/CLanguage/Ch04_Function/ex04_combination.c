@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int factorial(int);
-int combination(int, int);
+int factorial(int n);
+int combination(int n, int r);
 
 int main() {
 	int n, r;
