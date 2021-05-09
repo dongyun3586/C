@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-int factorial(int n);
 int combination(int n, int r);
 
 int main_ex04_combination() {
@@ -13,15 +12,6 @@ int main_ex04_combination() {
 
 	return 0;
 }
-
-//int factorial(int n) {
-//	int result = 1;
-//
-//	for (int i = 1; i <= n; i++)
-//		result *= i;
-//
-//	return result;
-//}
 
 int combination(int n, int r) {
 	return factorial(n) / (factorial(n - r) * factorial(r));

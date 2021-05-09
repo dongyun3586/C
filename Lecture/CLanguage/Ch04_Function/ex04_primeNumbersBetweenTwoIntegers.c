@@ -8,7 +8,7 @@ int main_ex03_primeNumbersBetweenTwoIntegers() {
 	printf("소수를 구할 범위를 입력하시오: ");
 	scanf("%d %d", &a, &b);
 
-	// a~b 사이의 소수 출력
+	// a~b 사이의 소수 모두 출력
 	for (int i = a; i <= b; i++) {
 		if (checkPrimeNumber(i)) {
 			printf("%d ", i);

@@ -18,5 +18,11 @@
     <ClCompile Include="test.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\Ch04_Function\myFunction.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ch04_Function\ex04_combination.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

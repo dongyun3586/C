@@ -1,34 +1,41 @@
 #include<stdio.h>
 #include<math.h>
 
-int checkArmstrongNumber(int);
-int reversNumber(int);
-void printArmstrongNumber(int);
+int CountDigitsOfAnInteger(int num);
+int checkArmstrongNumber(int num, int n);
+int reversNumber(int num);
+void printArmstrongNumber(int num, int n);
 
 int main_ex06_checkArmstronNumber() {
-	int a, b;
+	int a, b, n;
 
 	printf("암스트롱 정수 범위(양의 정수 두 개): ");
 	scanf("%d %d", &a, &b);
 
 	// a~b 사이의 암스트롱 넘버 출력하기
 	for (int i = a; i <= b; i++) {
-		if (checkArmstrongNumber(i)) {
+		n = CountDigitsOfAnInteger(i);
+		if (checkArmstrongNumber(i, n)) {
 			printf("%5d = ", i);
-			printArmstrongNumber(reversNumber(i));
+			printArmstrongNumber(reversNumber(i), n);
 		}
 	}
 	return 0;
 }
 
-// num이 암스트롱 넘버인지 체크(맞으면 1, 틀리면 0 반환)
-int checkArmstrongNumber(int num) {
-	int sum = 0, originalNum, n = 0, remainder;
-
-	// num의 자릿수 n 구하기
-	for (originalNum = num; originalNum != 0; n++) {
-		originalNum /= 10;
+// num의 자릿수 n 구하기
+int CountDigitsOfAnInteger(int num) {
+	int n = 0;
+	while (num != 0) {
+		num /= 10;
+		n++;
 	}
+	return 0;
+}
+
+// num이 암스트롱 넘버인지 체크(맞으면 1, 틀리면 0 반환)
+int checkArmstrongNumber(int num, int n) {
+	int sum = 0, originalNum, remainder;
 
 	// num의 자릿수를 n 제곱한 합 sum 구하기
 	for (originalNum = num; originalNum != 0; originalNum /= 10) {
@@ -53,9 +60,9 @@ int reversNumber(int num) {
 }
 
 // abc = a*a*a + b*b*b + c*c*c의 형태로 출력하기
-void printArmstrongNumber(int num) {
+void printArmstrongNumber(int num, int n) {
 	while (num != 0) {
-		printf("%d ", (int)pow(num % 10, 3));
+		printf("%d ", (int)pow(num % 10, n));
 		num /= 10;
 		if (num != 0) printf("+ ");
 	}
