@@ -1,22 +1,22 @@
 #include<stdio.h>
 #include<math.h>
 
-int CountDigitsOfAnInteger(int num);
+int countDigitsOfNumber(int num);
 int checkArmstrongNumber(int num, int n);
 int reversNumber(int num);
 void printArmstrongNumber(int num, int n);
 
-int main_ex06_checkArmstronNumber() {
+int main() {
 	int a, b, n;
 
 	printf("암스트롱 정수 범위(양의 정수 두 개): ");
 	scanf("%d %d", &a, &b);
 
-	// a~b 사이의 암스트롱 넘버 출력하기
+	// a ~ b 사이의 암스트롱 넘버 출력하기
 	for (int i = a; i <= b; i++) {
-		n = CountDigitsOfAnInteger(i);
+		n = countDigitsOfNumber(i);
 		if (checkArmstrongNumber(i, n)) {
-			printf("%5d = ", i);
+			printf("%7d = ", i);
 			printArmstrongNumber(reversNumber(i), n);
 		}
 	}
@@ -24,13 +24,13 @@ int main_ex06_checkArmstronNumber() {
 }
 
 // num의 자릿수 n 구하기
-int CountDigitsOfAnInteger(int num) {
+int countDigitsOfNumber(int num) {
 	int n = 0;
 	while (num != 0) {
 		num /= 10;
 		n++;
 	}
-	return 0;
+	return n;
 }
 
 // num이 암스트롱 넘버인지 체크(맞으면 1, 틀리면 0 반환)
