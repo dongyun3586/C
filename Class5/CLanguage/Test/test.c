@@ -1,35 +1,29 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+
+int checkPrimeNumber(int n);
 
 int main() {
-	// 변수 선언
-	int dan, i, jungdap, userdap, score = 0, n;
+    int n, flag = 1;     // flag 값을 이용하여 소수의 합으로 표현할 수 없는 경우 처리
+    printf("양의 정수: ");
+    scanf("%d", &n);
 
-	// 사용자 입력 받기
-	printf("몇 문제? ");
-	scanf("%d", &n);
+    // n을 소수의 합으로 표현되는 경우를 모두 출력
+    for (int i = 2; i < n; i++) {
+        if (checkPrimeNumber(i) && checkPrimeNumber(n - i)) {
+            printf("%d = %d + %d\n", n, i, n - i);
+            flag = 0;
+        }
+    }
 
-	// 처리
-	srand(time(NULL));
-	for (int a = 0; a < n; a++) {
-		dan = rand() % 8 + 2;	// 2~9
-		i = rand() % 9 + 1;		// 1~9
-		jungdap = dan * i;
+    if (flag)
+        printf("%d는 수수의 합으로 표현할 수 없습니다. \n", n);
 
-		printf("%d * %d = ", dan, i);
-		scanf("%d", &userdap);
+    return 0;
+}
 
-		if (userdap == jungdap) {
-			printf("정답입니다. \n");
-			score++;
-		}
-		else
-			printf("틀렸어요. 정답은 %d 입니다. \n", jungdap);
-	}
-
-	// 최종 결과 출력
-	printf("%d 문제 중 %d 개 맞음\n", n, score);
-
-	return 0;
+int checkPrimeNumber(int n) {
+    if (n < 2) return 0;
+    for (int i = 2; i < n; i++)
+        if (n % i == 0) return 0;
+    return 1;
 }
