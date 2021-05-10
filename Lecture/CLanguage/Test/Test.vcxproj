@@ -140,8 +140,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Ch04_Function\ex04_combination.c" />
-    <ClCompile Include="..\Ch04_Function\myFunction.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
