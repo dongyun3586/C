@@ -8,15 +8,6 @@ int main() {
     scanf("%d", &n);
 
     // n을 소수의 합으로 표현되는 경우를 모두 출력
-    for (int i = 2; i <= n/2; i++) {
-        if (checkPrimeNumber(i) && checkPrimeNumber(n - i)) {
-            printf("%d = %d + %d\n", n, i, n - i);
-            flag = 0;
-        }
-    }
-
-    if (flag)
-        printf("%d는 소수의 합으로 표현할 수 없습니다. \n", n);
 
     return 0;
 }
