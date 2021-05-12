@@ -18,16 +18,16 @@
     <ClCompile Include="ex02_function.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex04_primeNumbersBetweenTwoIntegers.c">
+    <ClCompile Include="ex05_primeNumbersBetweenTwoIntegers.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex05_SumOfTwoPrimeNumbers.c">
+    <ClCompile Include="ex06_SumOfTwoPrimeNumbers.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex03_factorial.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex06_checkArmstronNumber.c">
+    <ClCompile Include="ex07_checkArmstronNumber.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex04_combination.c">
@@ -46,6 +46,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="..\Test\myMath.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex08_array.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex09_array.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex10_calculateAverageUsingArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex11_largestElementInArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="standardDeviation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="addTwoMatrices.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
