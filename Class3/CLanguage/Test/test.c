@@ -1,28 +1,21 @@
 #include<stdio.h>
 
-int factorial(int);
-int combination(int, int);
-
 int main() {
-	int n, r;
+    int arr[2][3] = { 10,20,30,40,50,60 };
+    /* Above array can be initialized as below also
+      arr[0][0] = 10; // Initializing array
+      arr[0][1] = 20;
+      arr[1][0] = 30;
+      arr[1][1] = 40; */
 
-	printf("조합을 계산할 n과 r을 입력하시오: ");
-	scanf("%d %d", &n, &r);
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            // Accessing variables
+            printf("value of arr[%d][%d] : %d\n", i, j, arr[i][j]);
+        }
+    }
 
-	// 1. 결과 출력
-
-	return 0;
-}
-
-int factorial(int n) {
-	int result = 1;
-
-	for (int i = 1; i <= n; i++)
-		result *= i;
-
-	return result;
-}
-
-int combination(int n, int r) {
-	// 2. C(n, r)의 결과 리턴
+    return 0;
 }

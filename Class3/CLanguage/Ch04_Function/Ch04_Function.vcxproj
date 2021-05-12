@@ -144,6 +144,12 @@
     <ClCompile Include="ex02_function.c" />
     <ClCompile Include="ex03_factorial.c" />
     <ClCompile Include="ex04_combination.c" />
+    <ClCompile Include="ex05_primeNumbersBetweenTwoIntegers.c" />
+    <ClCompile Include="ex06_SumOfTwoPrimeNumbers.c" />
+    <ClCompile Include="ex08_array.c" />
+    <ClCompile Include="ex09_array.c" />
+    <ClCompile Include="ex10_calculateAverageUsingArray.c" />
+    <ClCompile Include="ex11_largestElementInArray.c" />
     <ClCompile Include="myMath.c" />
   </ItemGroup>
   <ItemGroup>
