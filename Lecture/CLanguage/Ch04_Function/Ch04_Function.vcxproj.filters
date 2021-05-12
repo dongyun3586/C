@@ -66,6 +66,27 @@
     <ClCompile Include="addTwoMatrices.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="GCD_LCM.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveSum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="printArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveHello.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveFactorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveFibonacci.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="insertElementArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMath.h">

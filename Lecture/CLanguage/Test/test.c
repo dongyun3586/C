@@ -1,26 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<math.h>
 
-int main() {
-    int arr[10], max;
-    int arrCount = sizeof(arr) / sizeof(arr[0]);
+#define PI 3.1415926535  // 180
 
-    // 1. 배열에 1~1000 사이의 랜덤값 저장
-    srand(time(NULL));
-    for (int i = 0; i < arrCount; i++)
-        arr[i] = rand() % 1000 + 1;
+int main(void) {
 
-    // 2. 배열의 모든 값 출력하기
-    for (int i = 0; i < arrCount; i++)
-        printf("arr[%d] = %d\n", i, arr[i]);
+	int angle[] = { 0,30,45,60,90 };
+	double rad[] = { 0,PI / 6,PI / 4,PI / 3,PI / 2 };
+	
+	for (int i = 0; i < 5; i++)
+		printf("sin(%d) = %lf\n", angle[i], sin(rad[i]));
+	printf("\n");
 
-    // 3. 배열에서 가장 큰 값 찾기
-    max = arr[0];
-    for (int i = 1; i < arrCount; i++)
-        if (max < arr[i])
-            max = arr[i];
+	for (int i = 0; i < 5; i++)
+		printf("cos(%d) = %lf\n", angle[i], cos(rad[i]));
+	printf("\n");
 
-    // 4. 배열에서 가장 큰 값 출력
-    printf("배열에서 가장 큰 값 = %d\n", max);
+	for (int i = 0; i < 4; i++)
+		printf("tan(%d) = %lf\n", angle[i], tan(rad[i]));
+	printf("\n");
 
-    return 0;
+	return 0;
 }

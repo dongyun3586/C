@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{157e1322-bf2c-46ba-a3f2-d29b4b59b089}</ProjectGuid>
-    <RootNamespace>Ch04Function</RootNamespace>
+    <ProjectGuid>{187972d2-73f8-4f0d-8d44-9482658fe9d0}</ProjectGuid>
+    <RootNamespace>GUI</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,33 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Test\myMath.c" />
-    <ClCompile Include="addTwoMatrices.c" />
-    <ClCompile Include="ex01_function2.c" />
-    <ClCompile Include="ex01_function1.c" />
-    <ClCompile Include="ex01_function3.c" />
-    <ClCompile Include="ex02_function.c" />
-    <ClCompile Include="ex04_combination.c" />
-    <ClCompile Include="ex07_checkArmstronNumber.c" />
-    <ClCompile Include="ex03_factorial.c" />
-    <ClCompile Include="ex05_primeNumbersBetweenTwoIntegers.c" />
-    <ClCompile Include="ex06_SumOfTwoPrimeNumbers.c" />
-    <ClCompile Include="ex08_array.c" />
-    <ClCompile Include="ex09_array.c" />
-    <ClCompile Include="ex10_calculateAverageUsingArray.c" />
-    <ClCompile Include="ex11_largestElementInArray.c" />
-    <ClCompile Include="GCD_LCM.c" />
-    <ClCompile Include="insertElementArray.c" />
-    <ClCompile Include="myFunction.c" />
-    <ClCompile Include="printArray.c" />
-    <ClCompile Include="recursiveFactorial.c" />
-    <ClCompile Include="recursiveFibonacci.c" />
-    <ClCompile Include="recursiveHello.c" />
-    <ClCompile Include="recursiveSum.c" />
-    <ClCompile Include="standardDeviation.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyMath.h" />
+    <ClCompile Include="drawPoint.c" />
+    <ClCompile Include="drawRectangle.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
