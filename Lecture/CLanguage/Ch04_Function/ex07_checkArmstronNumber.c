@@ -4,7 +4,8 @@
 int countDigitsOfNumber(int num);
 int checkArmstrongNumber(int num, int n);
 int reversNumber(int num);
-void printArmstrongNumber(int num, int n);
+void printArmstrongNumber1(int num, int n);
+void printArmstrongNumber2(int num, int n);
 
 int main() {
 	int a, b, n;
@@ -16,8 +17,8 @@ int main() {
 	for (int i = a; i <= b; i++) {
 		n = countDigitsOfNumber(i);
 		if (checkArmstrongNumber(i, n)) {
-			printf("%7d = ", i);
-			printArmstrongNumber(reversNumber(i), n);
+			printArmstrongNumber1(i, n);
+			printArmstrongNumber2(i, n);
 		}
 	}
 	return 0;
@@ -61,10 +62,21 @@ int reversNumber(int num) {
 
 // abc = a*a*a + b*b*b + c*c*c의 형태로 출력하기
 void printArmstrongNumber(int num, int n) {
+	printf("%7d = ", num);
+	num = reversNumber(num);
 	while (num != 0) {
 		printf("%d ", (int)pow(num % 10, n));
 		num /= 10;
 		if (num != 0) printf("+ ");
+	}
+	printf("\n");
+}
+
+void printArmstrongNumber2(int num, int n) {
+	printf("%7d = ", num);
+	for (int i = n - 1; i >= 0; i--) {
+		printf("%d ", (int)pow((num % (int)pow(10, i + 1) - num % (int)pow(10, i)) / (int)pow(10, i), n));
+		if (i != 0) printf("+ ");
 	}
 	printf("\n");
 }
