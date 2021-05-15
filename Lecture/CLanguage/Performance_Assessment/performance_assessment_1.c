@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main() {
+int main_performance_assessment_1() {
 	// rand()함수의 랜덤 숫자 생성을 위한 seed값 설정
 	srand(time(NULL));
 

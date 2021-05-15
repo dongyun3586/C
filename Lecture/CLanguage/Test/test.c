@@ -1,32 +1,43 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
-/* Function declaration */
-int gcd(int a, int b);
-
-
-int main()
+int main(void)
 {
-    int num1, num2, hcf;
+	int n = 0, jungdap = 0, count = 0;
 
-    /* Input two numbers from user */
-    printf("Enter any two numbers to find GCD: ");
-    scanf("%d%d", &num1, &num2);
+	printf("*** 1학년 1반 2번 강은찬 ***\n1~100사이의 숫자를 추측하는 게임입니다.\n\n");
+	srand(time(NULL));
+	jungdap = rand() % 100 + 1;
 
-    hcf = gcd(num1, num2);
+	printf("정답 : %d\n\n", jungdap);
 
-    printf("GCD of %d and %d = %d", num1, num2, hcf);
+	while (1)
+	{
+		printf("정답은?: ");
+		scanf("%d", &n);
 
-    return 0;
-}
+		if (n != jungdap)
+		{
+			printf("틀렸습니다. ");
+			if (n > jungdap)
+			{
+				printf("%d보다 작습니다. \n", n);
+			}
+			else if (n < jungdap)
+			{
+				printf("%d보다 큽니다. \n", n);
+			}
+			count++;
+		}
+		if (n == jungdap)
+		{
+			printf("정답입니다. \n\n");
+			count++;
+			break;
+		}
+	}
+	printf("%d번 만에 맞혔습니다. ", count);
 
-
-/**
- * Recursive approach of euclidean algorithm to find GCD of two numbers
- */
-int gcd(int a, int b)
-{
-    if (b == 0)
-        return a;
-    else
-        return gcd(b, a % b);
+	return 0;
 }

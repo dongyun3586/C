@@ -1,37 +1,37 @@
 #include<stdio.h>
-#include<math.h>	// double pow( double base, double exponent ); double log10( double arg );
+#include<math.h>	
 
 int countDigitsOfNumber(int num);
 int checkArmstrongNumber(int num, int n);
 int reversNumber(int num);
-void printArmstrongNumber1(int num, int n);
-void printArmstrongNumber2(int num, int n);
+void printArmstrongNumber(int num, int n);
 
 int main() {
-	int a, b, n;
+	int a = 1, b = 1000000, digits, count = 0;
+	printf("*** 1학년 1반 20번 홍길동 ***\n");
+	printf("*** 1~1000000 사이의 암스트롱수 ***\n");
 
-	printf("암스트롱 정수 범위(양의 정수 두 개): ");
-	scanf("%d %d", &a, &b);
-
-	// a ~ b 사이의 암스트롱 넘버 출력하기
 	for (int i = a; i <= b; i++) {
-		n = countDigitsOfNumber(i);
-		if (checkArmstrongNumber(i, n)) {
-			printArmstrongNumber1(i, n);
-			printArmstrongNumber2(i, n);
+		digits = countDigitsOfNumber(i);
+		if (checkArmstrongNumber(i, digits)) {
+			printArmstrongNumber(i, digits);
+			count++;
 		}
 	}
+
+	printf("\n%d~%d 사이의 암스트롱수는 %d 개\n", a, b, count);
 	return 0;
 }
 
 // num의 자릿수 n 구하기
 int countDigitsOfNumber(int num) {
-	int n = 0;
+	/*int n = 0;
 	while (num != 0) {
 		num /= 10;
 		n++;
 	}
-	return n;
+	return n;*/
+	return log10(num) + 1;
 }
 
 // num이 암스트롱 넘버인지 체크(맞으면 1, 틀리면 0 반환)
@@ -62,21 +62,12 @@ int reversNumber(int num) {
 
 // abc = a*a*a + b*b*b + c*c*c의 형태로 출력하기
 void printArmstrongNumber(int num, int n) {
-	printf("%7d = ", num);
+	printf("%6d = ", num);
 	num = reversNumber(num);
 	while (num != 0) {
 		printf("%d ", (int)pow(num % 10, n));
 		num /= 10;
 		if (num != 0) printf("+ ");
-	}
-	printf("\n");
-}
-
-void printArmstrongNumber2(int num, int n) {
-	printf("%7d = ", num);
-	for (int i = n - 1; i >= 0; i--) {
-		printf("%d ", (int)pow((num % (int)pow(10, i + 1.0) - num % (int)pow(10, i)) / (int)pow(10, i), n));
-		if (i != 0) printf("+ ");
 	}
 	printf("\n");
 }

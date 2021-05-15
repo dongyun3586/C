@@ -18,7 +18,7 @@
     <ClCompile Include="performance_assessment_1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="timePractice.c">
+    <ClCompile Include="performance_assessment_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
