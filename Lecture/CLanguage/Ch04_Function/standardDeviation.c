@@ -1,7 +1,9 @@
 // SD of a population
 #include <math.h>
 #include <stdio.h>
-float calculateSD(float data[]);
+
+float calculateSD(float data[]);    // 표준편차함수
+
 int main() {
     int i;
     float data[10];

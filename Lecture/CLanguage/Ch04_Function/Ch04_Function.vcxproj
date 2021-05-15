@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Test\myMath.c" />
     <ClCompile Include="addTwoMatrices.c" />
+    <ClCompile Include="checkPerfectNumber.c" />
     <ClCompile Include="ex01_function2.c" />
     <ClCompile Include="ex01_function1.c" />
     <ClCompile Include="ex01_function3.c" />
@@ -156,12 +156,16 @@
     <ClCompile Include="ex11_largestElementInArray.c" />
     <ClCompile Include="GCD_LCM.c" />
     <ClCompile Include="insertElementArray.c" />
-    <ClCompile Include="myFunction.c" />
     <ClCompile Include="printArray.c" />
     <ClCompile Include="recursiveFactorial.c" />
     <ClCompile Include="recursiveFibonacci.c" />
+    <ClCompile Include="recursiveGCD.c" />
     <ClCompile Include="recursiveHello.c" />
+    <ClCompile Include="recursiveLCM.c" />
+    <ClCompile Include="recursivePrintArray.c" />
+    <ClCompile Include="recursiveReverseNumber.c" />
     <ClCompile Include="recursiveSum.c" />
+    <ClCompile Include="recursiveSumArray.c" />
     <ClCompile Include="standardDeviation.c" />
   </ItemGroup>
   <ItemGroup>

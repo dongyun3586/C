@@ -39,13 +39,7 @@
     <ClCompile Include="ex01_function2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="myFunction.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex01_function3.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Test\myMath.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex08_array.c">
@@ -85,6 +79,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="insertElementArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursivePrintArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveGCD.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveSumArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveLCM.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="recursiveReverseNumber.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="checkPerfectNumber.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
