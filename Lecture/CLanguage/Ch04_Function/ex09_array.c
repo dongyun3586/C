@@ -8,7 +8,7 @@ int main()
     printf("%d\n", sizeof(numArr));                 // 배열의 크기(byte)
     printf("%d\n", sizeof(numArr) / sizeof(int));   // 배열의 요수 개수
 
-    // 배열이 요소를 모두 출력
+    // 배열의 요소를 모두 출력
     for (int i = 0; i < 10; i++)
         printf("numArr[%d] = %d\n", i, numArr[i]);
 

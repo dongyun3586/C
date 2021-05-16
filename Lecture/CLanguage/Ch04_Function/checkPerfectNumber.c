@@ -1,11 +1,7 @@
 #include <stdio.h>
 
-
-/* Function declarations */
 int isPerfect(int num);
 void printPerfect(int start, int end);
-
-
 
 int main()
 {
@@ -23,11 +19,8 @@ int main()
     return 0;
 }
 
-
-
 /**
- * Check whether the given number is perfect or not.
- * Returns 1 if the number is perfect otherwise 0.
+ * Check whether the given number is perfect or not. Returns 1 if the number is perfect otherwise 0.
  */
 int isPerfect(int num)
 {
@@ -43,17 +36,12 @@ int isPerfect(int num)
         }
     }
 
-    /*
-     * If sum of proper positive divisors equals to given number
-     * then the number is perfect number
-     */
+    // If sum of proper positive divisors equals to given number then the number is perfect number
     if (sum == num)
         return 1;
     else
         return 0;
 }
-
-
 
 /**
  * Print all perfect numbers between given range start and end.
@@ -67,7 +55,6 @@ void printPerfect(int start, int end)
         {
             printf("%d, ", start);
         }
-
         start++;
     }
 }

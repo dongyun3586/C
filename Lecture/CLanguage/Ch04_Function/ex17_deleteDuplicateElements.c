@@ -1,4 +1,4 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
 #include <time.h>
 
@@ -7,47 +7,52 @@ void print1DArray(int arr[], int length);
 
 int main()
 {
-    int arr[20];
-    int size = 20, temp;
+    int arr[1000];
+    int size;
 
-    // ëœë¤ ë°°ì—´ ìƒì„±
-    printf("1~100 ì‚¬ì´ì˜ ëœë¤ ìˆ«ì ë°°ì—´ ìƒì„±\n");
+    printf("¹è¿­ÀÇ Å©±â: ");
+    scanf("%d", &size);
+
+    // ·£´ı ¹è¿­ »ı¼º
+    printf("1~50 »çÀÌÀÇ ·£´ı ¼ıÀÚ ¹è¿­ »ı¼º\n");
     generateRandomNum(arr, size);
 
-    // ì´ˆê¸° ë°°ì—´ ìƒíƒœ ì¶œë ¥
-    printf("ì •ë ¬ ì „ ë°°ì—´\n");
+    // ÃÊ±â ¹è¿­ »óÅÂ Ãâ·Â
     print1DArray(arr, size);
 
     // Find duplicate elements in array
     for (int i = 0; i < size; i++) {
         for (int j = i + 1; j < size; j++) {
-            if (arr[i] > arr[j])
+            // Áßº¹µÈ ¿ä¼Ò¸¦ ¹ß°ßÇÏ¸é
+            if (arr[i] == arr[j])
             {
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                // Áßº¹µÈ ¿ä¼Ò ¹è¿­¿¡¼­ Á¦°Å 
+                for (int k = j; k < size - 1; k++)
+                    arr[k] = arr[k + 1];
+                size--;     // ¹è¿­ Å©±â 1 °¨¼Ò
+                j--;
             }
         }
     }
 
-    // ì •ë ¬ëœ ë°°ì—´
-    printf("ì •ë ¬ í›„ ë°°ì—´\n");
+    // Áßº¹ ¿ä¼Ò Á¦°Å ÈÄ ¹è¿­
+    printf("\n¹è¿­ Å©±â: %d\n", size);
     print1DArray(arr, size);
 
     return 0;
 }
 
-// ëœë¤ ë°°ì—´ ìƒì„± í•¨ìˆ˜
+// ·£´ı ¹è¿­ »ı¼º ÇÔ¼ö
 void generateRandomNum(int arr[], int size)
 {
     srand(time(NULL));
     for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 100 + 1;
+        arr[i] = rand() % 50 + 1;
     }
 }
 
 void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
         printf("%2d ", arr[i]);
-    printf("\n\n");
+    printf("\n");
 }

@@ -153,10 +153,12 @@
     <ClCompile Include="ex08_array.c" />
     <ClCompile Include="ex09_array.c" />
     <ClCompile Include="ex10_calculateAverageUsingArray.c" />
-    <ClCompile Include="ex11_largestElementInArray.c" />
+    <ClCompile Include="ex11_findMaximumAndMinimumElement.c" />
+    <ClCompile Include="ex16_countFrequencyOfEachElement.c" />
+    <ClCompile Include="ex18_sort.c" />
     <ClCompile Include="GCD_LCM.c" />
-    <ClCompile Include="insertElementArray.c" />
-    <ClCompile Include="printArray.c" />
+    <ClCompile Include="ex15_insertElement.c" />
+    <ClCompile Include="ex13_printArray.c" />
     <ClCompile Include="recursiveFactorial.c" />
     <ClCompile Include="recursiveFibonacci.c" />
     <ClCompile Include="recursiveGCD.c" />
@@ -166,10 +168,13 @@
     <ClCompile Include="recursiveReverseNumber.c" />
     <ClCompile Include="recursiveSum.c" />
     <ClCompile Include="recursiveSumArray.c" />
-    <ClCompile Include="standardDeviation.c" />
+    <ClCompile Include="ex14_calculateStandardDeviation.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex17_deleteDuplicateElements.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

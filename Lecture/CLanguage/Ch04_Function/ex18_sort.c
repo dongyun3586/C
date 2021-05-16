@@ -1,4 +1,4 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
 #include <time.h>
 
@@ -10,12 +10,11 @@ int main()
     int arr[20];
     int size = 20, temp;
 
-    // ëœë¤ ë°°ì—´ ìƒì„±
-    printf("1~100 ì‚¬ì´ì˜ ëœë¤ ìˆ«ì ë°°ì—´ ìƒì„±\n");
+    // ·£´ı ¹è¿­ »ı¼º
+    printf("1~100 »çÀÌÀÇ ·£´ı ¼ıÀÚ ¹è¿­ »ı¼º\n");
     generateRandomNum(arr, size);
 
-    // ì´ˆê¸° ë°°ì—´ ìƒíƒœ ì¶œë ¥
-    printf("ì •ë ¬ ì „ ë°°ì—´\n");
+    // ÃÊ±â ¹è¿­ »óÅÂ Ãâ·Â
     print1DArray(arr, size);
 
     // Find duplicate elements in array
@@ -30,14 +29,13 @@ int main()
         }
     }
 
-    // ì •ë ¬ëœ ë°°ì—´
-    printf("ì •ë ¬ í›„ ë°°ì—´\n");
+    // Á¤·ÄµÈ ¹è¿­
     print1DArray(arr, size);
 
     return 0;
 }
 
-// ëœë¤ ë°°ì—´ ìƒì„± í•¨ìˆ˜
+// ·£´ı ¹è¿­ »ı¼º ÇÔ¼ö
 void generateRandomNum(int arr[], int size)
 {
     srand(time(NULL));
@@ -49,5 +47,5 @@ void generateRandomNum(int arr[], int size)
 void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
         printf("%2d ", arr[i]);
-    printf("\n\n");
+    printf("\n");
 }

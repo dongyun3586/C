@@ -51,12 +51,6 @@
     <ClCompile Include="ex10_calculateAverageUsingArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex11_largestElementInArray.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="standardDeviation.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="addTwoMatrices.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -66,9 +60,6 @@
     <ClCompile Include="recursiveSum.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="printArray.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="recursiveHello.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -76,9 +67,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="recursiveFibonacci.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="insertElementArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="recursivePrintArray.c">
@@ -99,10 +87,33 @@
     <ClCompile Include="checkPerfectNumber.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex11_findMaximumAndMinimumElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_printArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_calculateStandardDeviation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex15_insertElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex16_countFrequencyOfEachElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex18_sort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMath.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex17_deleteDuplicateElements.c">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>
