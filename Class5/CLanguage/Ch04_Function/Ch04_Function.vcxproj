@@ -145,6 +145,13 @@
     <ClCompile Include="ex04_combination.c" />
     <ClCompile Include="ex05_primeNumbersBetweenTwoIntegers.c" />
     <ClCompile Include="ex06_SumOfTwoPrimeNumbers.c" />
+    <ClCompile Include="ex08_array.c" />
+    <ClCompile Include="ex09_array.c" />
+    <ClCompile Include="ex10_calculateAverageUsingArray.c" />
+    <ClCompile Include="ex11_findMaximumAndMinimumElement.c" />
+    <ClCompile Include="ex12_array.c" />
+    <ClCompile Include="ex13_printArray.c" />
+    <ClCompile Include="ex14_calculateStandardDeviation.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
