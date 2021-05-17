@@ -15,6 +15,7 @@ int main()
     generateRandomNum(arr, size);
 
     // 초기 배열 상태 출력
+    printf("정렬 전 배열\n");
     print1DArray(arr, size);
 
     // Find duplicate elements in array
@@ -30,6 +31,7 @@ int main()
     }
 
     // 정렬된 배열
+    printf("정렬 후 배열\n");
     print1DArray(arr, size);
 
     return 0;
@@ -47,5 +49,5 @@ void generateRandomNum(int arr[], int size)
 void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
         printf("%2d ", arr[i]);
-    printf("\n");
+    printf("\n\n");
 }
