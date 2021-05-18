@@ -11,7 +11,7 @@ double calculateSD(double arr[], int length);
 
 int main() {
     double numArr[ARRAY_LENGTH];
-    int length = sizeof(numArr) / sizeof(double);    // 배열의 크기
+    int length = sizeof(numArr) / sizeof(numArr[0]);    // 배열의 크기
 
     // 랜덤 배열 생성
     printf("0~100 사이의 랜덤 숫자 %d개 생성\n", ARRAY_LENGTH);
@@ -43,23 +43,3 @@ void print1DArray(double arr[], int length)
 }
 
 // 표준편차 계산 함수
-double calculateSD(double arr[], int length) {
-    double mean=0, SD=0;
-    // 평균
-    for (int i = 0; i < length; i++)
-        mean += arr[i];
-    mean /= length;
-    printf("평균: %.2f\n", mean);
-
-    // 분산
-    for (int i = 0; i < length; i++)
-        SD += pow(arr[i] - mean, 2);
-    SD /= length;
-    printf("분산: %.2f\n", SD);
-
-    // 표준편차 반환
-    SD = sqrt(SD);
-    printf("표준편차: %.2f\n", SD);
-
-    return SD;
-}
