@@ -4,35 +4,27 @@
 
 void generateRandomNum(int arr[], int size);
 void print1DArray(int arr[], int length);
+void bubbleSortAscending(int arr[], int size);
 
 int main()
 {
-    int arr[20];
-    int size = 20, temp;
+    int numArr[20];
+    int size = sizeof(numArr) / sizeof(int);
 
     // 랜덤 배열 생성
     printf("1~100 사이의 랜덤 숫자 배열 생성\n");
-    generateRandomNum(arr, size);
+    generateRandomNum(numArr, size);
 
     // 초기 배열 상태 출력
     printf("정렬 전 배열\n");
-    print1DArray(arr, size);
+    print1DArray(numArr, size);
 
-    // Find duplicate elements in array
-    for (int i = 0; i < size; i++) {
-        for (int j = i + 1; j < size; j++) {
-            if (arr[i] > arr[j])
-            {
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-    }
+    // 오름차순 정렬
+    bubbleSortAscending(numArr, size);
 
     // 정렬된 배열
     printf("정렬 후 배열\n");
-    print1DArray(arr, size);
+    print1DArray(numArr, size);
 
     return 0;
 }
@@ -50,4 +42,19 @@ void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
         printf("%2d ", arr[i]);
     printf("\n\n");
+}
+
+void bubbleSortAscending(int arr[], int size)
+{
+    int temp;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size - 1 - i; j++) {
+            if (arr[j] > arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
 }

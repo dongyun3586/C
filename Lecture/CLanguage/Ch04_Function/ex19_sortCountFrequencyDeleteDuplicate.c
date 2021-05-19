@@ -1,4 +1,4 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
 #include <time.h>
 
@@ -13,33 +13,33 @@ int main()
     int numArr[100], freq[100] = { 0 };
     int size = sizeof(numArr) / sizeof(int);
 
-    // ëœë¤ ë°°ì—´ ìƒì„±
+    // ·£´ı ¹è¿­ »ı¼º
     generateRandomNum(numArr, size);
 
-    // ì´ˆê¸° ë°°ì—´ ìƒíƒœ ì¶œë ¥
-    printf("ì´ˆê¸° ë°°ì—´ì˜ í¬ê¸° : %d\n", size);
+    // ÃÊ±â ¹è¿­ »óÅÂ Ãâ·Â
+    printf("ÃÊ±â ¹è¿­ÀÇ Å©±â : %d\n", size);
     print1DArray(numArr, size);
 
-    // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+    // ¿À¸§Â÷¼ø Á¤·Ä
     bubbleSortAscending(numArr, size);
 
-    // ì •ë ¬ëœ ë°°ì—´ ìƒíƒœ ì¶œë ¥
-    printf("ì •ë ¬ í›„ ë°°ì—´ ìƒíƒœ\n");
+    // Á¤·ÄµÈ ¹è¿­ »óÅÂ Ãâ·Â
+    printf("Á¤·Ä ÈÄ ¹è¿­ »óÅÂ\n");
     print1DArray(numArr, size);
 
-    // ì¤‘ë³µëœ ìš”ì†Œì˜ ê°œìˆ˜ ì¶œë ¥
+    // Áßº¹µÈ ¿ä¼ÒÀÇ °³¼ö Ãâ·Â
     countFrequencyElements(numArr, freq, size);
 
-    // ë°°ì—´ì—ì„œ ì¤‘ë³µ ìš”ì†Œ ì œê±°
+    // ¹è¿­¿¡¼­ Áßº¹ ¿ä¼Ò Á¦°Å
     size = deleteDuplicateElements(numArr, size);
 
-    // ì¤‘ë³µ ìš”ì†Œ ì œê±° í›„ ë°°ì—´ ìƒíƒœ ì¶œë ¥
-    printf("\n\nì¤‘ë³µ ìš”ì†Œë¥¼ ì œê±°í•œ ë°°ì—´ì˜ í¬ê¸°: %d\n", size);
+    // Áßº¹ ¿ä¼Ò Á¦°Å ÈÄ ¹è¿­ »óÅÂ Ãâ·Â
+    printf("\n\nÁßº¹ ¿ä¼Ò¸¦ Á¦°ÅÇÑ ¹è¿­ÀÇ Å©±â: %d\n", size);
     print1DArray(numArr, size);
     return 0;
 }
 
-// 1~10 ì‚¬ì´ì˜ ëœë¤ ë°°ì—´ ìƒì„± í•¨ìˆ˜
+// 1~10 »çÀÌÀÇ ·£´ı ¹è¿­ »ı¼º ÇÔ¼ö
 void generateRandomNum(int arr[], int size)
 {
     srand(time(NULL));
@@ -57,7 +57,7 @@ void print1DArray(int arr[], int length) {
 void countFrequencyElements(int arr[], int freq[], int size) {
     int count;
 
-    // ë¹ˆë„ìˆ˜ ê¸°ë¡í•˜ê¸°
+    // ºóµµ¼ö ±â·ÏÇÏ±â
     for (int i = 0; i < size; i++)
     {
         count = 1;
@@ -73,23 +73,23 @@ void countFrequencyElements(int arr[], int freq[], int size) {
     }
 
     // Print frequency of each element
-    printf("\në°°ì—´ ìš”ì†Œë“¤ì˜ ë¹ˆë„ìˆ˜\n");
+    printf("\n¹è¿­ ¿ä¼ÒµéÀÇ ºóµµ¼ö\n");
     for (int i = 0; i < size; i++)
         if (freq[i] != -1)
-            printf("%3d : %3dë²ˆ ", arr[i], freq[i]);
+            printf("%3d : %3d¹ø ", arr[i], freq[i]);
 }
 
 int deleteDuplicateElements(int arr[], int size)
 {
     for (int i = 0; i < size; i++) {
         for (int j = i + 1; j < size; j++) {
-            // ì¤‘ë³µëœ ìš”ì†Œë¥¼ ë°œê²¬í•˜ë©´
+            // Áßº¹µÈ ¿ä¼Ò¸¦ ¹ß°ßÇÏ¸é
             if (arr[i] == arr[j])
             {
-                // ì¤‘ë³µëœ ìš”ì†Œ ë°°ì—´ì—ì„œ ì œê±° 
+                // Áßº¹µÈ ¿ä¼Ò ¹è¿­¿¡¼­ Á¦°Å 
                 for (int k = j; k < size - 1; k++)
                     arr[k] = arr[k + 1];
-                size--;     // ë°°ì—´ í¬ê¸° 1 ê°ì†Œ
+                size--;     // ¹è¿­ Å©±â 1 °¨¼Ò
                 j--;
             }
         }

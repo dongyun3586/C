@@ -51,9 +51,6 @@
     <ClCompile Include="ex10_calculateAverageUsingArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="addTwoMatrices.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="GCD_LCM.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -102,7 +99,16 @@
     <ClCompile Include="ex16_countFrequencyOfEachElement.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex18_sort.c">
+    <ClCompile Include="multiplyTwoMatrices.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex18_bubbleSortAscending.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex19_sortCountFrequencyDeleteDuplicate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex20_matrixOperation.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
