@@ -1,21 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-	char ch;
-	int num;
-	int numArr[10] = { 11, 22, 33, 44, 55, 66, 77, 88, 99, 110 };
+int main()
+{
+    int numArr[] = { 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, 1, 2, 3 };
+    int arrCount = sizeof(numArr) / sizeof(numArr[0]);
 
-	printf("%d\n", sizeof(ch));		// 1
-	printf("%d\n", sizeof(num));	// 4
+    // 1. 배열의 모든 요소 출력하기
+    printf("1. 배열의 모든 요소 출력하기\n");
+    for (int i = 0; i < arrCount; i++)
+        printf("numArr[%d] = %d\n", i, numArr[i]);
+    printf("\n\n");
 
-	printf("%d\n", sizeof(char));	// 1
-	printf("%d\n", sizeof(int));	// 4
-	printf("%d\n", sizeof(float));	// 4
-	printf("%d\n", sizeof(double));	// 8
+    // 2. 배열의 요소를 역순으로 출력하기
+    printf("2. 배열의 요소를 역순으로 출력하기\n");
+    // 여기에 코드 작성
+    printf("\n\n");
 
-	printf("%d\n", sizeof(numArr[0]));              // 배열 요소 하나의 크기(byte)
-	printf("%d\n", sizeof(numArr));                 // 배열의 크기(byte)
-	printf("%d\n", sizeof(numArr) / sizeof(int));   // 배열의 요수 개수
+    // 3. 배열의 요소 합계 구하기
+    printf("3. 배열의 요소 합계 구하기\n");
+    // 여기에 코드 작성
+    printf("\n\n");
 
-	return 0;
+    return 0;
 }

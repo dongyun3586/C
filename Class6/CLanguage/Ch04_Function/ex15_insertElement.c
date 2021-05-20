@@ -6,7 +6,7 @@ void insertElement(int array[], int position);
 int main()
 {
     int array[100] = { 1,2,3,4,5,6,7,8,9,10 };
-    int position, c, length = 10;
+    int position, c, length = 10, insertValue;
 
     // 배열의 초기 상태 출력 
     print1DArray(array, length);
@@ -28,5 +28,5 @@ void print1DArray(int arr[], int length) {
 
 void insertElement(int array[], int length)
 {
-    int insertElement;
+
 }

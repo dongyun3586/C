@@ -39,5 +39,20 @@
     <ClCompile Include="ex09_array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex10_calculateAverageUsingArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex11_findMaximumAndMinimumElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_printArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_calculateStandardDeviation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex15_insertElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
