@@ -43,20 +43,3 @@ void print1DArray(double arr[], int length)
 }
 
 // 표준편차 계산 함수
-double calculateSD(double arr[], int length) {
-    // 평균
-    double mean = 0.0, sd=0.0;
-    for (int i = 0; i < length; i++)
-        mean += arr[i];
-    mean /= length;
-    printf("평균: %lf\n", mean);
-
-    // 분산
-    for (int i = 0; i < length; i++)
-        sd += pow(arr[i] - mean, 2);
-    sd /= length;
-    printf("분산: %lf\n", sd);
-
-    // 표준편차 리턴
-    return sqrt(sd);
-}
