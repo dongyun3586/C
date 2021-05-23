@@ -72,3 +72,21 @@ void printArmstrongNumber(int num, int n) {
 	printf("\n");
 }
 
+//// num의 자릿수 n 구하기
+//int countDigitsOfNumber(int num) {
+//	return (int)log10(num) + 1;
+//}
+
+// 각 자리를 n제곱한 숫자들의 덧셈 형태로 출력하기
+void printArmstrongNumber(int num, int n) {
+	printf("%7d = ", num);
+	int d;
+	for (int i = n - 1; i >= 0; i--) {
+		d = ((num % (int)pow(10, i + 1.0)) - (num % (int)pow(10, i))) / (int)pow(10, i);
+		printf("%d", (int)pow(d, n));
+		if (i != 0)
+			printf(" + ");
+	}
+	printf("\n");
+}
+
