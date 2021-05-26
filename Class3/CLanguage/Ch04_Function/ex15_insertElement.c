@@ -27,15 +27,5 @@ void print1DArray(int arr[], int length) {
 
 void insertElement(int arr[], int length)
 {
-    int insertValue, position;
-    // 입력 받기
-    printf("위치와 새로운 값: ");
-    scanf("%d %d", &position, &insertValue);
 
-    // 한 칸씩 옮기기
-    for (int i = length - 1; i >= position - 1; i--)
-        arr[i + 1] = arr[i];
-
-    // 새로운 값 저장하기
-    arr[position - 1] = insertValue;
 }

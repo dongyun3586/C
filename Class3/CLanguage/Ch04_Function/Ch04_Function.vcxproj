@@ -150,6 +150,10 @@
     <ClCompile Include="ex09_array.c" />
     <ClCompile Include="ex10_calculateAverageUsingArray.c" />
     <ClCompile Include="ex11_largestElementInArray.c" />
+    <ClCompile Include="ex12_array.c" />
+    <ClCompile Include="ex13_printArray.c" />
+    <ClCompile Include="ex14_calculateStandardDeviation.c" />
+    <ClCompile Include="ex15_insertElement.c" />
     <ClCompile Include="myMath.c" />
   </ItemGroup>
   <ItemGroup>

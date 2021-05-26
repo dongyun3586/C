@@ -28,13 +28,5 @@ void print1DArray(int arr[], int length) {
 
 void insertElement(int array[], int length)
 {
-    int newElement, position;
-    printf("새로운 값과 위치 입력\n");
-    scanf("%d %d", &newElement, &position);
-
-    for (int i = length - 1; i >= position - 1; i--)
-        array[i + 1] = array[i];
-
-    array[position - 1] = newElement;
 
 }

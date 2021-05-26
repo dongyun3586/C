@@ -152,6 +152,7 @@
     <ClCompile Include="ex12_array.c" />
     <ClCompile Include="ex13_printArray.c" />
     <ClCompile Include="ex14_calculateStandardDeviation.c" />
+    <ClCompile Include="ex15_insertElement.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
