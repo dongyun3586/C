@@ -15,28 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_classification.c">
+    <ClCompile Include="ex_convertDecimalToHexadecimal.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex02_dataTypeRange.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex03_fibonacciSequence.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex04_countNum.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex05_printHalfPyramid.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex06_printFullPyramid.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex07_findPerfectNumbers.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex08_convertDecimalToBinary.c">
+    <ClCompile Include="ex_convertHexadecimalToDecimal.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

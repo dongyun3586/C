@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0419e9fb-7a46-44ae-9085-e32d4cce532b}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{d09fdf20-b19f-4b46-aedd-7e02ec54f3ea}</ProjectGuid>
+    <RootNamespace>Day02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Day01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,14 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_classification.c" />
-    <ClCompile Include="ex02_dataTypeRange.c" />
-    <ClCompile Include="ex03_fibonacciSequence.c" />
-    <ClCompile Include="ex04_countNum.c" />
-    <ClCompile Include="ex05_printHalfPyramid.c" />
-    <ClCompile Include="ex06_printFullPyramid.c" />
-    <ClCompile Include="ex07_findPerfectNumbers.c" />
-    <ClCompile Include="ex08_convertDecimalToBinary.c" />
+    <ClCompile Include="ex_convertDecimalToHexadecimal.c" />
+    <ClCompile Include="ex_convertHexadecimalToDecimal.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

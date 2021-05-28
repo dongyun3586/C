@@ -2,7 +2,7 @@
 
 int main()
 {
-    int inputNum, decimalNum, binaryNum=0;
+    int inputNum, decimalNum, binaryNum = 0;
     int r, place = 1;
 
     // 십진수값 입력받기
