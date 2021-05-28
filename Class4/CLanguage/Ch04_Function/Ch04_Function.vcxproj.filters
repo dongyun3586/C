@@ -45,5 +45,8 @@
     <ClCompile Include="ex14_calculateStandardDeviation.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex15_insertElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

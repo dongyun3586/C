@@ -1,62 +1,44 @@
-#include <stdio.h>
-#include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
-#include <math.h>       // double pow( double base, double exponent ), double sqrt( double arg );
-#include <time.h>
+#include<stdio.h>
 
-void generateRandomNum(double arr[], int length);
-void print1DArray(double arr[], int length);
-double calculateSD(double arr[], int length);
+void print1DArray(int arr[], int length);
+void insertElement(int arr[], int length);
 
-#define ARRAY_LENGTH 20
+int main()
+{
+    int numArr[100] = { 1,2,3,4,5,6,7,8,9,10 };
+    int length = 10;
 
-int main() {
-    double numArr[ARRAY_LENGTH];
-    int length = sizeof(numArr) / sizeof(numArr[0]);    // 배열의 크기
-
-    // 랜덤 배열 생성
-    printf("0~100 사이의 랜덤 숫자 %d개 생성\n", ARRAY_LENGTH);
-    generateRandomNum(numArr, length);
-
-    // 배열 출력
+    // 배열 출력 
     print1DArray(numArr, length);
 
-    // 표준 편차 출력
-    printf("표준 편차 = %.5f\n", calculateSD(numArr, length));
+    for (int i = 0; i < 2; i++) {
+        insertElement(numArr, length++);      // 배열에 새로운 요소 삽입
+        print1DArray(numArr, length);         // 배열 출력 
+    }
+
     return 0;
 }
 
-// 랜덤 배열 생성 함수
-void generateRandomNum(double arr[], int length)
-{
-    srand(time(NULL));
-    for (int i = 0; i < length; i++) {
-        arr[i] = (double)rand() / RAND_MAX * 100;
-    }
-}
-
-// 1차원 배열 출력 함수
-void print1DArray(double arr[], int length)
-{
+void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
-        printf("%.2f\n", arr[i]);
+        printf("%d ", arr[i]);
     printf("\n");
 }
 
-// 표준편차 계산 함수
-double calculateSD(double arr[], int length) {
-    // 평균
-    double mean = 0.0, sd=0.0;
-    for (int i = 0; i < length; i++)
-        mean += arr[i];
-    mean /= length;
-    printf("평균: %lf\n", mean);
+void insertElement(int arr[], int length)
+{
+    // 변수 선언
+    int position, insertValue;
 
-    // 분산
-    for (int i = 0; i < length; i++)
-        sd += pow(arr[i] - mean, 2);
-    sd /= length;
-    printf("분산: %lf\n", sd);
+    // 값 입력받기
+    printf("위치와 값: ");
+    scanf("%d %d", &position, &insertValue);
 
-    // 표준편차 리턴
-    return sqrt(sd);
+    // 배열에 새로운 요소 추가
+    // 1. 원하는 위치 이후의 값들은 모두 이동시킴
+    for (int i = length - 1; i >= position - 1; i--)
+        arr[i + 1] = arr[i];
+
+    // 2. 새로운 값을 원하는 위치에 삽입
+    arr[position - 1] = insertValue;
 }
