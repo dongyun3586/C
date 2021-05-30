@@ -1,116 +1,87 @@
 ﻿#include <stdio.h>
-#include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
-#include <time.h>
 
-void generateRandomNum(int arr[], int length);
-void print1DArray(int arr[], int length);
-void bubbleSortAscending(int arr[], int length);
-void countFrequencyElements(int arr[], int freq[], int length);
-int deleteDuplicateElements(int arr[], int length);
+#define SIZE 3 // Size of the matrix
+
+void print2DArray(int arr[][SIZE], int row, int column);
+void addMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE]);
+void subtractMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE]);
+void multiplyMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE]);
 
 int main()
 {
-    int numArr[100], freq[100] = { 0 };
-    int length = sizeof(numArr) / sizeof(int);
+    int A[SIZE][SIZE] = { 1,2,3,4,5,6,7,8,9 };
+    int B[SIZE][SIZE] = { 9,8,7,6,5,4,3,2,1 };
+    int C[SIZE][SIZE] = { 0 };
 
-    // 1. 1~100 사이의 랜덤 숫자 배열 생성
-    generateRandomNum(numArr, length);
+    int row, col, i, sum;
 
-    // 2. 초기 배열 상태 출력
-    print1DArray(numArr, length);
+    // 행렬 A와 B 출력
+    printf("행렬 A\n");
+    print2DArray(A, SIZE, SIZE);
+    printf("행렬 B\n");
+    print2DArray(B, SIZE, SIZE);
 
-    // 3. 오름차순 정렬
-    bubbleSortAscending(numArr, length);
+    // 행렬의 덧셈
+    addMatrices(A, B, C);
+    printf("행렬 A, B의 덧셈 결과\n");
+    print2DArray(C, SIZE, SIZE);
 
-    // 4. 정렬된 배열 상태 출력
-    printf("정렬 후 배열 상태\n");
-    print1DArray(numArr, length);
+    // 행렬의 뺄셈
+    subtractMatrices(A, B, C);
+    printf("행렬 A, B의 뺄셈 결과\n");
+    print2DArray(C, SIZE, SIZE);
 
-    // 5. 중복된 요소의 개수 출력
-    countFrequencyElements(numArr, freq, length);
-
-    // 6. 배열에서 중복 요소 제거
-    length = deleteDuplicateElements(numArr, length);
-
-    // 7. 중복 요소 제거 후 배열 상태 출력
-    print1DArray(numArr, length);
+    // 행렬의 곱셈
+    multiplyMatrices(A, B, C);
+    printf("행렬 A, B의 곱셈 결과\n");
+    print2DArray(C, SIZE, SIZE);
 
     return 0;
 }
 
-// 1~10 사이의 랜덤 배열 생성 함수
-void generateRandomNum(int arr[], int length)
-{
-    srand(time(NULL));
-    for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 100 + 1;
-    }
-}
-
-void print1DArray(int arr[], int length) {
-    printf("초기 배열의 크기 : %d\n", length);
-    for (int i = 0; i < length; i++)
-        printf("%3d ", arr[i]);
-    printf("\n\n");
-}
-
-void countFrequencyElements(int arr[], int freq[], int length) {
-    int count;
-
-    // 빈도수 기록하기
-    for (int i = 0; i < length; i++)
-    {
-        count = 1;
-        for (int j = i + 1; j < length; j++)
-        {
-            if (arr[i] == arr[j]) {
-                count++;
-                freq[j] = -1;
-            }
-        }
-        if (freq[i] != -1)
-            freq[i] = count;
-    }
-
-    // Print frequency of each element
-    printf("\n배열 요소들의 빈도수\n");
-    for (int i = 0; i < length; i++) {
-        if (freq[i] != -1)
-            printf("%3d : %3d번 ", arr[i], freq[i]);
+void print2DArray(int arr[][SIZE], int row, int column) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < column; j++)
+            printf("%3d ", arr[i][j]);
+        printf("\n");
     }
     printf("\n");
-        
 }
 
-int deleteDuplicateElements(int arr[], int length)
+void addMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE])
 {
-    for (int i = 0; i < length; i++) {
-        for (int j = i + 1; j < length; j++) {
-            // 중복된 요소를 발견하면
-            if (arr[i] == arr[j])
-            {
-                // 중복된 요소 배열에서 제거 
-                for (int k = j; k < length - 1; k++)
-                    arr[k] = arr[k + 1];
-                length--;     // 배열 크기 1 감소
-                j--;
-            }
-        }
+    for (int row = 0; row < SIZE; row++) {
+        for (int col = 0; col < SIZE; col++)
+            C[row][col] = A[row][col] + B[row][col];
     }
-    return length;
 }
 
-void bubbleSortAscending(int arr[], int length)
+void subtractMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE])
 {
-    int temp;
-    for (int i = 0; i < length; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (arr[j] > arr[j + 1])
-            {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
+    for (int row = 0; row < SIZE; row++) {
+        for (int col = 0; col < SIZE; col++)
+            C[row][col] = A[row][col] - B[row][col];
+    }
+}
+
+void multiplyMatrices(int A[][SIZE], int B[][SIZE], int C[][SIZE])
+{
+    int sum;
+    for (int row = 0; row < SIZE; row++) {
+        for (int col = 0; col < SIZE; col++) {
+            sum = 0;    // Multiply row of first matrix to column of second matrix and store sum of product of elements in sum.
+            for (int i = 0; i < SIZE; i++)
+                sum += A[row][i] * B[i][col];
+            C[row][col] = sum;
         }
     }
 }
+
+
+
+
+
+
+
+
+
