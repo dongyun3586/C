@@ -153,6 +153,9 @@
     <ClCompile Include="ex13_printArray.c" />
     <ClCompile Include="ex14_calculateStandardDeviation.c" />
     <ClCompile Include="ex15_insertElement.c" />
+    <ClCompile Include="ex16_countFrequencyOfEachElement.c" />
+    <ClCompile Include="ex17_deleteDuplicateElements.c" />
+    <ClCompile Include="ex18_bubbleSortAscending.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
