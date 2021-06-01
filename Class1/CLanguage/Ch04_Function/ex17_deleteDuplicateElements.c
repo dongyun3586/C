@@ -47,7 +47,7 @@ void print1DArray(int arr[], int length) {
 
 int deleteDuplicateElements(int arr[], int length)
 {
-    for (int i = 0; i < length-1; i++) {
+    for (int i = 0; i < length - 1; i++) {
         for (int j = i + 1; j < length; j++) {
             // 중복 체크
             if (arr[i] == arr[j]) {
