@@ -60,6 +60,15 @@
     <ClCompile Include="ex15_insertElement.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex16_countFrequencyOfEachElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex17_deleteDuplicateElements.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex18_bubbleSortAscending.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myMath.h">
