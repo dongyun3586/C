@@ -1,31 +1,22 @@
 #include <stdio.h>
 #include <math.h>
 
-
-/* Fuction declaration */
 int reverse(int num);
-
 
 int main()
 {
     int num, rev;
 
-    /* Input number from user */
     printf("Enter any number: ");
     scanf("%d", &num);
 
-    /* Call the function to reverse number */
     rev = reverse(num);
-
-    printf("Reverse of %d = %d", num, rev);
+    printf("Reverse of %d = %d", num, reverse(num));
 
     return 0;
 }
 
 
-/**
- * Recursive function to find reverse of any number
- */
 int reverse(int num)
 {
     // Find total digits in num

@@ -1,32 +1,28 @@
 ﻿#include <stdio.h>
+#include <math.h>
 
-/* Function declaration */
-int gcd(int a, int b);
-
+int reverse(int num);
 
 int main()
 {
-    int num1, num2, hcf;
+    int num, rev;
 
-    /* Input two numbers from user */
-    printf("Enter any two numbers to find GCD: ");
-    scanf("%d%d", &num1, &num2);
+    printf("양의 정수 입력: ");
+    scanf("%d", &num);
 
-    hcf = gcd(num1, num2);
-
-    printf("GCD of %d and %d = %d", num1, num2, hcf);
+    rev = reverse(num);
+    printf("Reverse of %d = %d", num, reverse(num));
 
     return 0;
 }
 
 
-/**
- * Recursive approach of euclidean algorithm to find GCD of two numbers
- */
-int gcd(int a, int b)
+int reverse(int num)
 {
-    if (b == 0)
-        return a;
-    else
-        return gcd(b, a % b);
+    int n = (int)log10(num);
+
+    if (num == 0)
+        return 0;
+
+    return ((num % 10 * pow(10, n)) + reverse(num / 10));
 }
