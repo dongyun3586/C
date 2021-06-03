@@ -21,5 +21,17 @@
     <ClCompile Include="ex_convertHexadecimalToDecimal.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex01_factorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex02_combination.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex03_SumOfTwoPrimeNumbers.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex04_checkArmstronNumber.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -14,8 +14,7 @@ int main() {
 	for (int i = a; i <= b; i++) {
 		n = countDigitsOfNumber(i);
 		if (checkArmstrongNumber(i, n)) {
-			printf("%d\n", i);
-			//printArmstrongNumber(i, n);
+			printArmstrongNumber(i, n);
 		}
 	}
 	return 0;
@@ -28,12 +27,7 @@ int countDigitsOfNumber(int num) {
 
 // num이 암스트롱 넘버인지 체크(맞으면 1, 틀리면 0 반환)
 int checkArmstrongNumber(int num, int n) {
-	int temp=num, sum = 0;
-	while (temp != 0) {
-		sum += pow(temp % 10, n);
-		temp /= 10;
-	}
-	return (sum == num) ? 1 : 0;
+
 }
 
 // num의 각 자리 숫자 뒤집기
