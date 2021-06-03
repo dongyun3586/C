@@ -14,8 +14,7 @@ int main() {
 	for (int i = a; i <= b; i++) {
 		n = countDigitsOfNumber(i);
 		if (checkArmstrongNumber(i, n)) {
-			printf("%d\n", i);
-			//printArmstrongNumber(i, n);
+			printArmstrongNumber(i, n);
 		}
 	}
 	return 0;
@@ -43,5 +42,11 @@ int reversNumber(int num) {
 
 // 각 자리를 n제곱한 숫자들의 덧셈 형태로 출력하기
 void printArmstrongNumber(int num, int n) {
-
+	printf("%7d = ", num);
+	for (int i = n - 1; i >= 0; i--) {
+		printf("%d", (int)pow((num % (int)pow(10, i + 1) - num % (int)pow(10, i)) / (int)pow(10, i), n));
+		if (i != 0)
+			printf(" + ");
+	}
+	printf("\n");
 }
