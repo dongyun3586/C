@@ -18,7 +18,6 @@ int main() {
 			printArmstrongNumber1(i, n);
 			printArmstrongNumber2(i, n);
 		}
-
 	}
 	return 0;
 }
@@ -44,7 +43,6 @@ int reversNumber(int num) {
 		remainder = num % 10;
 		reversNum = reversNum * 10 + remainder;
 	}
-
 	return reversNum;
 }
 
