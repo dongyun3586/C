@@ -1,62 +1,58 @@
 #include <stdio.h>
-#include <stdlib.h>     // srand(), rand() => 0 and RAND_MAX (0 and RAND_MAX included), RAND_MAX (32767)
-#include <math.h>       // double pow( double base, double exponent ), double sqrt( double arg );
+#include <stdlib.h> 
 #include <time.h>
 
-void generateRandomNum(double arr[], int length);
-void print1DArray(double arr[], int length);
-double calculateSD();
+void generateRandomNum(int arr[], int length);
+void print1DArray(int arr[], int length);
+void bubbleSortAscending(int arr[], int length);
 
-#define ARRAY_LENGTH 20
+int main()
+{
+    int numArr[20];
+    int length = sizeof(numArr) / sizeof(int);
 
-int main() {
-    double numArr[ARRAY_LENGTH];
-    int length = sizeof(numArr) / sizeof(numArr[0]);    // 배열의 크기
-
-    // 랜덤 배열 생성
-    printf("0~100 사이의 랜덤 숫자 %d개 생성\n", ARRAY_LENGTH);
+    // 1~100 랜덤 숫자 배열 생성
     generateRandomNum(numArr, length);
 
-    // 배열 출력
+    // 초기 배열 상태 출력
+    printf("정렬 전 배열 상태\n");
     print1DArray(numArr, length);
 
-    // 표준 편차 출력
-    printf("표준 편차 = %.5f\n", calculateSD(numArr, length));
+    // 오름차순 정렬
+    bubbleSortAscending(numArr, length);
+
+    // 정렬된 배열
+    printf("정렬 후 배열 상태\n");
+    print1DArray(numArr, length);
+
     return 0;
 }
 
 // 랜덤 배열 생성 함수
-void generateRandomNum(double arr[], int length)
+void generateRandomNum(int arr[], int length)
 {
     srand(time(NULL));
     for (int i = 0; i < length; i++) {
-        arr[i] = (double)rand() / RAND_MAX * 100;
+        arr[i] = rand() % 100 + 1;
     }
 }
 
-// 1차원 배열 출력 함수
-void print1DArray(double arr[], int length)
-{
+void print1DArray(int arr[], int length) {
     for (int i = 0; i < length; i++)
-        printf("%.2f\n", arr[i]);
-    printf("\n");
+        printf("%2d ", arr[i]);
+    printf("\n\n");
 }
 
-// 표준편차 계산 함수
-double calculateSD(double arr[], int length) {
-    double mean = 0.0, sd = 0.0;
-    // 평균
-    for (int i = 0; i < length; i++)
-        mean += arr[i];
-    mean /= length;
-    printf("평균: %lf\n", mean);
-
-    // 분산
-    for (int i = 0; i < length; i++)
-        sd += pow(arr[i] - mean, 2);
-    sd /= length;
-    printf("분산: %lf\n", sd);
-
-    // 표준편차 리턴
-    return sqrt(sd);
+void bubbleSortAscending(int arr[], int length)
+{
+    int temp;
+    for (int i = 0; i < length; i++) {
+        for (int j = 0; j < length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
 }

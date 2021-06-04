@@ -15,25 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_classification.c">
+    <ClCompile Include="ex02_combination.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex03_fibonacciSequence.c">
+    <ClCompile Include="ex03_SumOfTwoPrimeNumbers.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex04_countNum.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex05_printHalfPyramid.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex06_printFullPyramid.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex07_findPerfectNumbers.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex08_convertDecimalToBinary.c">
+    <ClCompile Include="ex04_checkArmstronNumber.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

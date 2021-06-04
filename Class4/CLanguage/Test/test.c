@@ -1,44 +1,58 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h> 
+#include <time.h>
 
+void generateRandomNum(int arr[], int length);
 void print1DArray(int arr[], int length);
-void insertElement(int arr[], int length);
+void bubbleSortAscending(int arr[], int length);
 
 int main()
 {
-    int numArr[100] = { 1,2,3,4,5,6,7,8,9,10 };
-    int length = 10;
+    int numArr[20];
+    int length = sizeof(numArr) / sizeof(int);
 
-    // 배열 출력 
+    // 1~100 랜덤 숫자 배열 생성
+    generateRandomNum(numArr, length);
+
+    // 초기 배열 상태 출력
+    printf("정렬 전 배열 상태\n");
     print1DArray(numArr, length);
 
-    for (int i = 0; i < 2; i++) {
-        insertElement(numArr, length++);      // 배열에 새로운 요소 삽입
-        print1DArray(numArr, length);         // 배열 출력 
-    }
+    // 오름차순 정렬
+    bubbleSortAscending(numArr, length);
+
+    // 정렬된 배열
+    printf("정렬 후 배열 상태\n");
+    print1DArray(numArr, length);
 
     return 0;
 }
 
-void print1DArray(int arr[], int length) {
-    for (int i = 0; i < length; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+// 랜덤 배열 생성 함수
+void generateRandomNum(int arr[], int length)
+{
+    srand(time(NULL));
+    for (int i = 0; i < length; i++) {
+        arr[i] = rand() % 100 + 1;
+    }
 }
 
-void insertElement(int arr[], int length)
+void print1DArray(int arr[], int length) {
+    for (int i = 0; i < length; i++)
+        printf("%2d ", arr[i]);
+    printf("\n\n");
+}
+
+void bubbleSortAscending(int arr[], int length)
 {
-    // 변수 선언
-    int position, insertValue;
-
-    // 값 입력받기
-    printf("위치와 값: ");
-    scanf("%d %d", &position, &insertValue);
-
-    // 배열에 새로운 요소 추가
-    // 1. 원하는 위치 이후의 값들은 모두 이동시킴
-    for (int i = length - 1; i >= position - 1; i--)
-        arr[i + 1] = arr[i];
-
-    // 2. 새로운 값을 원하는 위치에 삽입
-    arr[position - 1] = insertValue;
+    int temp;
+    for (int i = 0; i < length; i++) {
+        for (int j = 0; j < length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
 }
