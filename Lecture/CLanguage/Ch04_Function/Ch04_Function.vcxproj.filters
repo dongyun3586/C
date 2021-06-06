@@ -54,25 +54,10 @@
     <ClCompile Include="GCD_LCM.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="recursiveSum.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="recursiveHello.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="recursiveFactorial.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="recursiveFibonacci.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="recursivePrintArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="recursiveGCD.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="recursiveSumArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="recursiveLCM.c">
@@ -99,9 +84,6 @@
     <ClCompile Include="ex16_countFrequencyOfEachElement.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="multiplyTwoMatrices.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex18_bubbleSortAscending.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -109,6 +91,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex20_matrixOperation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex21_recursiveFactorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex22_recursiveHello.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex23_recursiveSum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex24_recursiveFibonacci.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex25_recursiveSumArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex26_hanoi_tower.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

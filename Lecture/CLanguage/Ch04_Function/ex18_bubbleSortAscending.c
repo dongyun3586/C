@@ -46,7 +46,7 @@ void print1DArray(int arr[], int length) {
 void bubbleSortAscending(int arr[], int length)
 {
     int temp;
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length - 1; i++) {
         for (int j = 0; j < length - 1 - i; j++) {
             if (arr[j] > arr[j + 1])
             {

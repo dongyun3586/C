@@ -4,7 +4,8 @@ int factorial(int n);
 
 int main()
 {
-    printf("%d", factorial(5));
+    for (int i = 1; i <= 10; i++)
+        printf("%2d! = %7d\n", i, factorial(i));
 
     return 0;
 }

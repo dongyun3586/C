@@ -1,4 +1,4 @@
-﻿#include<windows.h>
+#include<windows.h>
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -9,10 +9,10 @@ int main() {
 	HDC hdc;
 	hdc = GetWindowDC(GetForegroundWindow());
 
-	srand((unsigned)time(NULL));
+	srand(time(NULL));
 	for (int i = 0; i < 10000; i++) {
 		x = rand() % 300;
-		y = rand() % 300+150;
+		y = rand() % 300 + 150;
 		r = rand() % 256;
 		g = rand() % 256;
 		b = rand() % 256;

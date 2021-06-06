@@ -54,6 +54,21 @@ void print1DArray(int arr[], int length) {
     printf("\n\n");
 }
 
+void bubbleSortAscending(int arr[], int size)
+{
+    int temp;
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - 1 - i; j++) {
+            if (arr[j] > arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
 void countFrequencyElements(int arr[], int freq[], int size) {
     int count;
 
@@ -81,7 +96,7 @@ void countFrequencyElements(int arr[], int freq[], int size) {
 
 int deleteDuplicateElements(int arr[], int size)
 {
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size - 1; i++) {
         for (int j = i + 1; j < size; j++) {
             // 중복된 요소를 발견하면
             if (arr[i] == arr[j])
@@ -97,17 +112,4 @@ int deleteDuplicateElements(int arr[], int size)
     return size;
 }
 
-void bubbleSortAscending(int arr[], int size)
-{
-    int temp;
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size - 1 - i; j++) {
-            if (arr[j] > arr[j + 1])
-            {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
-}
+
