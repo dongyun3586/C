@@ -66,5 +66,20 @@
     <ClCompile Include="ex18_bubbleSortAscending.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex19_sortCountFrequencyDeleteDuplicate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex21_recursiveHello.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex22_recursiveFactorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex23_recursiveSum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex24_recursiveFibonacci.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
