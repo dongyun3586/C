@@ -1,4 +1,4 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -8,13 +8,13 @@ int main()
     char hexNum[100];
     int index, rem;
 
-    printf("10ì§„ìˆ˜ê°’ ì…ë ¥: ");
+    printf("10Áø¼ö°ª ÀÔ·Â: ");
     scanf("%d", &inputNum);
     decimalNum = inputNum;
 
     index = 0;
 
-    // 10ì§„ìˆ˜ â†’ 16ì§„ìˆ˜ ë³€í™˜
+    // 10Áø¼ö ¡æ 16Áø¼ö º¯È¯
     while (decimalNum != 0)
     {
         rem = decimalNum % 16;
@@ -24,10 +24,10 @@ int main()
     }
 
     hexNum[index] = '\0';
-    strrev(hexNum);        // ë¬¸ìì—´ ë’¤ì§‘ê¸°
+    strrev(hexNum);        // ¹®ÀÚ¿­ µÚÁı±â
 
-    printf("\n10 ì§„ìˆ˜ê°’ = %d\n", inputNum);
-    printf("16 ì§„ìˆ˜ê°’ = %s", hexNum);
+    printf("\n10 Áø¼ö°ª = %d\n", inputNum);
+    printf("16 Áø¼ö°ª = %s", hexNum);
 
     return 0;
 }
