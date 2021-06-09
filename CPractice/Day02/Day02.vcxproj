@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day02\ex01_factorial.c" />
     <ClCompile Include="ex02_combination.c" />
     <ClCompile Include="ex03_SumOfTwoPrimeNumbers.c" />
     <ClCompile Include="ex04_checkArmstronNumber.c" />

@@ -139,6 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex05_calculateStandardDeviation.c" />
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex06_countFrequencyOfEachElement.c" />
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex07_deleteDuplicateElements.c" />
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex08_bubbleSortAscending.c" />
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex09_sortCountFrequencyDeleteDuplicate.c" />
     <ClCompile Include="ex10_convertDecimalToHexadecimal.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

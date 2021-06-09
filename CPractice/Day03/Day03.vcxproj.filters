@@ -18,5 +18,20 @@
     <ClCompile Include="ex10_convertDecimalToHexadecimal.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex08_bubbleSortAscending.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex09_sortCountFrequencyDeleteDuplicate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex05_calculateStandardDeviation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex06_countFrequencyOfEachElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day03\ex07_deleteDuplicateElements.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

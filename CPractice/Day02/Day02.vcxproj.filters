@@ -24,5 +24,8 @@
     <ClCompile Include="ex04_checkArmstronNumber.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Lecture\RemedialClass\Project1\Day02\ex01_factorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
