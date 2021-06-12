@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d34e8620-cf44-43c2-9b3c-f968289d811b}</ProjectGuid>
-    <RootNamespace>Test</RootNamespace>
+    <ProjectGuid>{afe3f84e-0f11-434d-861e-6ba61e00d531}</ProjectGuid>
+    <RootNamespace>Ch05Pointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,10 +113,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,10 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\이동윤\Downloads\GSA_Coin.c" />
-    <ClCompile Include="C:\Users\이동윤\Downloads\test.c" />
-    <ClCompile Include="C:\Users\이동윤\Downloads\test1.c" />
-    <ClCompile Include="threadTest.c" />
+    <ClCompile Include="ex01_pointer.c" />
+    <ClCompile Include="ex02_pointer2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

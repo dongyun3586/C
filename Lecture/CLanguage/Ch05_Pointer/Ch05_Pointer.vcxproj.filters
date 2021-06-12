@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\이동윤\Downloads\GSA_Coin.c">
+    <ClCompile Include="ex01_pointer.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\이동윤\Downloads\test.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\이동윤\Downloads\test1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="threadTest.c">
+    <ClCompile Include="ex02_pointer2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
