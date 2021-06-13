@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\이동윤\Downloads\GSA_Coin.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\이동윤\Downloads\test.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\이동윤\Downloads\test1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="threadTest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

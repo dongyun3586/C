@@ -140,10 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\이동윤\Downloads\GSA_Coin.c" />
     <ClCompile Include="C:\Users\이동윤\Downloads\test.c" />
-    <ClCompile Include="C:\Users\이동윤\Downloads\test1.c" />
-    <ClCompile Include="threadTest.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
