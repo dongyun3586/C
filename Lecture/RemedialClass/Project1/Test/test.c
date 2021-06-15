@@ -1,41 +1,43 @@
 #include <stdio.h>
 
+long long lcm(long long  a, long long  b);
+long long  multiple = 0;
+
 int main()
 {
-    int inputNum, decimalNum, binaryNum = 0;
-    int r, p = 1;
+    long long num1, num2, LCM;
 
-    // 십진수값 입력받기
-    printf("십진수 입력: ");
-    scanf("%d", &inputNum);
-    decimalNum = inputNum;
+    printf("최소 공배수를 찾을 두 수 입력: ");
+    scanf("%lld %lld", &num1, &num2);
 
-    // 10진수 -> 2진수 변환
-    // 1. while문 사용
-    while (decimalNum > 0)
-    {
-        r = decimalNum % 2;
-        binaryNum += (r * p);
-        decimalNum /= 2;
-        p *= 10;
+    // 이 교환 작업을 안해도 최소공배수는 구해진다. 하지만 반복 횟수가 줄어든다.
+    long long temp;
+    if (num1 > num2) {
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
     }
 
-    printf("\nwhile문 사용\n");
-    printf("10 진수값 = %d\n", inputNum);
-    printf(" 2 진수값 = %d\n\n", binaryNum);
+    /*if (num1 > num2)
+        LCM = lcm(num2, num1);
+    else
+        LCM = lcm(num1, num2);*/
 
-    binaryNum = 0;
-    p = 1;
-    // 2. for문 사용
-    for (decimalNum = inputNum; decimalNum > 0; decimalNum /= 2) {
-        r = decimalNum % 2;
-        binaryNum += r * p;
-        p *= 10;
-    }
+    //LCM = (num1 > num2) ? lcm(num2, num1) : lcm(num1, num2);
 
-    printf("for문 사용\n");
-    printf("10 진수값 = %d\n", inputNum);
-    printf(" 2 진수값 = %d\n\n", binaryNum);
+    printf("LCM(%lld, %lld) = %lld\n", num1, num2, lcm(num1, num2));
 
     return 0;
+}
+
+long long lcm(long long a, long long b)
+{
+    //static int multiple = 0;
+    multiple += b;
+
+    // 최소공배수를 찾으면 return
+    if ((multiple % a == 0) && (multiple % b == 0))
+        return multiple;
+    else
+        return lcm(a, b);
 }

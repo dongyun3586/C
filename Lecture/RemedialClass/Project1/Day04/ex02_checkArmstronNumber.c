@@ -46,8 +46,8 @@ int reversNumber(int num) {
 	int reversNum = 0, r;
 	while (num != 0) {
 		r = num % 10;
-		reversNum = reversNum * 10 + r;
 		num /= 10;
+		reversNum = reversNum * 10 + r;
 	}
 	return reversNum;
 }
@@ -55,11 +55,10 @@ int reversNumber(int num) {
 void printArmstrongNumber(int num, int n) {
 	printf("%7d = ", num);
 	int rev = reversNumber(num);
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++, rev /= 10) {
 		printf("%d", (int)pow(rev % 10, n));
 		if (i != n - 1)
 			printf(" + ");
-		rev /= 10;
 	}
 	printf("\n");
 }
@@ -68,7 +67,7 @@ void printArmstrongNumber(int num, int n) {
 void printArmstrongNumber2(int num, int n) {
 	printf("%7d = ", num);
 	for (int i = n - 1; i >= 0; i--) {
-		printf("%d", (int)pow((num % (int)pow(10, i + 1) - num % (int)pow(10, i)) / (int)pow(10, i), n));
+		printf("%d", (int)pow((num % (int)pow(10, i + 1.0) - num % (int)pow(10, i)) / (int)pow(10, i), n));
 		if (i != 0)
 			printf(" + ");
 	}
