@@ -142,6 +142,7 @@
     <ClCompile Include="..\..\..\..\C언어 수행평가\C 프로젝트\정보과학1 프로젝트 결과물\2반 프로젝트 결과물\1203김승윤\1203.c" />
     <ClCompile Include="1201.c" />
     <ClCompile Include="1202.c" />
+    <ClCompile Include="1204.c" />
     <ClCompile Include="1205.c" />
     <ClCompile Include="1206.c" />
     <ClCompile Include="1207.c" />
