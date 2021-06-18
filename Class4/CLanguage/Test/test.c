@@ -1,58 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h> 
-#include <time.h>
-
-void generateRandomNum(int arr[], int length);
-void print1DArray(int arr[], int length);
-void bubbleSortAscending(int arr[], int length);
-
+int sumArr(int arr[], int start, int len);
+void printArray(int arr[], int start, int len);
 int main()
 {
-    int numArr[20];
-    int length = sizeof(numArr) / sizeof(int);
+    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+    int N = sizeof(arr) / sizeof(int);
 
-    // 1~100 랜덤 숫자 배열 생성
-    generateRandomNum(numArr, length);
-
-    // 초기 배열 상태 출력
-    printf("정렬 전 배열 상태\n");
-    print1DArray(numArr, length);
-
-    // 오름차순 정렬
-    bubbleSortAscending(numArr, length);
-
-    // 정렬된 배열
-    printf("정렬 후 배열 상태\n");
-    print1DArray(numArr, length);
-
+    printf("배열 요소들의 합: %d\n", sumArr(arr, 0, N));
+    printf("배열의 모든 요소 출력\n");
+    printArray(arr, 0, N);
     return 0;
 }
 
-// 랜덤 배열 생성 함수
-void generateRandomNum(int arr[], int length)
-{
-    srand(time(NULL));
-    for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 100 + 1;
-    }
+int sumArr(int arr[], int start, int len) {
+    if (start == len - 1)
+        return arr[start];
+    return arr[start] + sumArr(arr, start + 1, len);
 }
 
-void print1DArray(int arr[], int length) {
-    for (int i = 0; i < length; i++)
-        printf("%2d ", arr[i]);
-    printf("\n\n");
-}
-
-void bubbleSortAscending(int arr[], int length)
-{
-    int temp;
-    for (int i = 0; i < length; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
+void printArray(int arr[], int start, int len) {
+    if (start == len - 1) {
+        printf("%d", arr[start]);
+        return;
     }
+    printf("%d, ", arr[start]);
+    printArray(arr, start+1, len);
 }
