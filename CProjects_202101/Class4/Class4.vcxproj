@@ -140,6 +140,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1401.c" />
+    <ClCompile Include="1402.c" />
+    <ClCompile Include="1403.c" />
+    <ClCompile Include="1404.c" />
+    <ClCompile Include="1405.c" />
+    <ClCompile Include="1406.c" />
+    <ClCompile Include="1407.C" />
+    <ClCompile Include="1408.C" />
+    <ClCompile Include="1409.c" />
+    <ClCompile Include="1410.c" />
+    <ClCompile Include="1411.c" />
+    <ClCompile Include="1412.c" />
+    <ClCompile Include="1413.c" />
+    <ClCompile Include="1414.c" />
+    <ClCompile Include="1415.c" />
+    <ClCompile Include="1416.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
