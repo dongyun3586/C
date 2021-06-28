@@ -13,7 +13,7 @@ int main()
 
 void hanoi(int n, char from, char other, char to)
 {
-    printf("호출 hanoi(%d, %c, %c, %c)\n", n, from, other ,to);
+    printf("호출 hanoi(%d, %c, %c, %c)\n", n, from, other, to);
     if (n == 1) {
         printf("%d번째 원반 : ", n);
         printf("%c -> %c\n", from, to);

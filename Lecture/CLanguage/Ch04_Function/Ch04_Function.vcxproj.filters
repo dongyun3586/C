@@ -111,6 +111,12 @@
     <ClCompile Include="ex26_hanoi_tower.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex26_hanoi_tower_v2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex26_hanoi_tower_v3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMath.h">
