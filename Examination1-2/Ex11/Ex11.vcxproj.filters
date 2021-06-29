@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_string.c">
+    <ClCompile Include="ex11_1505.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="WriteSentenceToFile.c">
+    <ClCompile Include="ex11_1511.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ReadFirstLineFromFile.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DisplayItsOwnSourceCodeAsOutput.c">
+    <ClCompile Include="ex11_1307.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
