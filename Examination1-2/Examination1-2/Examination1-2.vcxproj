@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2009ebcc-1de7-42fa-a568-f588274b652d}</ProjectGuid>
-    <RootNamespace>String</RootNamespace>
+    <ProjectGuid>{4dd033d7-538c-4616-95d0-347608797891}</ProjectGuid>
+    <RootNamespace>Examination12</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -85,7 +85,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,10 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DisplayItsOwnSourceCodeAsOutput.c" />
-    <ClCompile Include="ex01_string.c" />
-    <ClCompile Include="ReadFirstLineFromFile.c" />
-    <ClCompile Include="WriteSentenceToFile.c" />
+    <ClCompile Include="ex05ex06ex07_binarySearch.c" />
+    <ClCompile Include="ex01ex02_convertBinaryToDecimalNumber.c" />
+    <ClCompile Include="ex03_array.c" />
+    <ClCompile Include="ex04_globalLocalVariable.c" />
+    <ClCompile Include="ex08_fibonacciRecursive.c" />
+    <ClCompile Include="ex09_sizeofArray.c" />
+    <ClCompile Include="ex10_recursiveGCD.c" />
+    <ClCompile Include="ex10_v2_recursiveGCD.c" />
+    <ClCompile Include="ex11_permutation_combination.c" />
+    <ClCompile Include="ex12_recursiveReverseNumber.c" />
+    <ClCompile Include="ex13_selectionSort.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

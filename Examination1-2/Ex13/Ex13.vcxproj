@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2009ebcc-1de7-42fa-a568-f588274b652d}</ProjectGuid>
-    <RootNamespace>String</RootNamespace>
+    <ProjectGuid>{a59fe5af-67ad-4008-92b9-77aea25e30dc}</ProjectGuid>
+    <RootNamespace>Ex13</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,10 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DisplayItsOwnSourceCodeAsOutput.c" />
-    <ClCompile Include="ex01_string.c" />
-    <ClCompile Include="ReadFirstLineFromFile.c" />
-    <ClCompile Include="WriteSentenceToFile.c" />
+    <ClCompile Include="ex13_1301.c" />
+    <ClCompile Include="ex13_1313.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
