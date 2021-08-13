@@ -140,7 +140,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex01_pointer.c" />
-    <ClCompile Include="ex02_pointer2.c" />
+    <ClCompile Include="ex02_pointer.c" />
+    <ClCompile Include="ex03_pointer.c" />
+    <ClCompile Include="ex04_pointer.c" />
+    <ClCompile Include="ex05_CallByReference.c" />
+    <ClCompile Include="ex06_swapUsingPointer.c" />
+    <ClCompile Include="ex07_calculator.c" />
+    <ClCompile Include="ex08_linearEquation.c" />
+    <ClCompile Include="ex09_voidPointer.c" />
+    <ClCompile Include="ex10_PointerAndArray.c" />
+    <ClCompile Include="ex11_pointerAsArray.c" />
+    <ClCompile Include="ex12_pointerParameter.c" />
+    <ClCompile Include="ex13_pointerAndArray.c" />
+    <ClCompile Include="ex14_pointerAndArray.c" />
+    <ClCompile Include="ex15_sumRowsInArray.c" />
+    <ClCompile Include="ex16_swapArray.c" />
+    <ClCompile Include="ex17_swapArray.c" />
+    <ClCompile Include="swapCards.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

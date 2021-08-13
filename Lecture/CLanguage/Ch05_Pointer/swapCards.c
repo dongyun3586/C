@@ -4,7 +4,7 @@ void printCardInfo(char* cardOwner, void** card) {
 	printf("%s - %s\n", cardOwner, (char*)*card);	// (char*)card[0]
 	printf("|통솔|무력|지력|정치|매력|\n");
 	for (int i = 0; i < 5; i++)
-		printf("| %d ", *((int*)*(card+1) + i));	// *((int*)card[1] + i)
+		printf("| %d ", *((int*)*(card + 1) + i));	// *((int*)card[1] + i)
 	printf("\n");
 }
 
@@ -29,7 +29,7 @@ int main() {
 
 	printf("\n****** Card trading ******\n\n");
 	swapCard(&myCard, &comCard);
-	
+
 	printCardInfo("내 카드", myCard);
 	printCardInfo("컴퓨터 카드", comCard);
 
