@@ -1,20 +1,32 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int fibonacci(int n);
+// calculator( )함수 선언
+void calculator(int a, int b, int* sum, int* sub, int* mul, float* div);
 
-int main() {
+int main()
+{
+    int a, b;
+    int sum, subtract, multiply;
+    float divide;
 
-    for (int i = 0; i <= 20; i++)
-        printf("fibonacci(%2d) = %d\n", i, fibonacci(i));
+    printf("양의 정수 두 개 입력: ");
+    scanf("%d%d", &a, &b);
+
+    // calculator( ) 함수 호출
+    calculator(a, b, &sum, &subtract, &multiply, &divide);
+
+    printf("%d + %d = %d\n", a, b, sum);
+    printf("%d - %d = %d\n", a, b, subtract);
+    printf("%d * %d = %d\n", a, b, multiply);
+    printf("%d / %d = %f\n", a, b, divide);
 
     return 0;
 }
 
-int fibonacci(int n) {
-    // 종료 조건
-    if (n == 0 || n == 1)
-        return n;
-
-    // 재귀 호출
-    return fibonacci(n - 1) + fibonacci(n - 2);
+// calculator( ) 함수 정의
+void calculator(int a, int b, int* sum, int* sub, int* mul, float* div) {
+    *sum = a + b;
+    *sub = a - b;
+    *mul = a * b;
+    *div = (float)a / b;
 }
