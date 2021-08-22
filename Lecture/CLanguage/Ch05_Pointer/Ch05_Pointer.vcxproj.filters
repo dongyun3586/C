@@ -69,5 +69,14 @@
     <ClCompile Include="swapCards.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex12_sumOfArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_pointerArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dayOfYear.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
