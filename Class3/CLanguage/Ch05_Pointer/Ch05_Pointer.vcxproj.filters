@@ -15,28 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_pointer.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex02_pointer.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex03_pointer.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex04_pointer.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex05_CallByReference.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex06_swapUsingPointer.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex07_calculator.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex08_linearEquation.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex10_pointerAndArray.c">
@@ -46,9 +25,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex14_pointerAndArray.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex15_sumRowsInArray.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

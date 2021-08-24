@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{782aa8d3-10d7-4ac7-b495-b44fa5011ea2}</ProjectGuid>
+    <ProjectGuid>{617de460-71a2-4613-a310-d0e5e5a36961}</ProjectGuid>
     <RootNamespace>Ch05Pointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -140,17 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex01_pointer.c" />
-    <ClCompile Include="ex02_pointer.c" />
-    <ClCompile Include="ex03_pointer.c" />
-    <ClCompile Include="ex04_pointer.c" />
-    <ClCompile Include="ex05_CallByReference.c" />
     <ClCompile Include="ex06_swapUsingPointer.c" />
     <ClCompile Include="ex07_calculator.c" />
-    <ClCompile Include="ex08_linearEquation.c" />
-    <ClCompile Include="ex10_pointerAndArray.c" />
-    <ClCompile Include="ex12_sumOfArray.c" />
-    <ClCompile Include="ex14_pointerAndArray.c" />
-    <ClCompile Include="ex15_sumRowsInArray.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

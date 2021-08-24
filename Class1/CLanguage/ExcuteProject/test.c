@@ -1,22 +1,28 @@
 #include<stdio.h>
 
-// 기울기와 y절편 구하기
-int get_linearEquationParameter(int x1, int y1, int x2, int y2, float* slope, float* yintercept) {
-	if (x1 == x2)
-		return -1;
-	else {
-		*slope = (float)(y2 - y1) / (float)(x2 - x1);
-		*yintercept = y1 - (*slope) * x1;
-		return 0;
-	}
-}
+int sumArray(int* arr, int n);
 
 int main() {
-	float s, y;
+	int arr[3][5] = { 0 };
+	int* p = arr;
 
-	if (get_linearEquationParameter(1, 5, 2, 7, &s, &y) == -1)
-		printf("잘못된 좌표입니다.\n");
-	else
-		printf("y = %0.1fx + %0.1f\n", s, y);
+	for (int i = 1; i <= 3 * 5; i++)
+		*p++ = i;
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 5; j++)
+			printf("%2d ", arr[i][j]);
+		printf("\n");
+	}
+	printf("\n");
+
+	// 행별 합계 출력하기 => for문과 sumArray() 함수 사용
+	for (int i = 0; i < 3; i++)
+		printf("sum of arr[0] = %d\n", sumArray(arr[i], 5));
+
 	return 0;
+}
+
+int sumArray(int* arr, int n) {
+	// 함수 내용 작성하기
 }

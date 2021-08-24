@@ -17,15 +17,10 @@ int main() {
 	printf("\n");
 
 	// 행별 합계 출력하기 => for문과 sumArray() 함수 사용
-	for(int i=0; i<3; i++)
-		printf("sum of arr[%d] = %d\n", i, sumArray(arr[i], 5));
 
 	return 0;
 }
 
 int sumArray(int* arr, int n) {
-	int sum = 0;
-	for (int i = 0; i < n; i++)
-		sum += *arr++;
-	return sum;
+	// 함수 내용 작성하기
 }
