@@ -78,5 +78,8 @@
     <ClCompile Include="dayOfYear.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex20_bubbleSort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

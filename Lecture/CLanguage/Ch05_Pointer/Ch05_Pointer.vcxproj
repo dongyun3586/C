@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex20_bubbleSort.c" />
     <ClCompile Include="dayOfYear.c" />
     <ClCompile Include="ex01_pointer.c" />
     <ClCompile Include="ex02_pointer.c" />
