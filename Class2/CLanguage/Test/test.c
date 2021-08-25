@@ -1,32 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 
-// calculator( )함수 선언
-void calculator(int a, int b, int* sum, int* sub, int* mul, float* div);
+int sumArray(int* arr, int n);
 
-int main()
-{
-    int a, b;
-    int sum, subtract, multiply;
-    float divide;
+int main() {
+	int arr[3][5] = { 0 };
+	int* p = arr;
 
-    printf("양의 정수 두 개 입력: ");
-    scanf("%d%d", &a, &b);
+	for (int i = 1; i <= 3 * 5; i++)
+		*p++ = i;
 
-    // calculator( ) 함수 호출
-    calculator(a, b, &sum, &subtract, &multiply, &divide);
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 5; j++)
+			printf("%2d ", arr[i][j]);
+		printf("\n");
+	}
+	printf("\n");
 
-    printf("%d + %d = %d\n", a, b, sum);
-    printf("%d - %d = %d\n", a, b, subtract);
-    printf("%d * %d = %d\n", a, b, multiply);
-    printf("%d / %d = %f\n", a, b, divide);
+	// 행별 합계 출력하기 => for문과 sumArray() 함수 사용
 
-    return 0;
+	return 0;
 }
 
-// calculator( ) 함수 정의
-void calculator(int a, int b, int* sum, int* sub, int* mul, float* div) {
-    *sum = a + b;
-    *sub = a - b;
-    *mul = a * b;
-    *div = (float)a / b;
+int sumArray(int* arr, int n) {
+	// 함수 내용 작성하기
 }

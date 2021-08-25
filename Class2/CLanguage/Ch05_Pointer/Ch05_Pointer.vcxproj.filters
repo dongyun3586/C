@@ -21,5 +21,16 @@
     <ClCompile Include="ex07_calculator.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex10_pointerAndArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_pointerAndArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex12_sumOfArray.c)">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

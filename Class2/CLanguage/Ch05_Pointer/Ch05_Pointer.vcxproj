@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="ex06_swapUsingPointer.c" />
     <ClCompile Include="ex07_calculator.c" />
+    <ClCompile Include="ex10_pointerAndArray.c" />
+    <ClCompile Include="ex14_pointerAndArray.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex12_sumOfArray.c)" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
