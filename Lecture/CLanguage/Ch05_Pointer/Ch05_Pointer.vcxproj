@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex19_cardBattle.c" />
     <ClCompile Include="ex20_bubbleSort.c" />
     <ClCompile Include="dayOfYear.c" />
     <ClCompile Include="ex01_pointer.c" />
@@ -160,7 +161,7 @@
     <ClCompile Include="ex15_sumRowsInArray.c" />
     <ClCompile Include="ex16_swapArray.c" />
     <ClCompile Include="ex17_swapArray.c" />
-    <ClCompile Include="swapCards.c" />
+    <ClCompile Include="ex18_swapCards.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

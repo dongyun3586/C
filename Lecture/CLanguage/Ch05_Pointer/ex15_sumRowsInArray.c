@@ -16,7 +16,7 @@ int main() {
 	}
 	printf("\n");
 
-	// 행별 합계 출력하기
+	// 행별 합계 출력하기 => for문과 sumArray() 함수 사용
 	for (int i = 0; i < 3; i++)
 		printf("sum of arr[%d] = %d\n", i, sumArray(arr[i], 5));
 

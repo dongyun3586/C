@@ -30,11 +30,11 @@ int main() {
 }
 
 void printCardInfo(char* cardOwner, void** card) {
-	printf("<%s> - %s\n", cardOwner, (char*)*card);	// (char*)card[0]
+	printf("%s - %s\n", cardOwner, (char*)*card);	// (char*)card[0]
 	printf("|통솔|무력|지력|정치|매력|\n");
 	for (int i = 0; i < 5; i++)
 		printf("| %d ", *((int*)*(card + 1) + i));	// *((int*)card[1] + i)
-	printf("|\n");
+	printf("|\n\n");
 }
 
 void swapCard(void** c1, void** c2) {
@@ -49,9 +49,11 @@ void cardBattle(void** myCard, void** comCard) {
 		sumA += *((int*)*(myCard + 1) + i);
 		sumB += *((int*)*(comCard + 1) + i);
 	}
-	printf("\n************* 카드 배틀 *************\n");
+	printf("************* 카드 배틀 *************\n");
+	printf("당신의 카드 점수 vs 컴퓨터 카드 점수\n");
+	printf("             %d vs %d\n", sumA, sumB);
 	if (sumA > sumB)
-		printf("당신 카드 점수(%d) vs 컴퓨터 카드 점수(%d)로 승리했습니다.\n", sumA, sumB);
+		printf("======> 당신이 이겼습니다.\n");
 	else
-		printf("당신 카드 점수(%d) vs 컴퓨터 카드 점수(%d)로 패배했습니다.\n", sumA, sumB);
+		printf("======> 컴퓨터가 이겼습니다.\n");
 }

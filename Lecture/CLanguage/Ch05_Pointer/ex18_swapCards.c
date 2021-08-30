@@ -5,7 +5,7 @@ void printCardInfo(char* cardOwner, void** card) {
 	printf("|통솔|무력|지력|정치|매력|\n");
 	for (int i = 0; i < 5; i++)
 		printf("| %d ", *((int*)*(card + 1) + i));	// *((int*)card[1] + i)
-	printf("\n");
+	printf("|\n\n");
 }
 
 void swapCard(void** c1, void** c2) {
@@ -15,22 +15,24 @@ void swapCard(void** c1, void** c2) {
 }
 
 int main() {
-	char nameA[10] = "General 1", nameB[10] = "General 2";
-	int infoA[5] = { 1,3,5,7,9 }, infoB[5] = { 2,4,6,8,10 };
+	char nameA[10] = "유비", nameB[10] = "조조";
+	int infoA[5] = { 75, 73, 74, 78, 99 }, infoB[5] = { 96, 72, 91, 94, 96 };
 
-	void* LDY[2] = { nameA, infoA };	// void* 자료형 2개 크기 배열
-	void* COM[2] = { nameB, infoB };
+	void* cardA[2] = { nameA, infoA };
+	void* cardB[2] = { nameB, infoB };
 
-	void* myCard = LDY;
-	void* comCard = COM;
+	void* myCard = cardA;
+	void* comCard = cardB;
 
-	printCardInfo("내 카드", myCard);
+	void** cA = myCard;
+
+	printCardInfo("플레이어 카드", myCard);
 	printCardInfo("컴퓨터 카드", comCard);
 
 	printf("\n****** Card trading ******\n\n");
 	swapCard(&myCard, &comCard);
 
-	printCardInfo("내 카드", myCard);
+	printCardInfo("플레이어 카드", myCard);
 	printCardInfo("컴퓨터 카드", comCard);
 
 	return 0;
