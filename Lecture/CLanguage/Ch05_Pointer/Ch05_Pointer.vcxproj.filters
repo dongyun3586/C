@@ -87,5 +87,8 @@
     <ClCompile Include="ex20_functionPointer.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex00_reversePrintArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

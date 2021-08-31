@@ -12,8 +12,9 @@ int main(void)
 {
     int y, m, d;
     printf("년, 월, 일로부터 연초부터 몇일이 지났는지 구하기\n");
-    printf("년, 월, 일 입력(예: 2021 4 10): ");
+    printf("년, 월, 일 입력(예: 2021 9 1): ");
     scanf("%d %d %d", &y, &m, &d);
+
     printf("%d\n", day_of_year(y, m, d));
 
     printf("년, 연초부터 지난 날수로 월, 일 구하기\n");

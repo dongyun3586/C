@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c" />
     <ClCompile Include="ex00_strcpy.c" />
+    <ClCompile Include="ex00_strlen.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

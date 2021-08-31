@@ -18,5 +18,11 @@
     <ClCompile Include="ex00_strcpy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex00_strlen.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

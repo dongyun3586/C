@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex00_reversePrintArray.c" />
     <ClCompile Include="ex19_cardBattle.c" />
     <ClCompile Include="ex21_bubbleSort.c" />
     <ClCompile Include="dayOfYear.c" />
