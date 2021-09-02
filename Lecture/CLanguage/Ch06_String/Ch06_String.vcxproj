@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c" />
+    <ClCompile Include="ex00_permutationsOfString.c" />
     <ClCompile Include="ex00_strcpy.c" />
     <ClCompile Include="ex00_strlen.c" />
   </ItemGroup>

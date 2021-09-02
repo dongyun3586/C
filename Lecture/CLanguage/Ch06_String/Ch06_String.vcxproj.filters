@@ -24,5 +24,8 @@
     <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex00_permutationsOfString.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
