@@ -143,6 +143,8 @@
     <ClCompile Include="ex00_permutationsOfString.c" />
     <ClCompile Include="ex00_strcpy.c" />
     <ClCompile Include="ex00_strlen.c" />
+    <ClCompile Include="ex01_string.c" />
+    <ClCompile Include="ex02_stringChange.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -27,5 +27,11 @@
     <ClCompile Include="ex00_permutationsOfString.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex01_string.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex02_stringChange.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
