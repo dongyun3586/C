@@ -139,10 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex00_checkCharacters.c" />
+    <ClCompile Include="ex04_myStrcpy.c" />
     <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c" />
+    <ClCompile Include="ex00_countVowelOrConsonant.c" />
+    <ClCompile Include="ex07_countWords.c" />
+    <ClCompile Include="ex00_findMaximumOccurringCharacter.c" />
+    <ClCompile Include="ex05_myStrcmp.c" />
     <ClCompile Include="ex00_permutationsOfString.c" />
+    <ClCompile Include="ex06_reverseString.c" />
+    <ClCompile Include="ex00_sortString.c" />
     <ClCompile Include="ex00_strcpy.c" />
-    <ClCompile Include="ex00_strlen.c" />
+    <ClCompile Include="ex00_stringBubbleSort.c" />
+    <ClCompile Include="ex03_strlen.c" />
     <ClCompile Include="ex01_string.c" />
     <ClCompile Include="ex02_stringChange.c" />
   </ItemGroup>
