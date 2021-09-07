@@ -18,7 +18,7 @@
     <ClCompile Include="ex00_strcpy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex03_strlen.c">
+    <ClCompile Include="ex03_myStrlen.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c">
@@ -33,10 +33,10 @@
     <ClCompile Include="ex02_stringChange.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex06_reverseString.c">
+    <ClCompile Include="ex07_reverseString.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex07_countWords.c">
+    <ClCompile Include="ex08_countWords.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex05_myStrcmp.c">
@@ -58,6 +58,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex00_stringBubbleSort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex06_myStrcat.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

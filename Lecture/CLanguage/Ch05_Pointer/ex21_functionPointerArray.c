@@ -25,7 +25,7 @@ int main()
     // 오름차순 정렬
     printf("정렬 방법 선택(오름차순=1, 내림차순=2) : ");
     scanf("%d", &choice);
-    if(choice==1)
+    if (choice == 1)
         bubbleSortAscending(numArr, length, "오름차순 정렬", ascendCompare);
     else
         bubbleSortAscending(numArr, length, "내림차순 정렬", descendCompare);

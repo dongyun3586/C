@@ -20,6 +20,7 @@ void main()
 }
 
 int myStrcpy(char* dest, const char* src) {
+    if (dest == NULL) return -1;
     int i;
     for (i = 0; src[i] != '\0'; i++)
         dest[i] = src[i];
