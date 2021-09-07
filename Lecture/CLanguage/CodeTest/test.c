@@ -1,87 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h> 
-#include <time.h>
+#include <string.h>
+#include <stdlib.h>
 
-void generateRandomNum(int arr[], int length);
-void print1DArray(int arr[], int length);
-void bubbleSortAscending(int arr[], int length, char* order, int(*fp)(int, int));
-int ascendCompare(int a, int b);
-int descendCompare(int a, int b);
+int myStrlen(const char* str);
+int myStrcpy(char* dest, const char* src);
+char* myStrcat(char* dest, const char* src);
 
 int main()
 {
-    int numArr[10];
-    int length = sizeof(numArr) / sizeof(int);
-    int choice = 0;
+    char str1[100] = "Let's ";
+    char str2[100] = "go!!!";
+    printf("str1 : %s\n", str1);
 
-    // 1~100 랜덤 숫자 배열 생성
-    generateRandomNum(numArr, length);
-
-    // 초기 배열 상태 출력
-    printf("정렬 전: ");
-    print1DArray(numArr, length);
-    printf("\n");
-
-    // 오름차순 정렬
-    printf("정렬 방법 선택(오름차순=1, 내림차순=2) : ");
-    scanf("%d", &choice);
-    if(choice==1)
-        bubbleSortAscending(numArr, length, "오름차순 정렬", ascendCompare);
-    else
-        bubbleSortAscending(numArr, length, "내림차순 정렬", descendCompare);
-
-    // 정렬된 배열
-    printf("\n정렬 후: ");
-    print1DArray(numArr, length);
+    if (myStrcat(str1, str2) == NULL) return -1;
+    printf("str1 : %s\n", str1);
 
     return 0;
 }
 
-void generateRandomNum(int arr[], int length)
+int myStrlen(const char* str)
 {
-    srand(time(NULL));
-    for (int i = 0; i < length; i++)
-        arr[i] = rand() % 100 + 1;
+    int i=0;
+    //for (i = 0; str[i] != '\0'; i++);
+    while (str[i] != '\0')
+        i++;
+    return i;
 }
 
-void print1DArray(int* arr, int length) {
-    for (int i = 0; i < length; i++)
-        printf("%02d ", *arr++);
-    printf("\n");
+int myStrcpy(char* dest, const char* src) {
+    if (dest == NULL) return -1;
+    int i=0;
+    for (i = 0; src[i] != '\0'; i++)
+        dest[i] = src[i];
+    dest[i] = '\0';
+
+    return i;
 }
 
-void bubbleSortAscending(int arr[], int length, char* order, int(*comparer)(int, int))
-{
-    printf("\n%s", order);
-    int temp;
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (comparer(arr[j], arr[j + 1]) > 0)
-            {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-        //printf("%2d단계 : ", i + 1);
-        //print1DArray(arr, length);
-    }
-}
-
-int ascendCompare(int a, int b) {
-    if (a > b)
-        return 1;
-    else if (a == b)
-        return 0;
-    else
-        return -1;
-}
-
-int descendCompare(int a, int b) {
-    if (a < b)
-        return 1;
-    else if (a == b)
-        return 0;
-    else
-        return -1;
+char* myStrcat(char* dest, const char* src) {
+    if (dest == NULL) return NULL;
+    int len = myStrlen(dest);
+    myStrcpy(&dest[len], src);
 }
