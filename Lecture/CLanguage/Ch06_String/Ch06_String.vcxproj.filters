@@ -18,13 +18,10 @@
     <ClCompile Include="ex00_strcpy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex03_myStrlen.c">
+    <ClCompile Include="ex04_myStrlen.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_countOfVowelsAndConsonantsInAString.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex00_permutationsOfString.c">
+    <ClCompile Include="ex99_permutationsOfString.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex01_string.c">
@@ -33,34 +30,37 @@
     <ClCompile Include="ex02_stringChange.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex07_reverseString.c">
+    <ClCompile Include="ex08_reverseString.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex08_countWords.c">
+    <ClCompile Include="ex09_countWords.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex05_myStrcmp.c">
+    <ClCompile Include="ex06_myStrcmp.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_checkCharacters.c">
+    <ClCompile Include="ex10_checkCharacters.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex04_myStrcpy.c">
+    <ClCompile Include="ex05_myStrcpy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_countVowelOrConsonant.c">
+    <ClCompile Include="ex11_countVowelOrConsonant.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_findMaximumOccurringCharacter.c">
+    <ClCompile Include="ex12_findMaximumOccurringCharacter.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_sortString.c">
+    <ClCompile Include="ex13_stringBubbleSort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex00_stringBubbleSort.c">
+    <ClCompile Include="ex14_stringBubbleSort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex06_myStrcat.c">
+    <ClCompile Include="ex07_myStrcat.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex03_inputOutputFunction.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

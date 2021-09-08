@@ -1,44 +1,19 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include<string.h>
 
-int myStrlen(const char* str);
-int myStrcpy(char* dest, const char* src);
-char* myStrcat(char* dest, const char* src);
+#define STRLEN 14
 
-int main()
+int main(void)
 {
-    char str1[100] = "Let's ";
-    char str2[100] = "go!!!";
-    printf("str1 : %s\n", str1);
+    char* src = "Take the test.";
+    char dst[STRLEN + 1];   // +1 to accomodate for the null terminator
 
-    if (myStrcat(str1, str2) == NULL) return -1;
-    printf("str1 : %s\n", str1);
+    strcpy(dst, src);
+    dst[0] = 'M';
+    printf("src = %s\ndst = %s\n", src, dst);
 
-    return 0;
-}
-
-int myStrlen(const char* str)
-{
-    int i=0;
-    //for (i = 0; str[i] != '\0'; i++);
-    while (str[i] != '\0')
-        i++;
-    return i;
-}
-
-int myStrcpy(char* dest, const char* src) {
-    if (dest == NULL) return -1;
-    int i=0;
-    for (i = 0; src[i] != '\0'; i++)
-        dest[i] = src[i];
-    dest[i] = '\0';
-
-    return i;
-}
-
-char* myStrcat(char* dest, const char* src) {
-    if (dest == NULL) return NULL;
-    int len = myStrlen(dest);
-    myStrcpy(&dest[len], src);
+    src = malloc(sizeof(char) * 15);
+    strcpy(src, "Hello world");
+    printf("%s\n", src);
+    free(src);
 }

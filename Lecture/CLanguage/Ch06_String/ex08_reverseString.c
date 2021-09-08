@@ -7,16 +7,14 @@ void main()
     char str[100]; /* Declares a string of size 100 */
     int l, i;
 
-    printf("\n\nPrint individual characters of string in reverse order :\n");
-    printf("------------------------------------------------------\n");
-    printf("Input the string : ");
+    printf("입력된 문자열 : ");
     //fgets(str, sizeof str, stdin);
-    //gets(str);
+    gets(str);
     l = strlen(str);
-    printf("The characters of the string in reverse are : \n");
+
+    printf("뒤집힌 문자열 : ");
     for (i = l; i >= 0; i--)
-    {
         printf("%c", str[i]);
-    }
+
     printf("\n");
 }
