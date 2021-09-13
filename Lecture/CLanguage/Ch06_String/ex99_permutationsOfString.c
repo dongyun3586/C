@@ -3,16 +3,20 @@
 
 void changePosition(char* ch1, char* ch2)
 {
+    printf("changePosition(\'%c\', \'%c\')\n", *ch1, *ch2);
     char tmp;
     tmp = *ch1;
     *ch1 = *ch2;
     *ch2 = tmp;
 }
+
 void charPermu(char* cht, int stno, int endno)
 {
+    printf("charPermu(\"%s\", %d, %d)\n", cht, stno, endno);
     int i;
+
     if (stno == endno)
-        printf("%s  ", cht);
+        printf("%s\n", cht);
     else
     {
         for (i = stno; i <= endno; i++)
@@ -27,13 +31,13 @@ void charPermu(char* cht, int stno, int endno)
 int main()
 {
     char str[10];
-    printf("\n\n Pointer : Generate permutations of a given string :\n");
-    printf("--------------------------------------------------------\n");
-    printf(" The permutations of the string are : \n");
+    printf("문자열 순열 출력하기 :\n");
+    printf("문자열 입력 : ");
     scanf("%s", str);
     int n = strlen(str);
 
     charPermu(str, 0, n - 1);
+
     printf("\n\n");
     return 0;
 }

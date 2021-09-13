@@ -6,7 +6,8 @@ int myStrcpy(char* dest, const char* src);
 
 void main()
 {
-    char str1[100] = "Copy one string into another string.", str2[100] = "";
+    char str1[100] = "Copy one string into another string.";
+    char str2[100] = "";
 
     printf("str1 : %s\n", str1);
     printf("str2 : %s\n", str2);

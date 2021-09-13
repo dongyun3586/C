@@ -18,7 +18,7 @@
     <ClCompile Include="ex00_strcpy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex04_myStrlen.c">
+    <ClCompile Include="ex03_myStrlen.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex99_permutationsOfString.c">
@@ -60,7 +60,25 @@
     <ClCompile Include="ex07_myStrcat.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex03_inputOutputFunction.c">
+    <ClCompile Include="ex04_getsFgets.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex15_checkSubstring.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex00_ReplaceCharacters.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex16_FindTheNumberOfTimesTheWord.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex17_RemoveCharactersExceptAlphabets.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex99_permutationsOfString01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex99_permutationsOfString02.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

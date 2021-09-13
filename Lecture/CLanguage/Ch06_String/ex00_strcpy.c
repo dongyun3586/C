@@ -1,19 +1,28 @@
 #include <stdio.h>
-#include<string.h>
-
-#define STRLEN 14
-
-int main(void)
+void main() 
 {
-    char* src = "Take the test.";
-    char dst[STRLEN + 1];   // +1 to accomodate for the null terminator
-
-    strcpy(dst, src);
-    dst[0] = 'M';
-    printf("src = %s\ndst = %s\n", src, dst);
-
-    src = malloc(sizeof(char) * 15);
-    strcpy(src, "Hello world");
-    printf("%s\n", src);
-    free(src);
+   char str[100], sstr[100];
+   int pos, l, c = 0;
+   
+       printf("\n\nExtract a substring from a given string:\n");
+       printf("--------------------------------------------\n");  
+ 
+       printf("Input the string : ");
+       fgets(str, sizeof str, stdin);
+ 
+   printf("Input the position to start extraction :");
+   scanf("%d", &pos);
+   
+   printf("Input the length of substring :");
+   scanf("%d", &l);
+ 
+   while (c < l) 
+   {
+      sstr[c] = str[pos+c-1];
+      c++;
+   }
+   sstr[c] = '\0';
+ 
+   printf("The substring retrieve from the string is : \" %s\ "\n\n", sstr);
+ 
 }
