@@ -161,6 +161,8 @@
     <ClCompile Include="ex02_stringChange.c" />
     <ClCompile Include="ex99_permutationsOfString01.c" />
     <ClCompile Include="ex99_permutationsOfString02.c" />
+    <ClCompile Include="ex99_printCombination.c" />
+    <ClCompile Include="ex99_printCombination_recursive.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

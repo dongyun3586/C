@@ -5,6 +5,7 @@
 #define str_size 100 
 
 void countVowelConsonant(char* str, int* vowel, int* consonant);
+int isVowel(char ch);
 
 void main()
 {
@@ -23,11 +24,25 @@ void main()
 
 void countVowelConsonant(char* str, int* vowel, int* consonant) {
     int len = strlen(str);
-    for (int i = 0; i < len; i++)
+    for (int i = 0; i < len; i++) {
+        if (isVowel(str[i]))
+            (*vowel)++;
+        else if (isalpha(str[i]))
+            (*consonant)++;
+    }
+    /*for (int i = 0; i < len; i++)
     {
         if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
             (*vowel)++;
         else if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
             (*consonant)++;
-    }
+    }*/
+}
+
+int isVowel(char ch) {
+    char vowels[] = "aeiouAEIOU";
+    for (int i = 0; i < 10; i++)
+        if (ch == vowels[i])
+            return 1;
+    return 0;
 }
