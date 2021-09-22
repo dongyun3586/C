@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ex09_countWords2.c" />
     <ClCompile Include="ex16_FindTheNumberOfTimesTheWord.c" />
     <ClCompile Include="ex00_ReplaceCharacters.c" />
     <ClCompile Include="ex10_checkCharacters.c" />
@@ -151,6 +152,11 @@
     <ClCompile Include="ex06_myStrcmp.c" />
     <ClCompile Include="ex15_checkSubstring.c" />
     <ClCompile Include="ex17_RemoveCharactersExceptAlphabets.c" />
+    <ClCompile Include="ex18_createFilename.c" />
+    <ClCompile Include="ex19_dictionary.c" />
+    <ClCompile Include="ex20_encryption.c" />
+    <ClCompile Include="ex20_encryption2.c" />
+    <ClCompile Include="ex20_encryptionUsingRandom.c" />
     <ClCompile Include="ex99_permutationsOfString.c" />
     <ClCompile Include="ex08_reverseString.c" />
     <ClCompile Include="ex13_stringBubbleSort.c" />

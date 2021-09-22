@@ -1,33 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <stdlib.h>
 
 void encrypt(char* cipher, int shift);
 void decrypt(char* cipher, int shift);
 
 void main()
 {
-    char cipher[50] = "Meet me at the zoo at midnight.\n";
-    int seed = 777;
+    char cipher[50];
+    int shift = 3;
 
-    printf("문자열을 입력하시오: Meet me at the zoo at midnight.\n");
-    //fgets(cipher, 50, stdin);
+    printf("문자열을 입력하시오: ");
+    fgets(cipher, 50, stdin);
     printf("평  문: %s", cipher);
-    encrypt(cipher, seed);
+    encrypt(cipher, shift);
     printf("암호문: %s", cipher);
-    decrypt(cipher, seed);
-    printf("복호문: %s", cipher);
+    decrypt(cipher, shift);
+    printf("평  문: %s", cipher);
 
     return 0;
 }
 
-void encrypt(char* cipher, int seed) {
-    int shift;
-    srand(seed);
-
+void encrypt(char* cipher, int shift) {
     for (int i = 0; cipher[i] != '\0'; i++) {
-        shift = rand() % 6;        // 0 ~ 26
         if (isupper(cipher[i])) {
             cipher[i] += shift;
             if (cipher[i] > 'Z')
@@ -41,12 +36,8 @@ void encrypt(char* cipher, int seed) {
     }
 }
 
-void decrypt(char* cipher, int seed) {
-    int shift;
-    srand(seed);
-
+void decrypt(char* cipher, int shift) {
     for (int i = 0; cipher[i] != '\0'; i++) {
-        shift = rand() % 6;
         if (isupper(cipher[i])) {
             cipher[i] -= shift;
             if (cipher[i] < 'A')

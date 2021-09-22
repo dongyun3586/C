@@ -8,16 +8,16 @@ void decrypt(char* cipher, int shift);
 
 void main()
 {
-    char cipher[50] = "Meet me at the zoo at midnight.\n";
-    int seed = 777;
+    char cipher[50];
+    int seed = 1004;
 
-    printf("문자열을 입력하시오: Meet me at the zoo at midnight.\n");
-    //fgets(cipher, 50, stdin);
+    printf("문자열을 입력하시오: ");
+    fgets(cipher, 50, stdin);
     printf("평  문: %s", cipher);
     encrypt(cipher, seed);
     printf("암호문: %s", cipher);
     decrypt(cipher, seed);
-    printf("복호문: %s", cipher);
+    printf("평  문: %s", cipher);
 
     return 0;
 }

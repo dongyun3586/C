@@ -87,5 +87,23 @@
     <ClCompile Include="ex99_printCombination_recursive.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex09_countWords2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex18_createFilename.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex19_dictionary.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex20_encryption.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex20_encryptionUsingRandom.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex20_encryption2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
