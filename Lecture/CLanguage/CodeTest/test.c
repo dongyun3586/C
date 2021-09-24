@@ -1,44 +1,22 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
 
-#define STR_SIZE 100 
+void main() {
+    char str[150];
+    int i, j;
 
-// countVowelConsonant( ) 함수 선언
-void countVowelConsonant(char* str, int* vowel, int* consonant);
-int isVowel(char ch);
-
-void main()
-{
-    char str[STR_SIZE];
-    int vowel = 0, consonant = 0;
-
-    printf("문자열 안의 자음과 모음 개수 구하기\n");
+    printf("Alphabet 이외의 문자 제거하기\n");
     printf("문자열 입력 : ");
     fgets(str, sizeof str, stdin);
 
-    // countVowelConsonant( ) 함수 호출
-    countVowelConsonant(str, &vowel, &consonant);
-
-    printf("문자열의 모음 개수 : %d\n", vowel);
-    printf("문자열의 자음 개수 : %d\n\n", consonant);
-}
-
-// countVowelConsonant( ) 함수 정의
-void countVowelConsonant(char* str, int* vowel, int* consonant) {
+    // 문자열에서 알파벳 이외의 문자 제거
     for (int i = 0; str[i] != '\0'; i++) {
-        if (isVowel(str[i]))
-            (*vowel)++;
-        else if(isalpha(str[i]))
-            (*consonant)++;
+        if (isalpha(str[i]) == 0) {
+            for (int j = i; str[j] != '\0'; j++)
+                str[j] = str[j + 1];
+            i--;
+        }
     }
-}
 
-int isVowel(char ch) {
-    char vowels[] = "aeiouAEIOU";
-    for (int i = 0; i < 10; i++)
-        if (ch == vowels[i])
-            return 1;
-    return 0;
+    printf("최종 문자열 : %s\n", str);
 }
