@@ -4,13 +4,13 @@
 
 void generateRandomNum(int arr[], int length);
 void print1DArray(int arr[], int length);
-void bubbleSortAscending(int arr[], int length, char* order, int(*fp)(int, int));
+void bubbleSort(int arr[], int length, char* order, int(*fp)(int, int));
 int ascendCompare(int a, int b);
 int descendCompare(int a, int b);
 
 int main()
 {
-    int numArr[20];
+    int numArr[10];
     int length = sizeof(numArr) / sizeof(int);
 
     // 1~100 랜덤 숫자 배열 생성
@@ -22,7 +22,13 @@ int main()
     printf("\n");
 
     // 오름차순 정렬
-    bubbleSortAscending(numArr, length, "오름차순 정렬", ascendCompare);
+    printf("정렬 방법(오름차순=a, 내림차순=d) : ");
+    char choice;
+    scanf("%c", &choice);
+    if (choice == 'a')
+        bubbleSort(numArr, length, "오름차순 정렬", ascendCompare);
+    else if (choice == 'd')
+        bubbleSort(numArr, length, "내림차순 정렬", descendCompare);
 
     // 정렬된 배열
     printf("\n정렬 후: ");
@@ -44,12 +50,12 @@ void print1DArray(int* arr, int length) {
     printf("\n");
 }
 
-void bubbleSortAscending(int arr[], int length, char* order, int(*comparer)(int, int))
+void bubbleSort(int arr[], int length, char* order, int(*comparer)(int, int))
 {
-    printf("%s\n", order);
+    printf("\n<%s>\n", order);
     int temp;
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
+    for (int i = 1; i < length; i++) {
+        for (int j = 0; j < length - i; j++) {
             if (comparer(arr[j], arr[j + 1]) > 0)
             {
                 temp = arr[j];
@@ -57,7 +63,7 @@ void bubbleSortAscending(int arr[], int length, char* order, int(*comparer)(int,
                 arr[j + 1] = temp;
             }
         }
-        printf("%2d단계 : ", i + 1);
+        printf("%d단계 : ", i);
         print1DArray(arr, length);
     }
 }
