@@ -21,7 +21,7 @@ int main()
     printf("%d %d\n", p[2].x, p[2].y);    // 50 60
 
     // 구조체 배열을 선언하면서 초기화
-    struct Point2D p2[3] = { 0, };
+    struct Point2D p2[3] = { { 10, 20 }, { 30, 40 }, { 50, 60 } };
 
     printf("%d %d\n", p2[0].x, p2[0].y);    // 10 20
     printf("%d %d\n", p2[1].x, p2[1].y);    // 30 40
