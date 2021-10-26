@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5d49d621-e936-43eb-9e32-097aea6c8524}</ProjectGuid>
-    <RootNamespace>Ch07Structure</RootNamespace>
+    <ProjectGuid>{c0f7ae4b-840b-45fb-9447-f19d867d469a}</ProjectGuid>
+    <RootNamespace>Ch08MemoryAllocation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,23 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_03_02.c" />
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_04_01.c" />
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_05_01.c" />
-    <ClCompile Include="codeup1805.c" />
-    <ClCompile Include="ex01_structure01.c" />
-    <ClCompile Include="ex02_structure02.c" />
-    <ClCompile Include="ex03_carDashboard.c" />
-    <ClCompile Include="ex04_rectangle.c" />
-    <ClCompile Include="ex05_typedefStructure.c" />
-    <ClCompile Include="ex06_pointer_to_structure.c" />
-    <ClCompile Include="ex08_datetimeStruct.c" />
-    <ClCompile Include="ex09_nested_structures.c" />
-    <ClCompile Include="ex07_swapSturcture.c" />
-    <ClCompile Include="ex10_array_structures.c" />
-    <ClCompile Include="ex11_friendsData-1.c" />
-    <ClCompile Include="ex11_friendsData-2.c" />
-    <ClCompile Include="ex12_struct_pointer_array.c" />
+    <ClCompile Include="ex01_dynamicMemoryAllocation.c" />
+    <ClCompile Include="ex02_dynamicMemoryAllocation.c" />
+    <ClCompile Include="ex03_struct_member_dereference.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

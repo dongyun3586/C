@@ -3,12 +3,13 @@
 
 typedef struct People
 {
-    char name[14];              /* 이름 */
-    unsigned short int age;     /* 나이 */
-    float height;               /* 키 */
-    float weight;               /* 몸무게 */
+    char name[14];            /* 이름 */
+    unsigned short int age;    /* 나이 */
+    float height;              /* 키 */
+    float weight;              /* 몸무게 */
 } Person;
 
+/* 친구를 추가하는 함수 : 성공하면 1을 반환하고 실패하면 0을 반환 함 */
 int AddFriend(Person* p_friend, int count)
 {
     if (count < MAX_COUNT) {  /* 입력 가능한 최대 수를 넘었는지 체크 */
@@ -33,9 +34,7 @@ int AddFriend(Person* p_friend, int count)
     return 0;  /* 친구 추가 실패 */
 }
 
-/* 등록된 친구를 출력하는 함수
-   main 함수에서 friends 배열의 시작 주소를 포인터로 받아서 사용
-   count는 현재까지 입력된 친구의 수를 기억하는 변수임 */
+/* 등록된 친구를 출력하는 함수 */
 void ShowFriendList(Person* p_friend, int count)
 {
     int i;
@@ -56,11 +55,10 @@ void ShowFriendList(Person* p_friend, int count)
 
 void main()
 {
-    Person friends[MAX_COUNT];   /* 친구 정보를 저장할 배열 */
-    int count = 0, num;  /* count : 등록된 친구 수  */
+    Person friends[MAX_COUNT];  /* 친구 정보를 저장할 배열 */
+    int count = 0, num;         /* count : 등록된 친구 수  */
 
-    while (1) { /* 무한 루프 : 사용자가 3을 누르면 break 문으로 종료 시킴 */
-        /* 메뉴를 화면에 출력 */
+    while (1) {              /* 무한 루프 : 사용자가 3을 누르면 break 문으로 종료 시킴 */
         printf("     [ 메뉴 ]     \n");
         printf("==================\n");
         printf("1. 친구 추가      \n");
@@ -70,21 +68,16 @@ void main()
         printf("번호 선택 : ");
         scanf("%d", &num);  /* 사용자에게 번호를 입력 받음 */
 
-        if (num == 1) {  /* 1번 : 친구 추가를 선택한 경우 */
-            /* AddFriend 함수가 1을 반환하면 정상적으로 추가된 경우
-              그래서 1을 반환했을 때만 등록된 친구 수 증가시킴
-               friends 배열의 주소를 인자로 넘겨 줌 */
+        if (num == 1) {          /* 1번 : 친구 추가를 선택한 경우 */
             if (1 == AddFriend(friends, count)) count++;
         }
-        else if (num == 2) { /* 2번 : 친구 목록 보기를 선택한 경우 */
-         /* friends 배열의 주소를 인자로 넘겨 줌 */
+        else if (num == 2) {   /* 2번 : 친구 목록 보기를 선택한 경우 */
             ShowFriendList(friends, count);
         }
-        else if (num == 3) { /* 3번 : 반복문을 빠져나가 종료 함 */
+        else if (num == 3) {    /* 3번 : 반복문을 빠져나가 종료 함 */
             break;
         }
-        else {
-            /* 번호가 유효하지 않는 경우에 오류 출력 */
+        else {                /* 번호가 유효하지 않는 경우에 오류 출력 */
             printf("1~3 번호만 선택할 수 있습니다!!\n\n");
         }
     }

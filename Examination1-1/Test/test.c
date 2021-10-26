@@ -1,21 +1,19 @@
 #include<stdio.h>
 
-/* 피보나치 수열 출력 */
+/* 알람 시간 출력  1612 임원상 */
 int main() {
+	int hh, hm, rh, rm;
 
-	int a = 1, b = 0, c = 0, n;
+	printf("현재 시간: ");
+	scanf("%d %d", &hh, &hm);
+	printf("알람 시간: ");
+	scanf("%d %d", &rh, &rm);
 
-	printf("양의 정수: ");
-	scanf("%d", &n);
-
-	for (int i = 0; ; i++) {
-		if (c > n)
-			break;
-		printf("%d ", c);
-		c = a + b;
-		a = b;
-		b = c;
-	}
+	if (rm >= hm)	// 알람분 > 현재분
+		// (알람시간 - 현재시간 + 24) % 24
+		printf("%d시간 %d분 ", (rh - hh + 24) % 24, rm - hm);
+	else
+		printf("%d시간 %d분 ", (rh - hh + 23) % 24, rm - hm + 60);
 
 	return 0;
 }
