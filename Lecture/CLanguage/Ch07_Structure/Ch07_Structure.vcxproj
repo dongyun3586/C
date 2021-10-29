@@ -147,15 +147,16 @@
     <ClCompile Include="ex02_structure02.c" />
     <ClCompile Include="ex03_carDashboard.c" />
     <ClCompile Include="ex04_rectangle.c" />
-    <ClCompile Include="ex05_typedefStructure.c" />
-    <ClCompile Include="ex06_pointer_to_structure.c" />
-    <ClCompile Include="ex08_datetimeStruct.c" />
-    <ClCompile Include="ex09_nested_structures.c" />
-    <ClCompile Include="ex07_swapSturcture.c" />
-    <ClCompile Include="ex10_array_structures.c" />
-    <ClCompile Include="ex11_friendsData-1.c" />
-    <ClCompile Include="ex11_friendsData-2.c" />
-    <ClCompile Include="ex12_struct_pointer_array.c" />
+    <ClCompile Include="ex05_structure.c" />
+    <ClCompile Include="ex06_typedefStructure.c" />
+    <ClCompile Include="ex07_pointer_to_structure.c" />
+    <ClCompile Include="ex09_datetimeStruct.c" />
+    <ClCompile Include="ex10_nested_structures.c" />
+    <ClCompile Include="ex08_swapSturcture.c" />
+    <ClCompile Include="ex11_array_structures.c" />
+    <ClCompile Include="ex12_friendsData-1.c" />
+    <ClCompile Include="ex12_friendsData-2.c" />
+    <ClCompile Include="ex13_struct_pointer_array.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

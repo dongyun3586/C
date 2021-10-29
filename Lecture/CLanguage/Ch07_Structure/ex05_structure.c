@@ -15,7 +15,7 @@ int main()
     printf("Enter today's date (mm dd yyyy): ");
     scanf("%d %d %d", &today.month, &today.day, &today.year);
 
-    tomorrow = (struct date) { today.month, today.day + 1, today.year };
+    tomorrow = getTomorrowDate(today);
     printf("tomorrow's date is %d/%d/%d\n", tomorrow.month, tomorrow.day, tomorrow.year);
 
     return 0;

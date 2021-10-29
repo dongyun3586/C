@@ -27,28 +27,28 @@
     <ClCompile Include="ex04_rectangle.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex05_typedefStructure.c">
+    <ClCompile Include="ex06_typedefStructure.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex06_pointer_to_structure.c">
+    <ClCompile Include="ex07_pointer_to_structure.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex07_swapSturcture.c">
+    <ClCompile Include="ex08_swapSturcture.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex09_nested_structures.c">
+    <ClCompile Include="ex10_nested_structures.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex10_array_structures.c">
+    <ClCompile Include="ex11_array_structures.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex08_datetimeStruct.c">
+    <ClCompile Include="ex09_datetimeStruct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="codeup1805.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex12_struct_pointer_array.c">
+    <ClCompile Include="ex13_struct_pointer_array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_04_01.c">
@@ -60,10 +60,13 @@
     <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_03_02.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex11_friendsData-1.c">
+    <ClCompile Include="ex12_friendsData-1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex11_friendsData-2.c">
+    <ClCompile Include="ex12_friendsData-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex05_structure.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
