@@ -139,9 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_03_02.c" />
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_04_01.c" />
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_05_01.c" />
     <ClCompile Include="codeup1805.c" />
     <ClCompile Include="ex01_structure01.c" />
     <ClCompile Include="ex02_structure02.c" />

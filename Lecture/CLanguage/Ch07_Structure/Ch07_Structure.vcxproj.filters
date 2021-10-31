@@ -51,15 +51,6 @@
     <ClCompile Include="ex13_struct_pointer_array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_04_01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_05_01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Downloads\DoIt_C_Source\DoIt_C_Source\18\18_03_02.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex12_friendsData-1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

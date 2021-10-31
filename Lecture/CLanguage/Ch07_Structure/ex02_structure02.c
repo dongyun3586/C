@@ -21,11 +21,8 @@ void main()
     xdiff = p1.x - p2.x;
     ydiff = p1.y - p2.y;
 
-    dist = sqrt((double)(xdiff * xdiff + ydiff * ydiff));
+    dist = sqrt(xdiff * xdiff + ydiff * ydiff);
     printf("두 점간의 거리는 %f입니다.\n", dist);
 
     return 0;
 }
-
-
-
