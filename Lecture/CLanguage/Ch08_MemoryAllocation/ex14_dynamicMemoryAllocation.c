@@ -21,5 +21,6 @@ void printP(int* p) {
             p[n] = n * n;
         for (int n = 0; n < 4; ++n)
             printf("p[%d] == %d\n", n, p[n]);
+        printf("\n");
     }
 }

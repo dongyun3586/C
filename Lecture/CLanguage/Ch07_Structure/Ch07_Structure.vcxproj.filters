@@ -39,25 +39,46 @@
     <ClCompile Include="ex10_nested_structures.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex11_array_structures.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex09_datetimeStruct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="codeup1805.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex13_struct_pointer_array.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex12_friendsData-1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex12_friendsData-2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ex05_structure.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex11_nested_struct.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex12_array_structures.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_friendsData-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_friendsData-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_DynamicMemoryAllocation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex16_students-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex16_students-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex15_structMAlloc-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex15_structMAlloc-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex17_findLargestNlement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex18_struct_pointer_array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

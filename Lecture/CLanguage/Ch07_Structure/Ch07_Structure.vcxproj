@@ -150,10 +150,17 @@
     <ClCompile Include="ex09_datetimeStruct.c" />
     <ClCompile Include="ex10_nested_structures.c" />
     <ClCompile Include="ex08_swapSturcture.c" />
-    <ClCompile Include="ex11_array_structures.c" />
-    <ClCompile Include="ex12_friendsData-1.c" />
-    <ClCompile Include="ex12_friendsData-2.c" />
-    <ClCompile Include="ex13_struct_pointer_array.c" />
+    <ClCompile Include="ex12_array_structures.c" />
+    <ClCompile Include="ex11_nested_struct.c" />
+    <ClCompile Include="ex13_friendsData-1.c" />
+    <ClCompile Include="ex13_friendsData-2.c" />
+    <ClCompile Include="ex14_DynamicMemoryAllocation.c" />
+    <ClCompile Include="ex15_structMAlloc-1.c" />
+    <ClCompile Include="ex15_structMAlloc-2.c" />
+    <ClCompile Include="ex16_students-1.c" />
+    <ClCompile Include="ex16_students-2.c" />
+    <ClCompile Include="ex17_findLargestNlement.c" />
+    <ClCompile Include="ex18_struct_pointer_array.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

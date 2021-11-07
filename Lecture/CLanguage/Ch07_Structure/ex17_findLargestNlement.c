@@ -23,7 +23,7 @@ int main()
     // 배열에 랜덤 숫자 저장
     generateRandomNum(element, n);
     printArr(element, n);
-    
+
     printf(" The Largest element is :  %2.1f \n\n", findMaxNum(element, n));
     return 0;
 }

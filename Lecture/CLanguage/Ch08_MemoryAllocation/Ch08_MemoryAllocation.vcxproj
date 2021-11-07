@@ -139,8 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex01_dynamicMemoryAllocation.c" />
-    <ClCompile Include="ex02_dynamicMemoryAllocation.c" />
+    <ClCompile Include="ex00_enum.c" />
     <ClCompile Include="ex03_struct_member_dereference.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
