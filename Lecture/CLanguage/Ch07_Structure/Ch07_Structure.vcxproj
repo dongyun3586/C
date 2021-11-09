@@ -140,6 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="codeup1805.c" />
+    <ClCompile Include="codeup3004.c" />
+    <ClCompile Include="codeup3015.c" />
+    <ClCompile Include="codeup3016.c" />
+    <ClCompile Include="codeup3019.c" />
+    <ClCompile Include="codeup3108.c" />
+    <ClCompile Include="codeup3109.c" />
+    <ClCompile Include="codeup3170.c" />
+    <ClCompile Include="codeup4012.c" />
+    <ClCompile Include="codeup4751.c" />
     <ClCompile Include="ex01_structure01.c" />
     <ClCompile Include="ex02_structure02.c" />
     <ClCompile Include="ex03_carDashboard.c" />
@@ -154,13 +163,16 @@
     <ClCompile Include="ex11_nested_struct.c" />
     <ClCompile Include="ex13_friendsData-1.c" />
     <ClCompile Include="ex13_friendsData-2.c" />
-    <ClCompile Include="ex14_DynamicMemoryAllocation.c" />
-    <ClCompile Include="ex15_structMAlloc-1.c" />
-    <ClCompile Include="ex15_structMAlloc-2.c" />
-    <ClCompile Include="ex16_students-1.c" />
-    <ClCompile Include="ex16_students-2.c" />
-    <ClCompile Include="ex17_findLargestNlement.c" />
-    <ClCompile Include="ex18_struct_pointer_array.c" />
+    <ClCompile Include="ex16_DynamicMemoryAllocation.c" />
+    <ClCompile Include="ex17_structMAlloc-1.c" />
+    <ClCompile Include="ex17_structMAlloc-2.c" />
+    <ClCompile Include="ex18_students-1.c" />
+    <ClCompile Include="ex18_students-2.c" />
+    <ClCompile Include="ex19_findLargestElement.c" />
+    <ClCompile Include="ex20_struct_pointer_array.c" />
+    <ClCompile Include="ex15_cardBattle.c" />
+    <ClCompile Include="ex14_swapCards-2.c" />
+    <ClCompile Include="ex14_swapCards.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

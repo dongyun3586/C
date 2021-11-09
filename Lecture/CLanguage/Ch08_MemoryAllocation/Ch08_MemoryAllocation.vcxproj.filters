@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex03_struct_member_dereference.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex00_enum.c">
+    <ClCompile Include="ex01_file.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
