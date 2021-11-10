@@ -30,5 +30,8 @@
     <ClCompile Include="ex03_bubbleSortAscending.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex4_insertElement.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

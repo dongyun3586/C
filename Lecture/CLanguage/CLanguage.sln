@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch08_FILE", "Ch08_MemoryAll
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2학기 기초보충", "2학기 기초보충\2학기 기초보충.vcxproj", "{477092F2-23B3-4D7A-9574-1E1D2A7A692D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1학기 2차 지필평가 문제", "1학기 2차 지필평가 문제\1학기 2차 지필평가 문제.vcxproj", "{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{477092F2-23B3-4D7A-9574-1E1D2A7A692D}.Release|x64.Build.0 = Release|x64
 		{477092F2-23B3-4D7A-9574-1E1D2A7A692D}.Release|x86.ActiveCfg = Release|Win32
 		{477092F2-23B3-4D7A-9574-1E1D2A7A692D}.Release|x86.Build.0 = Release|Win32
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Debug|x64.ActiveCfg = Debug|x64
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Debug|x64.Build.0 = Debug|x64
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Debug|x86.ActiveCfg = Debug|Win32
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Debug|x86.Build.0 = Debug|Win32
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Release|x64.ActiveCfg = Release|x64
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Release|x64.Build.0 = Release|x64
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Release|x86.ActiveCfg = Release|Win32
+		{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
