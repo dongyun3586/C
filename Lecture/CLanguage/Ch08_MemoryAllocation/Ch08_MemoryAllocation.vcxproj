@@ -21,6 +21,11 @@
   <ItemGroup>
     <ClCompile Include="ex01_file.c" />
     <ClCompile Include="ex02_file.c" />
+    <ClCompile Include="ex03_file.c" />
+    <ClCompile Include="ex04_file.c" />
+    <ClCompile Include="ex05_file.c" />
+    <ClCompile Include="ex06_file.c" />
+    <ClCompile Include="ex07_file.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

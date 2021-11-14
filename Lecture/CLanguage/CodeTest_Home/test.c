@@ -1,58 +1,92 @@
-#include <stdio.h>
-#include <stdlib.h> 
-#include <time.h>
+#include<stdio.h>
 
-void generateRandomNum(int arr[], int n);
-void print1DArray(int arr[], int n);
-void bubbleSortAscending(int arr[], int n);
+#define MAX_NUM_STUDENT 100
 
-int main()
-{
-    int numArr[20];
-    int n = sizeof(numArr) / sizeof(int);
+enum action { ADD, FIND, EXIT };
 
-    // 1~100 랜덤 숫자 배열 생성
-    generateRandomNum(numArr, n);
+typedef struct {
+	int id;
+	char name[10];
+	float score;
+} Student;
 
-    // 초기 배열 상태 출력
-    printf("정렬 전 배열 상태\n");
-    print1DArray(numArr, n);
+int fileOpen(FILE** fp, char* fileName, char* mode);
+int selectAction();
+int printStudentInfo(Student* s);
+int addStudentInfo(FILE* fp, Student* s);
+long findStudent(FILE* fp, Student* s);
 
-    // 오름차순 정렬
-    bubbleSortAscending(numArr, n);
+int main() {
+	FILE* fp = NULL;
+	Student data = { 0 };
+	fileOpen(&fp, "StudentDB", "ab+");
 
-    // 정렬된 배열
-    printf("정렬 후 배열 상태\n");
-    print1DArray(numArr, n);
+	// 학생 정보 입력 받아 파일에 저장
+	while (1) {
+		switch (selectAction()) {
+		case ADD:
+			addStudentInfo(fp, &data);
+			break;
+		case FIND:
+			if (findStudent(fp, &data) < 0)
+				printf("Cannot find the student\n");
+			else
+				printStudentInfo(&data);
+			break;
+		case EXIT:
+			exit(0);
+		}
+	}
 
-    return 0;
+	fclose(fp);
+	return 0;
 }
 
-// 랜덤 배열 생성 함수
-void generateRandomNum(int arr[], int n)
-{
-    srand(time(NULL));
-    for (int i = 0; i < n; i++) {
-        arr[i] = rand() % 100 + 1;
-    }
+int fileOpen(FILE** fp, char* fileName, char* mode) {
+	*fp = fopen(fileName, mode);
+	if (!*fp) {
+		printf("Fail to open - %s\n", fileName);
+		return -1;
+	}
+	return 1;
 }
 
-void print1DArray(int arr[], int n) {
-    for (int i = 0; i < n; i++)
-        printf("%2d ", arr[i]);
-    printf("\n\n");
+int selectAction() {
+	int choice = 0;
+	printf("[%d]add [%d]find [%d]exit: ", ADD, FIND, EXIT);
+	scanf("%d", &choice);
+	return choice;
 }
 
-void bubbleSortAscending(int arr[], int n)
-{
-    int temp;
-    for (int i = 1; i < n; i++) {
-        for (int j = 0; j < n - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
+int printStudentInfo(Student* s) {
+	printf("%d %s %.2f\n", s->id, s->name, s->score);
+}
+
+int addStudentInfo(FILE* fp, Student* s) {
+	printf("Enter(id name score) : ");
+	scanf("%d %s %f", &s->id, &s->name, &s->score);
+	getchar();
+
+	fseek(fp, 0, SEEK_END);
+	fwrite(s, sizeof(Student), 1, fp);
+
+	return 0;
+}
+
+long findStudent(FILE* fp, Student* s) {
+	char name[255] = { 0 };
+	printf("Name: ");
+	scanf("%s", name); getchar();
+
+	int elementSize = sizeof(Student);
+	fseek(fp, 0, SEEK_SET);
+
+	while (!feof(fp)) {
+		fread(s, elementSize, 1, fp);
+		if (strcmp(s->name, name) == 0) {	// Find
+			fseek(fp, -elementSize, SEEK_CUR);
+			return ftell(fp);
+		}
+	}
+	return -1;
 }
