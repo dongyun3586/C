@@ -12,7 +12,9 @@ int main()
     float* element;
     printf(" Input total number of elements(1 to 100): ");
     scanf("%d", &n);
-    element = (float*)malloc(sizeof(float) * n);
+
+    // 1. Memory is allocated for 'n' elements 
+    element = malloc(sizeof(float) * n);
 
     if (element == NULL)
     {
@@ -31,7 +33,7 @@ int main()
 void generateRandomNum(float* arr, int n) {
     srand((unsigned int)time(NULL));
     for (int i = 0; i < n; ++i)
-        arr[i] = ((float)rand() / (float)(RAND_MAX)) * 100;
+        arr[i] = (float)rand() / RAND_MAX * 100;
 }
 
 void printArr(float* arr, int n) {
@@ -42,8 +44,9 @@ void printArr(float* arr, int n) {
 
 float findMaxNum(float* arr, int n) {
     // 2. 배열 중 가장 큰 숫자 리턴
+    float max = *arr;
     for (int i = 1; i < n; i++)
-        if (*arr < *(arr + i))
-            *arr = *(arr + i);
-    return *arr;
+        if (max < arr[i])
+            max = arr[i];
+    return max;
 }

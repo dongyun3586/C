@@ -1,64 +1,61 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define MAXNAME 16      // 이름의 최대 길이
-int usedMemory = 0;      // 힙 메모리 사용량 저장 변수
+#include<stdio.h>
 
 typedef struct {
-    int age;
-    float score;
-    char* name;         // char name[MAXNAME];
-} student;
+	int id;
+	char name[10];
+	float score;
+} Student;
 
-int setStudent(student* s) {
-    s->age = rand() % 10+1;
-    s->score = rand() % 100;
-
-    int nameLen = rand() % MAXNAME + 1;                  
-    s->name = (char*)calloc(nameLen, sizeof(char));  // 이름을 저장할 메모리 할당
-    usedMemory += sizeof(char) * nameLen;                // 할당된 메모리 크기 누계
-    for (int i = 0; i < nameLen - 1; i++)
-        s->name[i] = 'a' + rand() % 26;
-    s->name[nameLen-1] = '\0';
-    printf("%d %.2f %s\n", s->age, s->score, s->name);
-}
+int fileOpen(FILE** fp, char* fileName, char* mode);
 
 int main() {
-    int n = 0;
-    printf("How many students? ");
-    scanf("%d", &n);
+	Student s = { 0 };
+	char* fileName = "studentList.txt";
+	FILE* fp = NULL;
 
-    // n 개수 만큼의 student 사이즈 메모리 할당
-    student* students = (student*)malloc(sizeof(student) * n);
-    memset(students, 0, sizeof(student) * n);  // 0 으로 초기화
-    usedMemory += sizeof(student) * n;          // 할당된 메모리 크기 누계
+	// append 모드로 파일 열기
+	if (fileOpen(&fp, fileName, "a") == 0) exit(1);
 
-    // n 개수 만큼 랜덤한 학생정보 저장
-    for (int i = 0; i < n; i++)
-        setStudent(&students[i]);
+	// 학생 정보 입력 받아 파일에 저장
+	while (1) {
+		printf("학생 정보 입력(id name score)(종료=-1): ");
+		scanf("%d", &s.id);
+		if (s.id < 0) break;				// -1이 입력되면 종료
 
-    // 평균 계산 및 출력
-    float avg = 0;
-    for (int i = 0; i < n; i++)
-        avg += students[i].score;
-    avg /= n;
-    printf("Average score = %.2f\n", avg);
+		scanf("%s %f", &s.name, &s.score);
+		getchar();							// 버퍼에서 '\n' 문자 제거
 
-    // release name for each student
-    for (int i = 0; i < n; i++)
-        if (students->name) {
-            free(students->name);
-            students->name = NULL;
-        }
+		// 파일에 특정 포맷형식으로 쓰기
+		fprintf(fp, "%d %s %.1f\n", s.id, s.name, s.score);
+	}
 
-    // release students
-    if (students) {
-        free(students);
-        students = NULL;
-    }
+	fclose(fp);		// 파일 닫기
 
-    printf("heap memory usage = %d bytes\n", usedMemory);
+	// read 모드로 파일 열기
+	if (fileOpen(&fp, fileName, "r") == 0) exit(1);
 
-    return 0;
+	int n = 0;
+	float sum = 0;
+
+	// 학생 정보 읽고, 평균 계산
+	while (!feof(fp)) {		// feof(fp) => 파일 끝이면 true, 아니면 flase
+		fscanf(fp, "%d %s %f\n", &s.id, &s.name, &s.score);
+		sum += s.score;
+		n++;
+	}
+
+	printf("학생 수 : %d명, 평균 점수 : %.2f\n", n, sum / n);
+
+	fclose(fp);
+
+	return 0;
+}
+
+int fileOpen(FILE** fp, char* fileName, char* mode) {
+	*fp = fopen(fileName, mode);
+	if (!*fp) {
+		printf("Fail to open - %s\n", fileName);
+		return 0;
+	}
+	return 1;
 }

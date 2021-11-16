@@ -1,39 +1,46 @@
 #include <stdio.h>
-#include <string.h>    // strcpy 함수가 선언된 헤더 파일
-#include <stdlib.h>    // malloc, free 함수가 선언된 헤더 파일
+#include <stdlib.h>
+#include <string.h>
 
-struct Person {           // 구조체 정의
-    char* name;        // 구조체 멤버 1
-    int age;              // 구조체 멤버 2
-    char* address;    // 구조체 멤버 3
-};
+#define N 1024
+#define MAX_NAME 20     // 이름의 최대 크기
 
-int heapUsage = 0;      // 힙 메모리 사용량 저장 변수
+typedef struct {
+    int age;
+    float score;
+    char name[MAX_NAME];
+} Student;
 
-int main()
-{
-    struct Person* p1 = malloc(sizeof(struct Person));    // 구조체 포인터 선언, 메모리 할당
-    heapUsage += sizeof(sizeof(struct Person));
+int setStudent(Student* s) {
+    s->age = rand() % 10 + 10;  // 10 ~ 19
+    s->score = rand() % 101;    // 0 ~ 100
 
-    // 화살표 연산자로 구조체 멤버에 접근하여 값 할당
-    p1->name = malloc(sizeof(char) * sizeof("홍길동"));
-    strcpy(p1->name, "홍길동");
-    heapUsage += sizeof(char) * sizeof("홍길동");
+    int nameLen = rand() % (MAX_NAME - 1) + 1;    // 1 ~ 15
+    int i;
+    for (i = 0; i < nameLen; i++) {
+        s->name[i] = 'a' + rand() % 26;
+    }
+    s->name[i] = '\0';
+    printf("%d %.2f %s\n", s->age, s->score, s->name);
+}
 
-    p1->age = 30;
-    p1->address = malloc(sizeof(char) * sizeof("서울시 용산구 한남동"));
-    strcpy(p1->address, "서울시 용산구 한남동");
-    heapUsage += sizeof(char) * sizeof("서울시 용산구 한남동");
+int main() {
+    int n = 0;
+    Student Students[N] = { 0 };
+    printf("size of Students array = %d bytes\n", sizeof(Student) * N);
 
-    // 메모리 사용량 출력
-    printf("heap memory usage = %d bytes\n\n", heapUsage);
+    printf("How many Students? ");
+    scanf("%d", &n);
 
-    // 화살표 연산자로 구조체 멤버에 접근하여 값 출력
-    printf("이름: %s\n", p1->name);       // 홍길동
-    printf("나이: %d\n", p1->age);        // 30
-    printf("주소: %s\n", p1->address);    // 서울시 용산구 한남동
+    for (int i = 0; i < n; i++)
+        setStudent(&Students[i]);
 
-    free(p1);    // 동적 메모리 해제
+    float avg = 0;
+    for (int i = 0; i < n; i++)
+        avg += Students[i].score;
+    avg /= n;
+
+    printf("\nAverage score = %.2f\n", avg);
 
     return 0;
 }

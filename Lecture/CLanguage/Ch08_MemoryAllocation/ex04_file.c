@@ -6,14 +6,8 @@ typedef struct {
 	float score;
 } Student;
 
-int fileOpen(FILE** fp, char* fileName, char* mode) {
-	*fp = fopen(fileName, mode);
-	if (!*fp) {
-		printf("Fail to open - %s\n", fileName);
-		return 0;
-	}
-	return 1;
-}
+
+int fileOpen(FILE** fp, char* fileName, char* mode);
 
 int main() {
 	Student s = { 0 };
@@ -56,4 +50,13 @@ int main() {
 	fclose(fp);
 
 	return 0;
+}
+
+int fileOpen(FILE** fp, char* fileName, char* mode) {
+	*fp = fopen(fileName, mode);
+	if (!*fp) {
+		printf("Fail to open - %s\n", fileName);
+		return 0;
+	}
+	return 1;
 }
