@@ -117,5 +117,8 @@
     <ClCompile Include="ex15_cardBattle.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="codeup3109-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

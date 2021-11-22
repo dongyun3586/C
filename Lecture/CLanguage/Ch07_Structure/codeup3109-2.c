@@ -4,7 +4,7 @@
 typedef struct {
     char c;
     int no;
-    char name[12];
+    char name[30];
 } Student;
 
 void insertStudent(Student* arr, Student* temp, int* s_count) {

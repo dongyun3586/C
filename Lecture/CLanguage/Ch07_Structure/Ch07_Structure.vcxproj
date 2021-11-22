@@ -145,6 +145,7 @@
     <ClCompile Include="codeup3016.c" />
     <ClCompile Include="codeup3019.c" />
     <ClCompile Include="codeup3108.c" />
+    <ClCompile Include="codeup3109-2.c" />
     <ClCompile Include="codeup3109.c" />
     <ClCompile Include="codeup3170.c" />
     <ClCompile Include="codeup4012.c" />
