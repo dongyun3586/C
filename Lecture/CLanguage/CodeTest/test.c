@@ -1,71 +1,36 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
-typedef struct {
-    char c;
-    int no;
-    char name[12];
-} Student;
+int main() {
+	FILE* src_file, * dst_file;
+	char fileName[200];
+	char buffer[1024];
+	int r_count;
 
-void insertStudent(Student* arr, Student* temp, int* s_count) {
-    int flag = 1;
-    for (int i = 0; i < *s_count; i++) {
-        // 번호 순서대로 삽입
-        if (temp->no <= arr[i].no) {
-            for (int j = *s_count - 1; j >= i; j--)
-                arr[j + 1] = arr[j];
-            arr[i] = *temp;
-            flag = 0;
-            break;
-        }
-    }
-    if (flag == 1) arr[*s_count] = *temp;
-    (*s_count)++;
-}
+	printf("이미지 파일 이름 입력: ");
+	scanf("%s", fileName);
 
-void deleteStudent(Student* arr, Student* temp, int* s_count) {
-    for (int i = 0; i < *s_count; i++) {
-        if (temp->no == arr[i].no) {
-            for (int j = i + 1; j < *s_count; j++)
-                arr[j - 1] = arr[j];
-            (*s_count)--;
-        }
-    }
-}
+	src_file = fopen(fileName, "rb");
+	dst_file = fopen("copy.jpg", "wb");
+	if (src_file == NULL || dst_file == NULL) {
+		fprintf(stderr, "파일 열기 오류\n");
+		return 1;
+	}
 
-int main()
-{
-    int n;
-    scanf("%d", &n);
-    getchar();
+	while ((r_count = fread(buffer, 1, sizeof(buffer), src_file)) > 0) {
+		int w_count = fwrite(buffer, 1, r_count, dst_file);
+		if (w_count < 0) {
+			fprintf(stderr, "파일 쓰기 오류\n");
+			return 1;
+		}
+		if (w_count < r_count) {
+			fprintf(stderr, "미디어 쓰기 오류\n");
+			return 1;
+		}
+	}
 
-    Student temp;
-    Student* students = (Student*)calloc(n, sizeof(Student));
+	printf("copy.jpg로 이미지 파일 복사 완료.");
+	fclose(src_file);
+	fclose(dst_file);
 
-    int s_count = 0;
-    for (int i = 0; i < n; i++) {
-        scanf("%c %d %s", &temp.c, &temp.no, temp.name);
-        getchar();
-
-        // 처리 코드가 'I'이면 데이터를 수험 번호 순서에 맞게 삽입
-        // 만약 입력할 때 이미 수험 번호가 입력되어 있다면 같은 수험 번호의 맨 앞에 삽입한다.
-        if (temp.c == 'I') {
-            insertStudent(students, &temp, &s_count);
-        }
-        // 처리 코드가 ‘D’이면 메모리의 해당 수험 번호의 데이터 중에서 가장 앞쪽 데이터를 찾아 삭제한다.
-        // 만약 처리 코드가 'D'이고 해당 수험 번호가 존재하지 않으면 아무 작업도 하지 않는다.
-        if (temp.c == 'D') {
-            deleteStudent(students, &temp, &s_count);
-        }
-    }
-
-    int index[5] = { 0 };
-    for (int i = 0; i < 5; i++)
-        scanf("%d", &index[i]);
-
-    for (int i = 0; i < 5; i++) {
-        printf("%d %s\n", students[index[i] - 1].no, students[index[i] - 1].name);
-    }
-
-    return 0;
+	return 0;
 }

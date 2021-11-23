@@ -33,7 +33,16 @@
     <ClCompile Include="ex06_file.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex07_file.c">
+    <ClCompile Include="ex08_file.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex99_feof.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex07_copyImageFile.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex09_studentDB.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

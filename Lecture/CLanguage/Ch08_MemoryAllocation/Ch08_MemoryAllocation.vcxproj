@@ -25,7 +25,10 @@
     <ClCompile Include="ex04_file.c" />
     <ClCompile Include="ex05_file.c" />
     <ClCompile Include="ex06_file.c" />
-    <ClCompile Include="ex07_file.c" />
+    <ClCompile Include="ex07_copyImageFile.c" />
+    <ClCompile Include="ex08_file.c" />
+    <ClCompile Include="ex09_studentDB.c" />
+    <ClCompile Include="ex99_feof.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
