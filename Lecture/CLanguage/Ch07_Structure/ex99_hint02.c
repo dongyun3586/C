@@ -6,12 +6,12 @@ char getStr(char* str);
 int main()
 {
     char str[100];
-    
+
     while (getStr(str) != EOF) {
-        if(isalpha(*str))
+        if (isalpha(*str))
             printf("%s\n", str);
     }
-        
+
     return 0;
 }
 

@@ -120,5 +120,11 @@
     <ClCompile Include="codeup3109-2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex99_hint01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex99_hint02.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
