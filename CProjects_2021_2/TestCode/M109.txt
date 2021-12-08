@@ -1,0 +1,6 @@
+M109
+Messier 109
+11h 57m 36.0s
++53° 22’ 28”
+10.6
+type SBbc barred spiral galaxy

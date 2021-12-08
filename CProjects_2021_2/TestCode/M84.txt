@@ -1,0 +1,7 @@
+M84
+Messier 84
+12h 25m 03.7s
++12deg 53’ 13’’
+10.1
+type S0 lenticular galaxy
+type E1 elliptical galaxy

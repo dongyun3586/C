@@ -1,39 +1,31 @@
 #include <stdio.h>
 #include <ctype.h>
 
-char getStr(char* str);
+void func();
+
+int count = 0;
 
 int main()
 {
-    char str[100];
-
-    while (getStr(str) != EOF) {
-        if (isalpha(*str))
-            printf("%s\n", str);
+    char c;
+    while ((c = getchar()) != EOF) {
+        if (isalpha(c)) {
+            count++;
+            printf("main: %c\n", c);
+            func();
+        }
     }
 
+    printf("count: %d\n", count);
     return 0;
 }
 
-char getStr(char* str) {
+void func() {
     char c;
     c = getchar();
 
-    if (c != EOF) {
-        *str = c;
-        str++;
+    if (isalpha(c)) {
+        count++;
+        printf("func: %c\n", c);
     }
-
-    if (!isalpha(c))
-        return c;
-
-    while (1) {
-        *str = getchar();
-        if (!isalpha(*str))
-            break;
-        str++;
-    }
-
-    *str = '\0';
-    return *str;
 }

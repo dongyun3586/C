@@ -1,0 +1,6 @@
+M48
+Messier 48
+08h 13.7m
+-05deg 45'
+5.5
+type f open cluster

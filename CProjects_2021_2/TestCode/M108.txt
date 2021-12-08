@@ -1,0 +1,6 @@
+M108
+Messier 108
+11h 11m 30.97s
++55° 40’ 26.8”
+10.7
+type SBcd barred spiral galaxy

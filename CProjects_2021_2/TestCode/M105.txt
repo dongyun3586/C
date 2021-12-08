@@ -1,0 +1,6 @@
+M105
+Messier 105
+10h 47m 49.6s
++12° 34’ 54”
+10.2
+type E1 elliptical galaxy

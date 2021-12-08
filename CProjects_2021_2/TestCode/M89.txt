@@ -1,0 +1,6 @@
+M89
+Messier 89
+12h 35m 39.8073444s
++12° 33’ 22.830809”
+10.73
+type E0 elliptical galaxy 

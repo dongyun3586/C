@@ -1,0 +1,6 @@
+M98
+Messier 98
+12h 13m 48.292s
++14deg 54’ 01.69”
+11.0
+type SABab spiral galaxy

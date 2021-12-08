@@ -1,0 +1,6 @@
+M93
+Messier 93
+07h 44.6m
+-23deg 52'
+6.0
+type g open cluster

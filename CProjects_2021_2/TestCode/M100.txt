@@ -1,0 +1,6 @@
+M100
+Messier 100
+12h 22m 54.9s
++15deg 49’ 21”
+10.1
+type SABbc spiral galaxy

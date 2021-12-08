@@ -1,0 +1,6 @@
+M95
+Messier 95
+10h 43m 57.7s
++11deg 42’ 14”
+11.4
+type SBb barred spiral galaxy

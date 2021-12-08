@@ -1,36 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <ctype.h>
 
-int main() {
-	FILE* src_file, * dst_file;
-	char fileName[200];
-	char buffer[1024];
-	int r_count;
+void func();
 
-	printf("이미지 파일 이름 입력: ");
-	scanf("%s", fileName);
+int count = 0;
 
-	src_file = fopen(fileName, "rb");
-	dst_file = fopen("copy.jpg", "wb");
-	if (src_file == NULL || dst_file == NULL) {
-		fprintf(stderr, "파일 열기 오류\n");
-		return 1;
-	}
+int main()
+{
+    char c;
+    while ((c = getchar()) != EOF) {
+        if (isalpha(c)) {
+            count++;
+            printf("main: %c\n", c);
+            func();
+        }
+    }
 
-	while ((r_count = fread(buffer, 1, sizeof(buffer), src_file)) > 0) {
-		int w_count = fwrite(buffer, 1, r_count, dst_file);
-		if (w_count < 0) {
-			fprintf(stderr, "파일 쓰기 오류\n");
-			return 1;
-		}
-		if (w_count < r_count) {
-			fprintf(stderr, "미디어 쓰기 오류\n");
-			return 1;
-		}
-	}
+    printf("count: %d\n", count);
+    return 0;
+}
 
-	printf("copy.jpg로 이미지 파일 복사 완료.");
-	fclose(src_file);
-	fclose(dst_file);
+void func() {
+    char c;
+    c = getchar();
 
-	return 0;
+    if (isalpha(c)) {
+        count++;
+        printf("func: %c\n", c);
+    }
 }

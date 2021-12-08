@@ -1,0 +1,6 @@
+M110
+Messier 110
+00h 40m 22.05446s
++41° 41’ 07.4963”
+8.92
+type E5 elliptical galaxy

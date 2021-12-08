@@ -1,0 +1,7 @@
+M86
+Messier 86
+12h 26m 11.7s
++12deg 56’ 46”
+9.8
+type S0 lenticular galaxy
+type E3 elliptical galaxy

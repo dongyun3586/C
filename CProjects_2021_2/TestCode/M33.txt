@@ -1,0 +1,6 @@
+M33
+Triangulum Galaxy
+01h 33m 50.02s
++30deg 39' 36.7"
+5.72
+type SAcd spiral galaxy

@@ -1,0 +1,6 @@
+M92
+Messier 92
+17h 17m 07.39s
++43deg 08’ 09.4”
+6.3
+Class IV globular cluster

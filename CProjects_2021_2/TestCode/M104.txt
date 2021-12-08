@@ -1,0 +1,6 @@
+M104
+Sombrero Galaxy
+12h 39m 59.4s
+−11deg 37' 23"
+8.98
+type SAa spiral galaxy

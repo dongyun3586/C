@@ -1,0 +1,6 @@
+M90
+Messier 90
+12h 36m 49.8s
++13deg 09’ 46”
+10.3
+type SABab spiral galaxy

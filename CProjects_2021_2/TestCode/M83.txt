@@ -1,0 +1,6 @@
+M83
+Southern Pinwheel Galaxy
+13h 37m 00.9s
+-29deg 51' 57''
+7.5
+type SABc barred spiral galaxy

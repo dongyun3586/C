@@ -1,0 +1,7 @@
+M85
+Messier 85
+12h 25m 24.0s
++18° 11’ 28”
+10.0
+type S0 lenticular galaxy
+type E2 elliptical galaxy

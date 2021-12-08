@@ -1,0 +1,6 @@
+M32
+Messier 32
+00h 42m 41.832s
++40deg 51' 55"03
+8.08
+type CE2 Elliptical galaxy

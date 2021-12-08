@@ -1,0 +1,6 @@
+M73
+Messier 73
+A: 20h 58m 56.77s, B: 20h 58m 57.59s, C: 20h 58m 53.32s, D: 20h 58m 54.79s
+A: -12deg 38′ 30.4″, B: -12deg 37′ 45.8″, C: -12deg 38′ 04.2″, D: -12deg 37′ 54.5″
+9.0
+Asterism of four stars

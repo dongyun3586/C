@@ -1,0 +1,6 @@
+M101
+Pinwheel galaxy
+14h 03m 12.6s
++54deg 20' 57''
+7.9
+type SABcd spiral galaxy

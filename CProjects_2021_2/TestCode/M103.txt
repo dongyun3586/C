@@ -1,0 +1,6 @@
+M103
+Messier 103
+01h 33.2m
++60° 42′
+7.4
+type d open cluster

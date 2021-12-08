@@ -1,0 +1,7 @@
+M42
+Orion Nebula
+05h 35m 17.3s
+-05deg 23' 28"
+4.0
+emission nebula
+H II region

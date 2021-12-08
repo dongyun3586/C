@@ -1,0 +1,6 @@
+M31
+Andromeda Galaxy
+00h 42m 44.3s
++41deg 16' 9"
+3.44
+type SAb Normal Spiral galaxy

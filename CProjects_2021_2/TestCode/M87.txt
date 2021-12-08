@@ -1,0 +1,6 @@
+M87
+Virgo A
+12h 30m 49.42338s
++12deg 23’ 28.0439”
+8.63
+type E0 elliptical galaxy

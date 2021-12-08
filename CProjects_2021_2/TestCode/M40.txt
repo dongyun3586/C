@@ -1,0 +1,7 @@
+M40
+Messier 40
+A: 12h 22m 12.5278s, B: 12h 22m 18.9989s
+A: +58deg 4' 58.539", B: +58deg 5' 10.364"
+8.4
+Double star
+A: K0III Giant, B: G0V main-sequence

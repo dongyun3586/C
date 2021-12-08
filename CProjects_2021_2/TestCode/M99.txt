@@ -1,0 +1,6 @@
+M99
+Coma Pinwheel Galaxy
+12h 18m 49.6s
++14deg 24’ 59”
+10.4
+type SAc spiral galaxy
