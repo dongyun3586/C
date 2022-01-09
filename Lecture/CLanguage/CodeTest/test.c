@@ -1,31 +1,25 @@
-#include <stdio.h>
-#include <ctype.h>
+#include<stdio.h>
 
-void func();
+int main() {
+	int score;
+	printf("점수를 입력하시오: ");
+	scanf("%d", &score);
 
-int count = 0;
+	if (score >= 60)
+		printf("합격입니다.\n");
+	else
+		printf("불합격입니다.\n");
 
-int main()
-{
-    char c;
-    while ((c = getchar()) != EOF) {
-        if (isalpha(c)) {
-            count++;
-            printf("main: %c\n", c);
-            func();
-        }
-    }
+	//// 조건 연산자
+	// (score>=60)?printf("합격입니다.\n"): printf("불합격입니다.\n");
 
-    printf("count: %d\n", count);
-    return 0;
-}
+	//// 윤년 판단 프로그램
+	//int year;
 
-void func() {
-    char c;
-    c = getchar();
+	//printf("연도를 입력하시오: ");
+	//scanf("%d", &year);
 
-    if (isalpha(c)) {
-        count++;
-        printf("func: %c\n", c);
-    }
+	//// 윤년 판단 => 결과 출력
+
+	return 0;
 }

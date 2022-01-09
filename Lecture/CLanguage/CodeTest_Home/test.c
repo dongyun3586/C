@@ -1,39 +1,25 @@
-#include <stdio.h>
-#include <ctype.h>
+#include<stdio.h>
 
-char getStr(char* str);
+int main() {
+	int score;
+	printf("점수를 입력하시오: ");
+	scanf("%d", &score);
 
-int main()
-{
-    char str[100];
-    
-    while (getStr(str) != EOF) {
-        if(isalpha(*str))
-            printf("%s\n", str);
-    }
-        
-    return 0;
-}
+	if (score >= 60)
+		printf("합격입니다.\n");
+	else
+		printf("불합격입니다.\n");
 
-char getStr(char* str) {
-    char c;
-    c = getchar();
+	//// 조건 연산자
+	// (score>=60)?printf("합격입니다.\n"): printf("불합격입니다.\n");
 
-    if (c != EOF) {
-        *str = c;
-        str++;
-    }
+	//// 윤년 판단 프로그램
+	//int year;
 
-    if (!isalpha(c))
-        return c;
+	//printf("연도를 입력하시오: ");
+	//scanf("%d", &year);
 
-    while (1) {
-        *str = getchar();
-        if (!isalpha(*str))
-            break;
-        str++;
-    }
+	//// 윤년 판단 => 결과 출력
 
-    *str = '\0';
-    return *str;
+	return 0;
 }
