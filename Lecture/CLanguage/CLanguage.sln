@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31019.35
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch01_DataType", "DataType\DataType.vcxproj", "{53D10804-14C6-48E8-AFA9-26C154F4DEFB}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1학기 2차 지필평가 문제", "1학기 2차 지필평가 문제\1학기 2차 지필평가 문제.vcxproj", "{F4E62D3D-4A5C-4D39-9E1B-B0017B2CC73B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2학기 1차 지필평가 문제", "2학기 1차 지필평가 문제\2학기 1차 지필평가 문제.vcxproj", "{37D40350-DDE6-4385-96A9-695FA09CD288}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeoGangHighSchool", "SeoGangHighSchool\SeoGangHighSchool.vcxproj", "{17A5A476-4685-4041-9413-BE6D07158E54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,6 +193,14 @@ Global
 		{37D40350-DDE6-4385-96A9-695FA09CD288}.Release|x64.Build.0 = Release|x64
 		{37D40350-DDE6-4385-96A9-695FA09CD288}.Release|x86.ActiveCfg = Release|Win32
 		{37D40350-DDE6-4385-96A9-695FA09CD288}.Release|x86.Build.0 = Release|Win32
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Debug|x64.ActiveCfg = Debug|x64
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Debug|x64.Build.0 = Debug|x64
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Debug|x86.ActiveCfg = Debug|Win32
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Debug|x86.Build.0 = Debug|Win32
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Release|x64.ActiveCfg = Release|x64
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Release|x64.Build.0 = Release|x64
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Release|x86.ActiveCfg = Release|Win32
+		{17A5A476-4685-4041-9413-BE6D07158E54}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
