@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dijkstra_maze.c" />
     <ClCompile Include="recursive_function1.c" />
     <ClCompile Include="recursive_function1_explanation.c" />
     <ClCompile Include="recursive_function2.c" />
