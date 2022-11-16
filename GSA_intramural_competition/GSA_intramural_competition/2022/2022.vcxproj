@@ -128,9 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dijkstra_maze.c" />
+    <ClCompile Include="exercise_baekjoon1991.c" />
+    <ClCompile Include="heap_sort.c" />
+    <ClCompile Include="infix_to_postfix.c" />
+    <ClCompile Include="prim.c" />
     <ClCompile Include="recursive_function1.c" />
     <ClCompile Include="recursive_function1_explanation.c" />
     <ClCompile Include="recursive_function2.c" />
+    <ClCompile Include="stack_baekjoon10828.c" />
+    <ClCompile Include="stack_baekjoon10828_sum.c" />
+    <ClCompile Include="tree.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
